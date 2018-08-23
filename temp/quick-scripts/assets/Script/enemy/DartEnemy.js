@@ -63,7 +63,7 @@ cc.Class({
             }
         }
 
-        if (math.abs(this._totalOffsetY) >= cc.director.getWinSize() * 1.5) {
+        if (Math.abs(this._totalOffsetY) >= cc.director.getWinSize() * 1.5) {
             this._gameManager.collectEnemy(this.node, this.type);
         }
     },

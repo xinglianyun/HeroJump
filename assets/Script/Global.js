@@ -1,5 +1,5 @@
 window.Global = {
-    gameManager = null,
-    gameMainScene = null,
-    hero = null
+    gameManager : null,
+    gameMainScene : null,
+    hero : null
 }

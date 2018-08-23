@@ -8,8 +8,6 @@
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
-var Global = require("Global")
-
 cc.Class({
     extends: cc.Component,
 
@@ -221,10 +219,10 @@ cc.Class({
     dealWithDartEnemy : function(dartEnemyNode){
         dartEnemyNode.parent = (this._leftOrRight > 0) ? this.enemyNodeLeft : this.enemyNodeRight
         var targetWorldPos = (this._leftOrRight > 0) ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0))
-        birdNode.scaleX *= this._leftOrRight
-        birdNode.getComponent("DartEnemy").setStartSide(-this._leftOrRight)
-        birdNode.getComponent("DartEnemy").setTargetWorldPos(targetWorldPos)
-        birdNode.getComponent("DartEnemy").setGameManager(this._gameManager)
+        dartEnemyNode.scaleX *= this._leftOrRight
+        dartEnemyNode.getComponent("DartEnemy").setStartSide(-this._leftOrRight)
+        dartEnemyNode.getComponent("DartEnemy").setTargetWorldPos(targetWorldPos)
+        dartEnemyNode.getComponent("DartEnemy").setGameManager(this._gameManager)
     },
 
     //

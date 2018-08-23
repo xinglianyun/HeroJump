@@ -8,7 +8,6 @@ cc._RF.push(module, 'f7b1dc5DqBF0pywMhvO+d9N', 'GameManager');
  * desc     :   game manager contains the Global Varible and some calculate logic
  * authur   :   xinghui
  */
-var Global = require("Global");
 var GameData = require("GameData");
 cc.Class({
 
@@ -202,13 +201,12 @@ cc.Class({
             dart2 = cc.instantiate(this.dartEnemyPrefab);
         }
 
-        var dartNode = null;
         for (var i = 0; i < 2; ++i) {
-            dartNode = this._dartNodePool.get();
+            var dartNode = this._dartNodePool.get();
             if (!dartNode) {
                 dartNode = cc.instantiate(this.dartPrefab);
             }
-            dart2.node.getComponent("DartEnemy").addChildDartNode(dartNode[i]);
+            dart2.getComponent("DartEnemy").addChildDartNode(dartNode);
         }
 
         return dart2;

@@ -454,44 +454,44 @@
     "meta": 1534069252760,
     "relativePath": "Script\\HeroColliderProxy.js"
   },
-  "57abda39-cbd5-42e0-9848-9a432718c127": {
-    "asset": 1534164364337,
-    "meta": 1534164365907,
-    "relativePath": "Script\\GameData.js"
-  },
-  "d7899491-e587-46d1-a80c-96af06fe0cd2": {
-    "asset": 1534170105031,
-    "meta": 1534169972332,
-    "relativePath": "Script\\Global.js"
-  },
   "fbd32b4a-d99f-4b14-9e65-7f7f0d1b6601": {
     "asset": 1534939340875,
     "meta": 1534940009516,
     "relativePath": "Script\\enemy\\Bird.js"
   },
+  "4f469df8-134f-452e-bb55-b01d5961142e": {
+    "asset": 1535029764466,
+    "meta": 1535030109859,
+    "relativePath": "Script\\enemy\\DartNode.js"
+  },
+  "57abda39-cbd5-42e0-9848-9a432718c127": {
+    "asset": 1535029785114,
+    "meta": 1535030109935,
+    "relativePath": "Script\\GameData.js"
+  },
+  "d7899491-e587-46d1-a80c-96af06fe0cd2": {
+    "asset": 1535030756330,
+    "meta": 1535030778831,
+    "relativePath": "Script\\Global.js"
+  },
   "28463d8f-653c-40a0-8c76-e9c12366f99d": {
-    "asset": 1534852810486,
-    "meta": 1534940009722,
+    "asset": 1535030676794,
+    "meta": 1535030778832,
     "relativePath": "Script\\Hero.js"
   },
+  "5be60a68-d5fb-4078-a402-5878ca7096e7": {
+    "asset": 1535031250580,
+    "meta": 1535031265187,
+    "relativePath": "Script\\enemy\\DartEnemy.js"
+  },
   "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
-    "asset": 1535028362789,
-    "meta": 1535028607250,
+    "asset": 1535031192705,
+    "meta": 1535031265280,
     "relativePath": "Script\\GameMainScene.js"
   },
   "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
-    "asset": 1535028122113,
-    "meta": 1535028607251,
+    "asset": 1535031142869,
+    "meta": 1535031265297,
     "relativePath": "Script\\GameManager.js"
-  },
-  "5be60a68-d5fb-4078-a402-5878ca7096e7": {
-    "asset": 1535029627905,
-    "meta": 1535029643853,
-    "relativePath": "Script\\enemy\\DartEnemy.js"
-  },
-  "4f469df8-134f-452e-bb55-b01d5961142e": {
-    "asset": 1535029638835,
-    "meta": 1535029643854,
-    "relativePath": "Script\\enemy\\DartNode.js"
   }
 }

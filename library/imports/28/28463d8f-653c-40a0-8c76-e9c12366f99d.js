@@ -13,7 +13,6 @@ cc._RF.push(module, '284632PZTxAoIx26cEjZvmd', 'Hero');
 // Learn life-cycle callbacks:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-var Global = require("Global");
 var HeroStatus = cc.Enum({
     dead: -1,
     running: -1,
