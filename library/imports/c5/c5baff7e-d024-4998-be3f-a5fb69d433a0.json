@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "role_birdRush_04",
+    "texture": "05323254-96d6-4f86-b947-39edd33004c4",
+    "atlas": "4eacebf4-93d3-49ef-91ea-338303916930",
+    "rect": [
+      254,
+      614,
+      250,
+      202
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      250,
+      202
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sideBar",
+    "texture": "ed2df72d-95ad-4e29-b0cb-fa673570f597",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      32,
+      64
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      32,
+      64
+    ]
+  }
+}
