@@ -459,11 +459,6 @@
     "meta": 1534164365907,
     "relativePath": "Script\\GameData.js"
   },
-  "4f469df8-134f-452e-bb55-b01d5961142e": {
-    "asset": 1534166068593,
-    "meta": 1534169668680,
-    "relativePath": "Script\\enemy\\DartNode.js"
-  },
   "d7899491-e587-46d1-a80c-96af06fe0cd2": {
     "asset": 1534170105031,
     "meta": 1534169972332,
@@ -474,24 +469,29 @@
     "meta": 1534940009516,
     "relativePath": "Script\\enemy\\Bird.js"
   },
-  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
-    "asset": 1534939281350,
-    "meta": 1534940009721,
-    "relativePath": "Script\\GameMainScene.js"
-  },
   "28463d8f-653c-40a0-8c76-e9c12366f99d": {
     "asset": 1534852810486,
     "meta": 1534940009722,
     "relativePath": "Script\\Hero.js"
   },
+  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
+    "asset": 1535028362789,
+    "meta": 1535028607250,
+    "relativePath": "Script\\GameMainScene.js"
+  },
   "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
-    "asset": 1534942753034,
-    "meta": 1534944301723,
+    "asset": 1535028122113,
+    "meta": 1535028607251,
     "relativePath": "Script\\GameManager.js"
   },
   "5be60a68-d5fb-4078-a402-5878ca7096e7": {
-    "asset": 1535026133053,
-    "meta": 1535026134703,
+    "asset": 1535029627905,
+    "meta": 1535029643853,
     "relativePath": "Script\\enemy\\DartEnemy.js"
+  },
+  "4f469df8-134f-452e-bb55-b01d5961142e": {
+    "asset": 1535029638835,
+    "meta": 1535029643854,
+    "relativePath": "Script\\enemy\\DartNode.js"
   }
 }

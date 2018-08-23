@@ -174,7 +174,7 @@ cc.Class({
 
     generateEnemyByType: function generateEnemyByType(enemyType) {
         var enemy = null;
-        enemyType = "bird"; //todo : test
+        enemyType = "dart2"; //todo : test
         switch (enemyType) {
             case "bird":
                 enemy = this._createBird();

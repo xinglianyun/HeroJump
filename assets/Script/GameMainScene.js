@@ -201,10 +201,11 @@ cc.Class({
             if(enemyInfo){
                 if(enemyInfo.type === "bird") {
                     this.dealWithBird(enemyInfo.enemyNode)
-                }else if(enemyInfo.type == "dartenemy") {
+                }else if(enemyInfo.type == "dart2") {
                     this.dealWithDartEnemy(enemyInfo.enemyNode)
                 }
-                this._stopCreateEnemy = false
+                // todo : for test
+                this._stopCreateEnemy = true
             }
         }
     },
@@ -219,6 +220,7 @@ cc.Class({
     },
     dealWithDartEnemy : function(dartEnemyNode){
         dartEnemyNode.parent = (this._leftOrRight > 0) ? this.enemyNodeLeft : this.enemyNodeRight
+        var targetWorldPos = (this._leftOrRight > 0) ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0))
         birdNode.scaleX *= this._leftOrRight
         birdNode.getComponent("DartEnemy").setStartSide(-this._leftOrRight)
         birdNode.getComponent("DartEnemy").setTargetWorldPos(targetWorldPos)
@@ -226,7 +228,7 @@ cc.Class({
     },
 
     //
-    gameOver : function(){
+    gameOver : function(){  
         this._gameManager.gameOver()
     },
 

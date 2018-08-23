@@ -17,17 +17,37 @@ cc._RF.push(module, '4f46934E09FLrtVsB1ZYRQu', 'DartNode', __filename);
 cc.Class({
     extends: cc.Component,
 
-    properties: {},
+    properties: {
+        type: {
+            default: "dartnode",
+            type: cc.String
+        }
+    },
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad: function onLoad() {
+        this.node.getComponent("Enemy").setRealListener(this);
+    },
+    start: function start() {},
 
-    start: function start() {}
-}
 
-// update (dt) {},
-);
+    // update (dt) {},
+
+    //logic
+    beVictory: function beVictory() {
+        this.node.stopAllActions();
+    },
+
+    beKilled: function beKilled() {
+        this.node.stopAllActions();
+        this._gameManager.collectEnemy(this.node, this.type);
+    },
+
+    setGameManager: function setGameManager(gameManager) {
+        this._gameManager = gameManager;
+    }
+});
 
 cc._RF.pop();
         }

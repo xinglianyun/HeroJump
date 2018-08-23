@@ -39,4 +39,8 @@ cc.Class({
         this.node.stopAllActions()
         this._gameManager.collectEnemy(this.node, this.type)
     },
+
+    setGameManager : function(gameManager){
+        this._gameManager = gameManager
+    },
 });

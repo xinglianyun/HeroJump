@@ -28,6 +28,7 @@ cc.Class({
 
     //logic
     addChildDartNode : function(dartNode){
+        dartNode.getComponent("DartNode").setGameManager(this._gameManager)
         dartNode.parent = this.node
         dartNodes.push(dartNode)
     },
@@ -39,7 +40,6 @@ cc.Class({
         this._gameMainScene = this._game.getComponent("GameMainScene")
         this._totalOffsetY = 0.0
         this._startSide = -1
-        this._stopMove = false
         this._targetWorldPos = cc.Vec2(0, 0)
         this._isEmitDart = false
         this.node.getComponent("Enemy").setRealListener(this)
@@ -55,10 +55,18 @@ cc.Class({
         this.node.y -= offsetY
         this._totalOffsetY += offsetY
 
-        if(Math.abs(this._totalOffsetY) >= cc.director.getWinSize().height * this.emitDartTime){
-            // emit the DartNode
-            this.emitDartNode()
+        if(!this._isEmitDart){
+            if(Math.abs(this._totalOffsetY) >= cc.director.getWinSize().height * this.emitDartTime){
+                // emit the DartNode
+                this.emitDartNode()
+                this._isEmitDart = true
+            }
         }
+
+        if(math.abs(this._totalOffsetY) >= cc.director.getWinSize() * 1.5){
+            this._gameManager.collectEnemy(this.node, this.type)
+        }
+        
     },
 
     // logic
@@ -88,7 +96,7 @@ cc.Class({
         for(let i = 0; i < dartNodes.length; ++i){
             //dartNodes[i].getComponent("DartNode").runToTarget(this._targetWorldPos, i, dartNodes.length)
             if(i === 0){
-                var moveToHeroPos = this.node.convertToNodeSpace(this._targetWorldPos)
+                var moveToHeroPos = this.node.parent.convertToNodeSpace(this._targetWorldPos)
                 moveToHeroPos.x += -this._startSide*this._overScreenX
                 moveToHeroPos.y -= (this._overScreenX * Math.abs(this.node.y - moveToHeroPos.y)) / (Math.abs(this.node.x - moveToHeroPos.x))
                 var moveAction = cc.moveTo(cc.director.getWinSize().height * (1- this.emitDartTime) / this._gameMainScene.getRunSpeed() * 0.5, moveToHeroPos)
@@ -100,7 +108,6 @@ cc.Class({
                 dartNodes[i].parent = this.node.parent
                 dartNodes[i].runAction(sequence)
             }else if(i === 1){
-                var targetPos = this.node.x + cc.director.getWinSize().width
                 var moveAction = cc.moveBy(cc.director.getWinSize().height * (1- this.emitDartTime) / this._gameMainScene.getRunSpeed(), -this._startSide * cc.director.getWinSize().width, 0)
 
                 var callfunc = cc.callFunc(function(target){
