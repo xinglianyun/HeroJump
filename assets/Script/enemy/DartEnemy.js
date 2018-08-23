@@ -91,7 +91,7 @@ cc.Class({
                 var moveToHeroPos = this.node.convertToNodeSpace(this._targetWorldPos)
                 moveToHeroPos.x += -this._startSide*this._overScreenX
                 moveToHeroPos.y -= (this._overScreenX * Math.abs(this.node.y - moveToHeroPos.y)) / (Math.abs(this.node.x - moveToHeroPos.x))
-                var moveAction = cc.moveTo(cc.director.getWinSize().height * (1- this.emitDartTime) / this._gameMainScene.getRunSpeed(), moveToHeroPos)
+                var moveAction = cc.moveTo(cc.director.getWinSize().height * (1- this.emitDartTime) / this._gameMainScene.getRunSpeed() * 0.5, moveToHeroPos)
     
                 var callfunc = cc.callFunc(function(target){
                     this._gameManager.collectEnemy(dartNodes[i], "dartnode")
@@ -99,6 +99,17 @@ cc.Class({
                 var sequence = cc.sequence(moveAction, callfunc)
                 dartNodes[i].parent = this.node.parent
                 dartNodes[i].runAction(sequence)
+            }else if(i === 1){
+                var targetPos = this.node.x + cc.director.getWinSize().width
+                var moveAction = cc.moveBy(cc.director.getWinSize().height * (1- this.emitDartTime) / this._gameMainScene.getRunSpeed(), -this._startSide * cc.director.getWinSize().width, 0)
+
+                var callfunc = cc.callFunc(function(target){
+                    this._gameManager.collectEnemy(dartNodes[i], "dartnode")
+                }, this)
+                var sequence = cc.sequence(moveAction, callfunc)
+                dartNodes[i].runAction(sequence)
+            }else if(i === 2){
+
             }
         }
     }

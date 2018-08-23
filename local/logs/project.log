@@ -1,58 +1,58 @@
-2018-08-21T11:23:21.469Z - normal: Load ~/.CocosCreator/settings.json
-2018-08-21T11:23:21.475Z - normal: checking language setting...
-2018-08-21T11:23:21.475Z - normal: Language: zh
-2018-08-21T11:23:25.052Z - success: protocol editor-framework registered
-2018-08-21T11:23:25.052Z - success: protocol app registered
-2018-08-21T11:23:25.053Z - success: protocol theme registered
-2018-08-21T11:23:25.053Z - success: protocol packages registered
-2018-08-21T11:23:25.053Z - success: protocol unpack registerred
-2018-08-21T11:23:25.053Z - success: protocol disable-commonjs registerred
-2018-08-21T11:23:25.151Z - normal: connected!
-2018-08-21T11:23:25.153Z - normal: Check project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
-2018-08-21T11:23:25.154Z - normal: Initializing Cocos2d
-2018-08-21T11:23:26.350Z - normal: Initializing Asset Database
-2018-08-21T11:23:26.421Z - success: protocol uuid registerred
-2018-08-21T11:23:26.421Z - success: protocol db registerred
-2018-08-21T11:23:26.422Z - success: protocol thumbnail registerred
-2018-08-21T11:23:26.422Z - normal: Loading editor/builtin packages
-2018-08-21T11:23:26.466Z - success: anysdk loaded
-2018-08-21T11:23:26.648Z - success: assets loaded
-2018-08-21T11:23:26.650Z - success: builder loaded
-2018-08-21T11:23:26.654Z - success: cocos-analytics loaded
-2018-08-21T11:23:26.658Z - success: console loaded
-2018-08-21T11:23:26.703Z - success: fb-instant-games loaded
-2018-08-21T11:23:26.706Z - success: hierarchy loaded
-2018-08-21T11:23:26.710Z - success: inspector loaded
-2018-08-21T11:23:26.711Z - success: keystore loaded
-2018-08-21T11:23:26.716Z - success: node-library loaded
-2018-08-21T11:23:26.718Z - success: package-asset loaded
-2018-08-21T11:23:26.720Z - success: preferences loaded
-2018-08-21T11:23:26.721Z - success: project-exporter loaded
-2018-08-21T11:23:26.746Z - success: project-importer loaded
-2018-08-21T11:23:26.748Z - success: project-settings loaded
-2018-08-21T11:23:26.751Z - success: ui-kit loaded
-2018-08-21T11:23:26.782Z - success: ui-grid loaded
-2018-08-21T11:23:26.801Z - success: scene loaded
-2018-08-21T11:23:26.807Z - success: sprite-editor loaded
-2018-08-21T11:23:26.818Z - success: store loaded
-2018-08-21T11:23:26.830Z - success: timeline loaded
-2018-08-21T11:23:26.831Z - normal: Loading builtin packages
-2018-08-21T11:23:26.913Z - success: asset-db-debugger loaded
-2018-08-21T11:23:26.919Z - success: code-editor loaded
-2018-08-21T11:23:26.921Z - success: color-picker loaded
-2018-08-21T11:23:26.927Z - success: package-manager loaded
-2018-08-21T11:23:26.932Z - success: qqplay-adapter loaded
-2018-08-21T11:23:26.938Z - success: sdkbox loaded
-2018-08-21T11:23:26.944Z - success: tester loaded
-2018-08-21T11:23:26.947Z - success: ui-kit-preview-extra loaded
-2018-08-21T11:23:26.958Z - success: ui-kit-preview loaded
-2018-08-21T11:23:26.961Z - success: ui-tree loaded
-2018-08-21T11:23:26.962Z - success: weapp-adapter loaded
-2018-08-21T11:23:28.802Z - normal: Initializing project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
-2018-08-21T11:23:28.840Z - normal: Loading packages
-2018-08-21T11:23:28.847Z - normal: Watching packages
-2018-08-21T11:23:29.436Z - normal: Run Application
-2018-08-21T11:23:31.244Z - failed: [db-task][init] Failed to import asset E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\assets\Script\Global.js, message: Compile error: SyntaxError: E:/Com4lovesCode/LightGame/CocosCreator/HeroJump/assets/Script/Global.js: Unexpected token (2:16)
+2018-08-23T11:47:43.918Z - normal: Load ~/.CocosCreator/settings.json
+2018-08-23T11:47:43.923Z - normal: checking language setting...
+2018-08-23T11:47:43.924Z - normal: Language: zh
+2018-08-23T11:47:48.248Z - success: protocol editor-framework registered
+2018-08-23T11:47:48.249Z - success: protocol app registered
+2018-08-23T11:47:48.249Z - success: protocol theme registered
+2018-08-23T11:47:48.249Z - success: protocol packages registered
+2018-08-23T11:47:48.249Z - success: protocol unpack registerred
+2018-08-23T11:47:48.249Z - success: protocol disable-commonjs registerred
+2018-08-23T11:47:48.360Z - normal: connected!
+2018-08-23T11:47:48.363Z - normal: Check project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
+2018-08-23T11:47:48.367Z - normal: Initializing Cocos2d
+2018-08-23T11:47:49.510Z - normal: Initializing Asset Database
+2018-08-23T11:47:49.576Z - success: protocol uuid registerred
+2018-08-23T11:47:49.576Z - success: protocol db registerred
+2018-08-23T11:47:49.576Z - success: protocol thumbnail registerred
+2018-08-23T11:47:49.576Z - normal: Loading editor/builtin packages
+2018-08-23T11:47:49.698Z - success: anysdk loaded
+2018-08-23T11:47:49.900Z - success: assets loaded
+2018-08-23T11:47:49.903Z - success: builder loaded
+2018-08-23T11:47:49.915Z - success: cocos-analytics loaded
+2018-08-23T11:47:49.920Z - success: console loaded
+2018-08-23T11:47:49.981Z - success: fb-instant-games loaded
+2018-08-23T11:47:49.986Z - success: hierarchy loaded
+2018-08-23T11:47:49.990Z - success: inspector loaded
+2018-08-23T11:47:49.992Z - success: keystore loaded
+2018-08-23T11:47:49.997Z - success: node-library loaded
+2018-08-23T11:47:50.000Z - success: package-asset loaded
+2018-08-23T11:47:50.003Z - success: preferences loaded
+2018-08-23T11:47:50.005Z - success: project-exporter loaded
+2018-08-23T11:47:50.039Z - success: project-importer loaded
+2018-08-23T11:47:50.042Z - success: project-settings loaded
+2018-08-23T11:47:50.046Z - success: ui-kit loaded
+2018-08-23T11:47:50.073Z - success: ui-grid loaded
+2018-08-23T11:47:50.079Z - success: scene loaded
+2018-08-23T11:47:50.081Z - success: sprite-editor loaded
+2018-08-23T11:47:50.087Z - success: store loaded
+2018-08-23T11:47:50.097Z - success: timeline loaded
+2018-08-23T11:47:50.097Z - normal: Loading builtin packages
+2018-08-23T11:47:50.175Z - success: asset-db-debugger loaded
+2018-08-23T11:47:50.177Z - success: code-editor loaded
+2018-08-23T11:47:50.178Z - success: color-picker loaded
+2018-08-23T11:47:50.181Z - success: package-manager loaded
+2018-08-23T11:47:50.183Z - success: qqplay-adapter loaded
+2018-08-23T11:47:50.188Z - success: sdkbox loaded
+2018-08-23T11:47:50.192Z - success: tester loaded
+2018-08-23T11:47:50.195Z - success: ui-kit-preview-extra loaded
+2018-08-23T11:47:50.207Z - success: ui-kit-preview loaded
+2018-08-23T11:47:50.209Z - success: ui-tree loaded
+2018-08-23T11:47:50.209Z - success: weapp-adapter loaded
+2018-08-23T11:47:52.254Z - normal: Initializing project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
+2018-08-23T11:47:52.264Z - normal: Loading packages
+2018-08-23T11:47:52.275Z - normal: Watching packages
+2018-08-23T11:47:52.832Z - normal: Run Application
+2018-08-23T11:47:53.850Z - failed: [db-task][init] Failed to import asset E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\assets\Script\Global.js, message: Compile error: SyntaxError: E:/Com4lovesCode/LightGame/CocosCreator/HeroJump/assets/Script/Global.js: Unexpected token (2:16)
   1 | window.Global = {
 > 2 |     gameManager = null,
     |                 ^
@@ -69,104 +69,9 @@
     at Parser.pp$1.parseTopLevel (E:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1778:8)
     at Parser.parse (E:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1673:17)
     at parse (E:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:7305:37)
-2018-08-21T11:23:32.236Z - success: preview server running at http://localhost:7456
-2018-08-21T11:23:41.124Z - normal: 1.9.2
-2018-08-21T11:23:41.574Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:248:13
-2018-08-21T11:23:41.576Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-21T11:23:41.577Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-21T11:23:41.587Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:244:13
-2018-08-21T11:23:41.609Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
-2018-08-21T11:23:41.613Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-21T11:23:41.624Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:42:13
-2018-08-21T11:52:26.953Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:256:13
-2018-08-21T11:52:26.959Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-21T11:52:26.959Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-21T11:52:26.962Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:247:13
-2018-08-21T11:52:26.981Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
-2018-08-21T11:52:26.984Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-21T11:52:26.986Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:69:13
-2018-08-21T11:52:26.987Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-22T12:13:32.499Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+2018-08-23T11:47:54.818Z - success: preview server running at http://localhost:7456
+2018-08-23T11:48:03.701Z - normal: 1.9.2
+2018-08-23T11:48:04.063Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
     at Module._resolveFilename (module.js:470:15)
     at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
     at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
@@ -177,57 +82,9 @@
     at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
     at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
     at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:257:13
-2018-08-22T12:13:32.643Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-22T12:13:32.643Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-22T12:13:32.643Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:247:13
-2018-08-22T12:13:32.681Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
-2018-08-22T12:13:32.682Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-22T12:13:32.682Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:94:13
-2018-08-22T12:13:32.682Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-22T13:25:02.287Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
-    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
-    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:257:13
-2018-08-22T13:25:02.293Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-22T13:25:02.293Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-22T13:25:02.298Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+2018-08-23T11:48:04.065Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T11:48:04.065Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T11:48:04.068Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
     at Module._resolveFilename (module.js:470:15)
     at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
     at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
@@ -238,7 +95,7 @@
     at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
     at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
     at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:250:13
-2018-08-22T13:25:02.304Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+2018-08-23T11:48:04.078Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
     at Module._resolveFilename (module.js:470:15)
     at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
     at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
@@ -249,8 +106,8 @@
     at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
     at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
     at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
-2018-08-22T13:25:02.308Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-22T13:25:02.311Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+2018-08-23T11:48:04.081Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T11:48:04.083Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
     at Module._resolveFilename (module.js:470:15)
     at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
     at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
@@ -261,5 +118,105 @@
     at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
     at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
     at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:122:13
-2018-08-22T13:25:02.312Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-22T13:27:29.719Z - info: shutdown preview server
+2018-08-23T11:48:04.084Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T11:48:49.588Z - success: TypeScript Configuration file has been copied to E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\tsconfig.json
+2018-08-23T11:48:53.044Z - success: API data generated and copied to E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\creator.d.ts
+2018-08-23T11:48:55.852Z - success: VS Code extension installed to C:\Users\Administrator\.vscode\extensions
+2018-08-23T11:48:58.134Z - success: Chrome debug setting has been updated to .vscode/launch.json, please install Debugger for Chrome VS Code extension to debug your project.
+2018-08-23T11:49:00.284Z - success: Compiling task has been added to .vscode/tasks.json, please run "compile" task in VS Code to trigger compile in Cocos Creator.
+2018-08-23T12:06:38.787Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:257:13
+2018-08-23T12:06:38.790Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T12:06:38.791Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T12:06:38.792Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:250:13
+2018-08-23T12:06:38.797Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
+2018-08-23T12:06:38.800Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T12:06:38.801Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:135:13
+2018-08-23T12:06:38.802Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T12:08:55.058Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:257:13
+2018-08-23T12:08:55.061Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T12:08:55.061Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T12:08:55.062Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:250:13
+2018-08-23T12:08:55.065Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
+2018-08-23T12:08:55.067Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T12:08:55.070Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:135:13
+2018-08-23T12:08:55.071Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.

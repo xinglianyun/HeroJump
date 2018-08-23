@@ -130,8 +130,8 @@
     "relativePath": "Script\\GameStartScene.js"
   },
   "b0ae6330-9d66-42c3-ac4d-ecfd698eecc6": {
-    "asset": 1534852496355,
-    "meta": 1534852496374,
+    "asset": 1535026234862,
+    "meta": 1535026234883,
     "relativePath": "Scene\\GameMainScene.fire"
   },
   "61b632d2-55e1-464c-82c2-b4da94d516f9": {
@@ -200,8 +200,8 @@
     "relativePath": "clips\\DartFlyClip.anim"
   },
   "3c85c7fb-3308-464a-86fb-5bdcb6000603": {
-    "asset": 1534165517728,
-    "meta": 1534165517750,
+    "asset": 1535026224465,
+    "meta": 1535026224482,
     "relativePath": "prefabs\\DartNode.prefab"
   },
   "7ca34719-aacc-4bda-aee5-c9c44d2c4746": {
@@ -484,14 +484,14 @@
     "meta": 1534940009722,
     "relativePath": "Script\\Hero.js"
   },
-  "5be60a68-d5fb-4078-a402-5878ca7096e7": {
-    "asset": 1534944285275,
-    "meta": 1534944301722,
-    "relativePath": "Script\\enemy\\DartEnemy.js"
-  },
   "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
     "asset": 1534942753034,
     "meta": 1534944301723,
     "relativePath": "Script\\GameManager.js"
+  },
+  "5be60a68-d5fb-4078-a402-5878ca7096e7": {
+    "asset": 1535026133053,
+    "meta": 1535026134703,
+    "relativePath": "Script\\enemy\\DartEnemy.js"
   }
 }
