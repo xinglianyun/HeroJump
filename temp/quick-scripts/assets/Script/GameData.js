@@ -15,7 +15,7 @@ var GameData = {
         }, {
             enemyType: "dart2", rate: 10
         }, {
-            enemyType: "cat", rate: 10
+            enemyType: "linecat", rate: 10
         }, {
             enemyType: "line", rate: 10
         }]
@@ -27,7 +27,7 @@ var GameData = {
         }, {
             enemyType: "bird", rate: 10
         }, {
-            enemyType: "cat", rate: 10
+            enemyType: "linecat", rate: 10
         }, {
             enemyType: "line", rate: 10
         }, {
@@ -43,7 +43,7 @@ var GameData = {
         }, {
             enemyType: "bird", rate: 10
         }, {
-            enemyType: "cat", rate: 10
+            enemyType: "linecat", rate: 10
         }, {
             enemyType: "line", rate: 10
         }, {
@@ -59,7 +59,7 @@ var GameData = {
         }, {
             enemyType: "bird", rate: 10
         }, {
-            enemyType: "cat", rate: 10
+            enemyType: "linecat", rate: 10
         }, {
             enemyType: "line", rate: 10
         }, {
@@ -81,7 +81,7 @@ var GameData = {
         }, {
             enemyType: "dart", rate: 10
         }, {
-            enemyType: "cat", rate: 10
+            enemyType: "linecat", rate: 10
         }, {
             enemyType: "line", rate: 10
         }, {
@@ -103,7 +103,7 @@ var GameData = {
         }, {
             enemyType: "dart", rate: 10
         }, {
-            enemyType: "cat", rate: 10
+            enemyType: "linecat", rate: 10
         }, {
             enemyType: "line", rate: 10
         }, {

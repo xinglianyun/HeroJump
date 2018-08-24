@@ -193,6 +193,10 @@ cc.Class({
                     this.dealWithBird(enemyInfo.enemyNode);
                 } else if (enemyInfo.type == "dart2") {
                     this.dealWithDartEnemy(enemyInfo.enemyNode);
+                } else if (enemyInfo.type == "line") {
+                    this.dealWithLine(enemyInfo.enemyNode);
+                } else if (enemyInfo.type == "linecat") {
+                    this.dealWithLineCat(enemyInfo.enemyNode);
                 }
                 // todo : for test
                 this._stopCreateEnemy = true;
@@ -215,6 +219,12 @@ cc.Class({
         dartEnemyNode.getComponent("DartEnemy").setStartSide(-this._leftOrRight);
         dartEnemyNode.getComponent("DartEnemy").setTargetWorldPos(targetWorldPos);
         dartEnemyNode.getComponent("DartEnemy").setGameManager(this._gameManager);
+    },
+    dealWithLine: function dealWithLine(lineEnemyNode) {
+        lineEnemyNode.parent = this.enemyNodeLeft;
+    },
+    dealWithLineCat: function dealWithLineCat(linecatEnemyNode) {
+        linecatEnemyNode.parent = this.enemyNodeLeft;
     },
 
     //

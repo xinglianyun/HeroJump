@@ -108,6 +108,13 @@ cc.Class({
             let enemy = cc.instantiate(this.runEnemyPrefab); // run enemy pool
             this._runEnemyPool.put(enemy)
         }
+
+        this._bannerEnemyPool = new cc.NodePool()
+        this._bannerEnemyPoolCapacity = 2
+        for(let i = 0; i < this._bannerEnemyPoolCapacity; ++i){
+            let enemy = cc.instantiate(this.bannerPrefab);// banner enemy pool
+            this._bannerEnemyPool.put(enemy)
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -169,13 +176,19 @@ cc.Class({
 
     generateEnemyByType : function(enemyType){
         let enemy = null
-        enemyType = "dart2" //todo : test
+        enemyType = "linecat" //todo : test
         switch(enemyType){
             case "bird":
                 enemy = this._createBird()
                 break;
             case "dart2":
                 enemy = this._createDart2()
+                break;
+            case "line":
+                enemy = this._createLine()
+                break;
+            case "linecat":
+                enemy = this._createLineCat()
                 break;
         }
         return {enemyNode : enemy, type : enemyType}
@@ -208,6 +221,27 @@ cc.Class({
         return dart2
     },
 
+    _createLine : function(){
+        let line = null
+        line = this._bannerEnemyPool.get()
+        if(!line){
+            line = cc.instantiate(this.bannerPrefab)
+        }
+        return line
+    },
+
+    _createLineCat : function(){
+        var line = this._createLine()
+
+        let cat = null
+        cat = this._catEnemyPool.get()
+        if(!cat){
+            cat = cc.instantiate(this.catEnemyPrefab)
+        }
+        line.getComponent("LineEnemy").addCat(cat)
+        return line
+    },
+
     //
     collectEnemy : function(node, type)
     {
@@ -220,6 +254,12 @@ cc.Class({
                 break;
             case "dartnode":
                 this._dartNodePool.put(node)
+                break;
+            case "line":
+                this._bannerEnemyPool.put(node)
+                break;
+            case "cat":
+                this._catEnemyPool.put(node)
                 break;
         }
 

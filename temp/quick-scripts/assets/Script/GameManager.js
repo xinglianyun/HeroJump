@@ -114,6 +114,13 @@ cc.Class({
             var _enemy6 = cc.instantiate(this.runEnemyPrefab); // run enemy pool
             this._runEnemyPool.put(_enemy6);
         }
+
+        this._bannerEnemyPool = new cc.NodePool();
+        this._bannerEnemyPoolCapacity = 2;
+        for (var _i7 = 0; _i7 < this._bannerEnemyPoolCapacity; ++_i7) {
+            var _enemy7 = cc.instantiate(this.bannerPrefab); // banner enemy pool
+            this._bannerEnemyPool.put(_enemy7);
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -173,13 +180,19 @@ cc.Class({
 
     generateEnemyByType: function generateEnemyByType(enemyType) {
         var enemy = null;
-        enemyType = "dart2"; //todo : test
+        enemyType = "linecat"; //todo : test
         switch (enemyType) {
             case "bird":
                 enemy = this._createBird();
                 break;
             case "dart2":
                 enemy = this._createDart2();
+                break;
+            case "line":
+                enemy = this._createLine();
+                break;
+            case "linecat":
+                enemy = this._createLineCat();
                 break;
         }
         return { enemyNode: enemy, type: enemyType };
@@ -212,6 +225,27 @@ cc.Class({
         return dart2;
     },
 
+    _createLine: function _createLine() {
+        var line = null;
+        line = this._bannerEnemyPool.get();
+        if (!line) {
+            line = cc.instantiate(this.bannerPrefab);
+        }
+        return line;
+    },
+
+    _createLineCat: function _createLineCat() {
+        var line = this._createLine();
+
+        var cat = null;
+        cat = this._catEnemyPool.get();
+        if (!cat) {
+            cat = cc.instantiate(this.catEnemyPrefab);
+        }
+        line.getComponent("LineEnemy").addCat(cat);
+        return line;
+    },
+
     //
     collectEnemy: function collectEnemy(node, type) {
         switch (type) {
@@ -223,6 +257,12 @@ cc.Class({
                 break;
             case "dartnode":
                 this._dartNodePool.put(node);
+                break;
+            case "line":
+                this._bannerEnemyPool.put(node);
+                break;
+            case "cat":
+                this._catEnemyPool.put(node);
                 break;
         }
     },
