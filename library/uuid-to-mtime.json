@@ -501,17 +501,17 @@
   },
   "e89231fc-59e3-4243-89b2-d013078ea173": {
     "asset": 1535115002213,
-    "meta": 1535115007820,
+    "meta": 1535117148671,
     "relativePath": "Script\\enemy\\LongBarrierEnemy.js"
   },
   "d1b70dee-35c2-4d40-bcf5-2dc1b4fa45ad": {
     "asset": 1535114997893,
-    "meta": 1535115007952,
+    "meta": 1535117148765,
     "relativePath": "Script\\enemy\\ShortBarrierEnemy.js"
   },
   "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
-    "asset": 1535115006484,
-    "meta": 1535115007982,
+    "asset": 1535115348918,
+    "meta": 1535117148784,
     "relativePath": "Script\\GameManager.js"
   }
 }
