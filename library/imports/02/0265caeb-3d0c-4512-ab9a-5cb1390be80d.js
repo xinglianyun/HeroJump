@@ -50,7 +50,7 @@ cc.Class({
 
     //logic
     beVictory: function beVictory() {
-        //this.node.stopAllActions()
+        this.node.stopAllActions();
     },
 
     beKilled: function beKilled() {

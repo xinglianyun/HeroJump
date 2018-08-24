@@ -130,8 +130,8 @@
     "relativePath": "Script\\GameStartScene.js"
   },
   "b0ae6330-9d66-42c3-ac4d-ecfd698eecc6": {
-    "asset": 1535100061812,
-    "meta": 1535100061855,
+    "asset": 1535114884908,
+    "meta": 1535114884924,
     "relativePath": "Scene\\GameMainScene.fire"
   },
   "61b632d2-55e1-464c-82c2-b4da94d516f9": {
@@ -215,13 +215,13 @@
     "relativePath": "prefabs\\Cat.prefab"
   },
   "7df53e27-753e-413c-964a-150103a44350": {
-    "asset": 1533028190652,
-    "meta": 1533028190657,
+    "asset": 1535113031314,
+    "meta": 1535113031321,
     "relativePath": "prefabs\\CrackerShort.prefab"
   },
   "51b47fb7-70e5-4762-989a-a59c703eed4a": {
-    "asset": 1533028259927,
-    "meta": 1533028259942,
+    "asset": 1535114880418,
+    "meta": 1535114880430,
     "relativePath": "prefabs\\CrackerLong.prefab"
   },
   "48c5e178-a3c6-4409-8299-57e52ccde6dd": {
@@ -484,24 +484,34 @@
     "meta": 1535096910555,
     "relativePath": "Script\\enemy\\DartEnemy.js"
   },
-  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
-    "asset": 1535103697582,
-    "meta": 1535107110240,
-    "relativePath": "Script\\GameMainScene.js"
-  },
-  "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
-    "asset": 1535104957926,
-    "meta": 1535107110241,
-    "relativePath": "Script\\GameManager.js"
-  },
   "0265caeb-3d0c-4512-ab9a-5cb1390be80d": {
-    "asset": 1535111113937,
-    "meta": 1535111114658,
+    "asset": 1535111454339,
+    "meta": 1535112770850,
     "relativePath": "Script\\enemy\\CatEnemy.js"
   },
   "d64a0e53-e4c0-49d4-b01f-8683041850c4": {
     "asset": 1535111076271,
-    "meta": 1535111114659,
+    "meta": 1535112770917,
     "relativePath": "Script\\enemy\\LineEnemy.js"
+  },
+  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
+    "asset": 1535114426422,
+    "meta": 1535114734576,
+    "relativePath": "Script\\GameMainScene.js"
+  },
+  "e89231fc-59e3-4243-89b2-d013078ea173": {
+    "asset": 1535115002213,
+    "meta": 1535115007820,
+    "relativePath": "Script\\enemy\\LongBarrierEnemy.js"
+  },
+  "d1b70dee-35c2-4d40-bcf5-2dc1b4fa45ad": {
+    "asset": 1535114997893,
+    "meta": 1535115007952,
+    "relativePath": "Script\\enemy\\ShortBarrierEnemy.js"
+  },
+  "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
+    "asset": 1535115006484,
+    "meta": 1535115007982,
+    "relativePath": "Script\\GameManager.js"
   }
 }

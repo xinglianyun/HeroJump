@@ -176,7 +176,7 @@ cc.Class({
 
     generateEnemyByType : function(enemyType){
         let enemy = null
-        enemyType = "linecat" //todo : test
+        enemyType = "longBarrier" //todo : test
         switch(enemyType){
             case "bird":
                 enemy = this._createBird()
@@ -189,6 +189,12 @@ cc.Class({
                 break;
             case "linecat":
                 enemy = this._createLineCat()
+                break;
+            case "shortBarrier":
+                enemy = this._createShortBarrier()
+                break;
+            case "longBarrier":
+                enemy = this._createLongBarrier()
                 break;
         }
         return {enemyNode : enemy, type : enemyType}
@@ -242,6 +248,24 @@ cc.Class({
         return line
     },
 
+    _createShortBarrier : function(){
+        var barrier = null
+        barrier = this._crackerShortEnemyPool.get()
+        if(!barrier){
+            barrier = cc.instantiate(this.crakerShortEnemyPrefab)
+        }
+        return barrier
+    },
+
+    _createLongBarrier : function(){
+        var barrier = null
+        barrier = this._crackerLongEnemyPool.get()
+        if(!barrier){
+            barrier = cc.instantiate(this.crakerLongEnemyPrefab)
+        }
+        return barrier
+    },
+
     //
     collectEnemy : function(node, type)
     {
@@ -260,6 +284,9 @@ cc.Class({
                 break;
             case "cat":
                 this._catEnemyPool.put(node)
+                break;
+            case "shortbarrier":
+                this._crackerShortEnemyPool.put(node)
                 break;
         }
 

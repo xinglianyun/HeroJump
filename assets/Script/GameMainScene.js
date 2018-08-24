@@ -199,12 +199,16 @@ cc.Class({
             if(enemyInfo){
                 if(enemyInfo.type === "bird") {
                     this.dealWithBird(enemyInfo.enemyNode)
-                }else if(enemyInfo.type == "dart2") {
+                }else if(enemyInfo.type === "dart2") {
                     this.dealWithDartEnemy(enemyInfo.enemyNode)
-                }else if(enemyInfo.type == "line"){
+                }else if(enemyInfo.type === "line"){
                     this.dealWithLine(enemyInfo.enemyNode)
-                }else if(enemyInfo.type == "linecat"){
+                }else if(enemyInfo.type === "linecat"){
                     this.dealWithLineCat(enemyInfo.enemyNode)
+                }else if(enemyInfo.type === "shortBarrier"){
+                    this.dealWithShortBarrier(enemyInfo.enemyNode)
+                }else if(enemyInfo.type === "longBarrier"){
+                    this.dealWithLongBarrier(enemyInfo.enemyNode)
                 }
                 // todo : for test
                 this._stopCreateEnemy = true
@@ -233,6 +237,16 @@ cc.Class({
     },
     dealWithLineCat : function(linecatEnemyNode){
         linecatEnemyNode.parent = this.enemyNodeLeft
+    },
+
+    dealWithShortBarrier : function(shortBarrierNode){
+        shortBarrierNode.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
+        shortBarrierNode.scaleX *= -this._leftOrRight
+    },
+
+    dealWithLongBarrier : function(longBarrierNode){
+        longBarrierNode.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
+        longBarrierNode.scaleX *= -this._leftOrRight
     },
 
     //
