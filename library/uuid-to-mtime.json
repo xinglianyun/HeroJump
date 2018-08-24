@@ -190,8 +190,8 @@
     "relativePath": "prefabs\\Bird.prefab"
   },
   "f873a55c-6ea6-4c57-997d-858e48fe325b": {
-    "asset": 1534852468832,
-    "meta": 1534852468847,
+    "asset": 1535080769638,
+    "meta": 1535080769658,
     "relativePath": "prefabs\\DartEnemyNode.prefab"
   },
   "bd1713f7-6360-44b4-83e4-3836d712285c": {
@@ -200,8 +200,8 @@
     "relativePath": "clips\\DartFlyClip.anim"
   },
   "3c85c7fb-3308-464a-86fb-5bdcb6000603": {
-    "asset": 1535026224465,
-    "meta": 1535026224482,
+    "asset": 1535080788233,
+    "meta": 1535080788247,
     "relativePath": "prefabs\\DartNode.prefab"
   },
   "7ca34719-aacc-4bda-aee5-c9c44d2c4746": {
@@ -454,11 +454,6 @@
     "meta": 1534069252760,
     "relativePath": "Script\\HeroColliderProxy.js"
   },
-  "fbd32b4a-d99f-4b14-9e65-7f7f0d1b6601": {
-    "asset": 1534939340875,
-    "meta": 1534940009516,
-    "relativePath": "Script\\enemy\\Bird.js"
-  },
   "4f469df8-134f-452e-bb55-b01d5961142e": {
     "asset": 1535029764466,
     "meta": 1535030109859,
@@ -479,19 +474,24 @@
     "meta": 1535030778832,
     "relativePath": "Script\\Hero.js"
   },
-  "5be60a68-d5fb-4078-a402-5878ca7096e7": {
-    "asset": 1535031250580,
-    "meta": 1535031265187,
-    "relativePath": "Script\\enemy\\DartEnemy.js"
-  },
   "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
     "asset": 1535031192705,
-    "meta": 1535031265280,
+    "meta": 1535076925367,
     "relativePath": "Script\\GameMainScene.js"
   },
   "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
     "asset": 1535031142869,
-    "meta": 1535031265297,
+    "meta": 1535076925412,
     "relativePath": "Script\\GameManager.js"
+  },
+  "5be60a68-d5fb-4078-a402-5878ca7096e7": {
+    "asset": 1535080729240,
+    "meta": 1535080752493,
+    "relativePath": "Script\\enemy\\DartEnemy.js"
+  },
+  "fbd32b4a-d99f-4b14-9e65-7f7f0d1b6601": {
+    "asset": 1535080901075,
+    "meta": 1535080922019,
+    "relativePath": "Script\\enemy\\Bird.js"
   }
 }
