@@ -30,10 +30,12 @@ cc.Class({
     },
 
     start () {
-        
         var moveAction = cc.moveBy(this.runTime, cc.director.getWinSize().width, 0)
+        var callfunc = cc.callFunc( function(target){
+            this.node.scaleX *= -1
+        }, this)
         var reverseMoveAction = moveAction.reverse()
-        var sequence = cc.sequence(moveAction, reverseMoveAction)
+        var sequence = cc.sequence(moveAction, callfunc, reverseMoveAction, callfunc)
         var repeat = cc.repeatForever(sequence)
         this.node.runAction(repeat)
     },

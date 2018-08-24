@@ -14,9 +14,6 @@ cc._RF.push(module, 'd64a05T5MBJ1LAfhoMEGFDE', 'LineEnemy');
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
-var gameMainScene = Global.gameMainScene;
-var gameManager = Global.gameManager;
-
 cc.Class({
     extends: cc.Component,
 
@@ -28,25 +25,37 @@ cc.Class({
         type: {
             default: "line",
             type: cc.String
+        },
+        _cat: {
+            default: null,
+            type: cc.Node,
+            serializable: false
         }
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
-        this._cat = null;
         this._totalOffsetY = 0.0;
     },
     start: function start() {},
     update: function update(dt) {
-        var speed = gameMainScene.getRunSpeed();
+        /*
+        if(Math.abs(this._totalOffsetY) > 200){
+            return
+        }
+        */
+
+        var speed = Global.gameMainScene.getRunSpeed();
         var offsetY = speed * dt;
         this.node.y += offsetY;
         this._totalOffsetY += offsetY;
 
         if (Math.abs(this._totalOffsetY) > cc.director.getWinSize().height * 1.5) {
             if (this.catNode.childrenCount > 0) {
-                this.cat.getComponent("CatEnemy").beKilled();
+                if (this._cat) {
+                    this._cat.getComponent("CatEnemy").beKilled();
+                }
             }
 
             this.beKilled();
@@ -58,13 +67,13 @@ cc.Class({
     addCat: function addCat(cat) {
         if (this.catNode) {
             this.catNode.addChild(cat);
+            this._cat = cat;
         }
-        this._cat = cat;
     },
 
     beKilled: function beKilled() {
         this.node.stopAllActions();
-        gameManager.collectEnemy(this.node, this.type);
+        Global.gameManager.collectEnemy(this.node, this.type);
     }
 });
 

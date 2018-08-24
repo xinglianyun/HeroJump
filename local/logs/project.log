@@ -220,3 +220,638 @@
     at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
     at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:135:13
 2018-08-23T12:08:55.071Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T12:50:07.640Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:259:13
+2018-08-23T12:50:07.646Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T12:50:07.647Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T12:50:07.649Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:250:13
+2018-08-23T12:50:07.653Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
+2018-08-23T12:50:07.657Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T12:50:07.660Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:135:13
+2018-08-23T12:50:07.660Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T12:50:07.662Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:07:24.345Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:259:13
+2018-08-23T13:07:24.350Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:07:24.351Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:07:24.354Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:250:13
+2018-08-23T13:07:24.360Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
+2018-08-23T13:07:24.363Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:07:24.367Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:140:13
+2018-08-23T13:07:24.368Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:07:24.374Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:14:41.371Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:259:13
+2018-08-23T13:14:41.373Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:14:41.375Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:14:41.375Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:250:13
+2018-08-23T13:14:41.379Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
+2018-08-23T13:14:41.382Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:14:41.385Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:140:13
+2018-08-23T13:14:41.386Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:14:41.387Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:15:10.364Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:259:13
+2018-08-23T13:15:10.365Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:15:10.366Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:15:10.367Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:250:13
+2018-08-23T13:15:10.370Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:1:346
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:16:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\Hero.js:106:13
+2018-08-23T13:15:10.371Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:15:10.373Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:140:13
+2018-08-23T13:15:10.373Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:15:10.375Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:24:48.451Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:1:355
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:17:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameMainScene.js:259:13
+2018-08-23T13:24:48.452Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:24:48.453Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:24:48.455Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:1:353
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:11:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\GameManager.js:250:13
+2018-08-23T13:24:48.462Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:24:48.465Z - failed: load script [Global] failed : Error: Cannot find module 'Global'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (E:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (E:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:1:357
+    at __define (E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:7:14)
+    at E:\Com4lovesCode\LightGame\CocosCreator\HeroJump\temp\quick-scripts\assets\Script\enemy\DartEnemy.js:140:13
+2018-08-23T13:24:48.465Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:24:48.466Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:26:19.114Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:26:19.115Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:26:19.153Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:26:19.154Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:26:19.155Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:27:47.739Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:27:47.740Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:27:47.744Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:27:47.745Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:27:47.746Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:30:10.977Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:30:10.980Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:30:10.985Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:30:10.985Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:30:10.986Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:32:25.102Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:32:25.104Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:32:25.107Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:32:25.108Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:32:25.108Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:33:24.431Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:33:24.432Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:33:24.435Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:33:24.436Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:33:24.437Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:34:15.093Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:34:15.093Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:34:15.098Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:34:15.100Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:34:15.286Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-23T13:34:25.623Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-23T13:34:25.623Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-23T13:34:25.631Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-23T13:34:25.632Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-23T13:34:25.633Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:15:26.050Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:15:26.051Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:15:26.202Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:15:26.203Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:15:26.205Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:21:22.860Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:21:22.864Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:21:22.868Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:21:22.870Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:21:22.870Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:25:13.060Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:25:13.062Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:25:13.064Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:25:13.065Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:25:13.066Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:30:13.822Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:30:13.824Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:30:13.830Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:30:13.832Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:30:13.833Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:42:43.103Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:42:43.105Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:42:43.111Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:42:43.114Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:42:43.116Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:43:56.877Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:43:56.879Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:43:56.884Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:43:56.885Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:43:56.886Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:44:04.834Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:44:04.834Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:44:04.838Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:44:04.839Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:44:04.839Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:46:05.641Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:46:05.644Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:46:05.650Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:46:05.651Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:46:05.653Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:46:11.691Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:46:11.691Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:46:11.694Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:46:11.698Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:46:11.701Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:47:20.626Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:47:20.627Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:47:20.637Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:47:20.639Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:47:20.640Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:48:21.625Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:48:21.626Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:48:21.633Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:48:21.634Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:48:21.634Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:49:54.149Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:49:54.151Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:49:54.153Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:49:54.157Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:49:54.159Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T02:51:24.484Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T02:51:24.484Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T02:51:24.489Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T02:51:24.490Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T02:51:24.490Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:04:40.851Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:04:40.852Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:04:40.858Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:04:40.860Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:04:40.861Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:08:03.223Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:08:03.227Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:08:03.234Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:08:03.235Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:08:03.236Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:14:20.211Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:14:20.213Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:14:20.217Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:14:20.219Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:14:20.220Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:16:58.215Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:16:58.219Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:16:58.224Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:16:58.226Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:16:58.227Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:17:42.699Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:17:42.699Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:17:42.704Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:17:42.706Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:17:42.707Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:18:23.545Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:18:23.545Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:18:23.552Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:18:23.555Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:18:23.556Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:19:12.778Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:19:12.779Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:19:12.801Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:19:12.802Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:19:12.802Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:22:02.286Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:22:02.287Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:22:02.293Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:22:02.294Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:22:02.296Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:24:00.011Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:24:00.015Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:24:00.019Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:24:00.020Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:24:00.020Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:27:52.928Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:27:52.931Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:27:52.933Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:27:52.933Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:27:52.934Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T03:45:14.770Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T03:45:14.773Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T03:45:14.814Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T03:45:14.825Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T03:45:14.826Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T04:10:50.971Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T04:10:50.972Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T04:10:50.978Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T04:10:50.981Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T04:10:50.982Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T04:10:59.372Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T04:10:59.372Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T04:10:59.377Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T04:10:59.378Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T04:10:59.378Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T04:11:03.968Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T04:11:03.968Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T04:11:03.979Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T04:11:03.980Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T04:11:03.981Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T04:11:07.554Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T04:11:07.554Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T04:11:07.558Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T04:11:07.558Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T04:11:07.559Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T04:11:12.913Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T04:11:12.913Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T04:11:12.920Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T04:11:12.923Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T04:11:12.923Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T04:24:35.492Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T04:24:35.495Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T04:24:35.518Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T04:24:35.524Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T04:24:35.530Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T06:26:36.859Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T06:26:36.862Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T06:26:36.882Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T06:26:36.891Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T06:26:36.893Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T06:28:28.592Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T06:28:28.593Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T06:28:28.596Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T06:28:28.597Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T06:28:28.598Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T06:48:39.472Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T06:48:39.474Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T06:48:39.482Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T06:48:39.483Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T06:48:39.484Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T07:48:32.494Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T07:48:32.497Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T07:48:32.638Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T07:48:32.665Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T07:48:32.704Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T08:02:13.658Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T08:02:13.661Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T08:02:13.736Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T08:02:13.738Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T08:02:13.750Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T08:02:13.752Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T08:02:13.755Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T08:39:09.748Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T08:39:09.750Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T08:39:09.754Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T08:39:09.755Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T08:39:09.758Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T08:39:09.759Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T08:39:09.761Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T09:19:40.854Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T09:19:40.856Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T09:19:40.877Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T09:19:40.878Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T09:19:40.884Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T09:19:40.885Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T09:19:40.889Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T09:45:47.836Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T09:45:47.837Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T09:45:47.841Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T09:45:47.844Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T09:45:47.845Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T09:45:47.848Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T09:45:47.868Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T09:47:05.947Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T09:47:05.947Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T09:47:05.951Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T09:47:05.952Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T09:47:05.952Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T09:47:05.953Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T09:47:05.955Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T09:48:09.636Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T09:48:09.636Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T09:48:09.640Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T09:48:09.640Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T09:48:09.641Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T09:48:09.642Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T09:48:09.644Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T09:57:42.856Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T09:57:42.858Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T09:57:42.877Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T09:57:42.879Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T09:57:42.880Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T09:57:42.881Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T09:57:42.882Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:06:40.971Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:06:40.973Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:06:40.974Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:06:40.977Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:06:40.978Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:06:40.978Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:06:40.979Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:07:39.329Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:07:39.330Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:07:39.359Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:07:39.360Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:07:39.360Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:07:39.361Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:07:39.362Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:08:47.887Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:08:47.891Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:08:47.893Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:08:47.893Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:08:47.895Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:08:47.895Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:08:47.899Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:09:29.575Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:09:29.576Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:09:29.591Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:09:29.592Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:09:29.593Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:09:29.593Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:09:29.594Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:12:49.340Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:12:49.342Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:12:49.344Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:12:49.344Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:12:49.346Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:12:49.347Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:12:49.349Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:22:52.990Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:22:52.993Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:22:52.995Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:22:52.996Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:22:52.997Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:22:52.998Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:22:53.002Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:24:44.403Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:24:44.404Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:24:44.410Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:24:44.411Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:24:44.411Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:24:44.412Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:24:44.413Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:25:21.146Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:25:21.146Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:25:21.153Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:25:21.155Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:25:21.156Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:25:21.157Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:25:21.158Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:26:09.968Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:26:09.968Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:26:09.972Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:26:09.973Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:26:09.975Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:26:09.977Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:26:09.979Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:31:14.204Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:31:14.206Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:31:14.208Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:31:14.209Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:31:14.210Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:31:14.210Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:31:14.212Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:38:00.894Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:38:00.896Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:38:00.897Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:38:00.900Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:38:00.902Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:38:00.903Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:38:00.908Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:38:30.727Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:38:30.728Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:38:30.741Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:38:30.742Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:38:30.743Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:38:30.743Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:38:30.744Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:53:47.641Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:53:47.643Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:53:47.655Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:53:47.657Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:53:47.659Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:53:47.661Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:53:47.663Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T10:54:59.879Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T10:54:59.879Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T10:54:59.883Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T10:54:59.883Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T10:54:59.887Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T10:54:59.889Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T10:54:59.893Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T11:35:25.395Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T11:35:25.397Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T11:35:25.537Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T11:35:25.539Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T11:35:25.571Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T11:35:25.572Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T11:35:25.574Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T11:37:30.094Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T11:37:30.097Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T11:37:30.099Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T11:37:30.100Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T11:37:30.101Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T11:37:30.101Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T11:37:30.103Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T11:38:28.506Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T11:38:28.508Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T11:38:28.514Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T11:38:28.515Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T11:38:28.515Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T11:38:28.516Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T11:38:28.517Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T11:44:07.837Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T11:44:07.843Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T11:44:07.845Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T11:44:07.845Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T11:44:07.846Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T11:44:07.847Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T11:44:07.849Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T11:44:53.296Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T11:44:53.296Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T11:44:53.301Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T11:44:53.301Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T11:44:53.302Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T11:44:53.302Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T11:44:53.304Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T11:45:09.403Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T11:45:09.404Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T11:45:09.421Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T11:45:09.425Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T11:45:09.433Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T11:45:09.433Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T11:45:09.433Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
+2018-08-24T11:45:14.901Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-24T11:45:14.904Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-24T11:45:14.915Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
+2018-08-24T11:45:14.916Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
+2018-08-24T11:45:14.918Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
+2018-08-24T11:45:14.918Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
+2018-08-24T11:45:14.920Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.

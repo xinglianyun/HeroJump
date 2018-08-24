@@ -22,6 +22,10 @@ cc.Class({
         type: {
             default: "cat",
             type: cc.String
+        },
+        runTime: {
+            default: 1.5,
+            type: cc.Float
         }
     },
 
@@ -30,14 +34,23 @@ cc.Class({
     onLoad: function onLoad() {
         this.node.getComponent("Enemy").setRealListener(this);
     },
-    start: function start() {},
+    start: function start() {
+        var moveAction = cc.moveBy(this.runTime, cc.director.getWinSize().width, 0);
+        var callfunc = cc.callFunc(function (target) {
+            this.node.scaleX *= -1;
+        }, this);
+        var reverseMoveAction = moveAction.reverse();
+        var sequence = cc.sequence(moveAction, callfunc, reverseMoveAction, callfunc);
+        var repeat = cc.repeatForever(sequence);
+        this.node.runAction(repeat);
+    },
 
 
     // update (dt) {},
 
     //logic
     beVictory: function beVictory() {
-        this.node.stopAllActions();
+        //this.node.stopAllActions()
     },
 
     beKilled: function beKilled() {

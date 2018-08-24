@@ -1,0 +1,917 @@
+window._CCSettings = {
+    designWidth: 640,
+    designHeight: 960,
+    groupList: [
+        "default",
+        "hero",
+        "enemy"
+    ],
+    collisionMatrix: [
+        [
+            false
+        ],
+        [
+            false,
+            false,
+            true
+        ],
+        [
+            false,
+            true,
+            false
+        ]
+    ],
+    platform: "web-desktop",
+    scripts: [
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/GameData.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/GameMainScene.js"
+        },
+        {
+            deps: {
+                GameData: 0
+            },
+            file: "preview-scripts/assets/Script/GameManager.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/GameStartScene.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/Global.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/HelloWorld.js"
+        },
+        {
+            deps: {
+                HeroColliderProxy: 7
+            },
+            file: "preview-scripts/assets/Script/Hero.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/HeroColliderProxy.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/enemy/Bird.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/enemy/CatEnemy.js"
+        },
+        {
+            deps: {
+                Global: 4
+            },
+            file: "preview-scripts/assets/Script/enemy/DartEnemy.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/enemy/DartNode.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/enemy/Enemy.js"
+        },
+        {
+            deps: {},
+            file: "preview-scripts/assets/Script/enemy/LineEnemy.js"
+        }
+    ],
+    rawAssets: {
+        assets: {
+            "6aa0aa6a-ebee-4155-a088-a687a6aadec4": [
+                "Texture/HelloWorld.png",
+                "cc.Texture2D"
+            ],
+            "a8027877-d8d6-4645-97a0-52d4a0123dba": [
+                "Texture/singleColor.png",
+                "cc.Texture2D"
+            ],
+            "696def08-5ccc-43e0-8d82-92cf87255370": [
+                "resources/textures/game/background",
+                "cc.SpriteFrame",
+                1
+            ],
+            "f5e2a721-dde3-49ad-b9e2-9aaf507814b9": [
+                "resources/textures/game/background.jpg",
+                "cc.Texture2D"
+            ],
+            "de380117-e32a-4367-8381-a1525025bec2": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "300f6a81-af7b-4f60-945f-9149b1307b7b": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "ecc1684a-f211-4e98-b1bb-dcce5546a628": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "b311ad99-a436-44a2-a71c-1ac9bec8c99e": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "709208d6-64fe-4d54-ad90-8eb5bfaca521": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "41ac6232-c3e3-4a36-9823-808444bc11a0": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "e817ece8-02d0-4628-a4fb-0f4c2dcc6e14": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "4dddefdf-23bf-4475-bdb6-3595739e32f6": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "d9c54a50-64bc-4c1c-9ccd-76989cea04e2": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "4ad02bdd-1c5a-47df-8240-c125360f0486": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "7a870556-eacd-4922-88b2-036591ce2b3c": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "37b0db69-2c21-454e-9f24-27a866df6c60": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "c1fa5d4b-08e4-4d26-a2f4-9c70efa34d7d": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "eddd57ad-5334-48fb-ac0b-84502329b2b3": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "04ee29fe-abd8-479f-80ef-f2eb54e3d984": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "9e69b804-92f8-4fb7-b1e2-081346da84bf": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "1ffe5bbc-e117-4250-930e-9f88b876b03b": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "46dcc72c-3062-469c-a3e2-cbf4c98c9e42": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "3cce123c-6830-4826-8fa3-60212c05c4db": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "e2cec933-ffe3-4955-8d54-006c798df3c9": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "e177acd9-ec84-4cae-af9d-f4f3467f5217": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "38c2da3f-b88f-4a21-b891-96d0237b0f61": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "de6e8c21-ab5c-41c7-8ec9-a011411b4956": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "6e99c8ad-76a4-44cc-a1fa-4553afc29584": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "44430bd4-c21e-4834-97e9-a5789effda45": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "61dedd86-4938-4ab7-807e-60d0bedb167c": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "f058af6c-05fe-4ec9-9fa5-d650f428e000": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "8c6442e4-a5a3-4af9-8649-02879e3e6fb9": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "4e707e06-0c11-47bc-86e1-9ff66cd5b033": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "3d5414af-bfa3-43ee-bbcb-22058ea003ee": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "3885334e-4163-4da6-8011-948449a002f1": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "a7e4accd-82b0-4ccd-af8e-dd476ce56644": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "39e57f16-d7ae-4963-8598-f1f13d21793f": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "505167ea-a108-43ab-85b8-e4cb12ea8435": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "92e29db1-1d8b-4112-9139-ff7c29a99334": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "592f25e3-816d-4bbc-99c9-7710dd2b38a8": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "81880e86-d84b-49f8-9432-4712547334d8": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "7b4e6426-ce99-47e2-9737-42bf6ae92b0c": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "bb09ca66-72fe-4ef1-a2d0-9e1d4e532939": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0d61bb32-14b2-45ad-aea0-6fbdd09e0206": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "8576d1cc-a11e-425b-b43c-a0bfbc27a377": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "8b2b6ee8-0471-4668-9fb6-67dae7f5d654": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "363b66ac-2440-4d49-8097-cca3d2c7dd15": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "ee011fb0-cfa7-482e-9d97-ccf19b1113bc": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "6b45d850-daf0-4683-868d-4575b2ca09b2": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "ddbe5fb1-2ca2-4c2c-89b7-ba6f7174868e": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "c4a0ed34-8822-48bf-bd00-f9cd0d3c1b1b": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "a6c9fab8-442c-4039-8eae-3df7c26c7452": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "60332002-663d-44bf-879e-339c7139b732": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "cdd5aa25-31e5-45c7-a31e-913bead1c7a0": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "9755dbaf-4ebc-4d2c-a292-0298c0380dd7": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "dbf8c956-9e05-4a2d-a701-e3a98227e41b": [
+                "resources/textures/game/enemyAltlas",
+                "cc.SpriteFrame",
+                1
+            ],
+            "ba6751e3-07c4-4091-b514-19129919738f": [
+                "resources/textures/game/enemyAltlas.plist",
+                "cc.SpriteAtlas"
+            ],
+            "af6b85d7-117e-4ab2-9fdc-fee288144be2": [
+                "resources/textures/game/enemyAltlas.png",
+                "cc.Texture2D"
+            ],
+            "b3f0318d-1c76-43ea-b9bc-19fd3d017a00": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "bb5a9f8b-c3d7-4cf7-a369-e87cc908a508": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "c1ffd73b-1292-42c8-8b23-9f9d24927e8d": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "c5baff7e-d024-4998-be3f-a5fb69d433a0": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "cd2315b4-b1d1-4d26-8b68-79c234035d28": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "c3cc32e5-bc5e-4f51-abea-2ff536f3cea2": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0612a3e9-10c1-40fc-84e9-275c08263a21": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "28aeae8f-4ee3-462d-af81-74712f7bcd96": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "efa4733e-b172-48ac-98c9-60dec423764c": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "6865cf8e-5c8b-47e1-a727-4790c69b428a": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "2106aeb8-feae-4f6a-8b9b-2c59a366278a": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "38102cad-8385-4c70-ac77-5815505270c0": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0d45b50b-aa62-4283-a2c6-652b2973f111": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "1dd25b2f-f916-4f6d-8b6a-9508d3850cec": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "d97c39f0-7f71-44e4-a428-bcfa87f377b1": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "a2d00cd9-53e7-487a-bb06-9091aa4aae73": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "17996aac-c8eb-4b9a-8d0c-dcf0d4c0ac7b": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0d714ac0-a5f5-4c33-b079-614b3ba43174": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "4c794035-cf62-4a85-a827-1e2c7e421dbf": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "ae5c0d6e-e0ec-453d-b41a-0482584be482": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "ca3c7ed7-298d-45d7-905a-011b578df8f2": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0bdbee58-28c9-4ed6-b5d6-bce4abe000e8": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "ba8f04d0-4b05-4841-ba12-dfe25f698340": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "ebb42efd-7b7c-4fd2-b741-0b6333b084b9": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "f2576dce-c40a-4302-ab03-191b9b84456f": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "d6a24c93-5a6d-4f22-bb7d-4b3c56c1980b": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "258fddbc-0ad1-4361-a048-bd352c9fd9c0": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "4e674d1d-5370-4707-b6c9-e03c977dc26b": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "61132e3e-4e0f-46f9-9105-44c562c00fe1": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0aee7a8a-35de-4e90-b268-bea0f61d034f": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "9b553365-9b82-4dfe-9579-a1152d7d8996": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "6a6d1040-67c8-4fdf-86f5-ca62c0bb5648": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "af08cbee-5526-4958-a5f1-23371263b675": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "5615bdb4-21ce-4936-bd91-b0fce7f3bf52": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "dcd9a058-fb9b-495a-a059-4561b3286f4f": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "9e489923-9edb-4132-b1b8-dc19bca08c8a": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "c486f57e-36a9-4f94-b27a-e0fb2efb31e6": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "e0df4c02-5e22-47f8-a7d0-277fce8c22c2": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "8c05f6b5-ca23-438c-8f8e-5658eca49722": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "df23c1ae-9690-4ac3-80ef-a047d60cebb3": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "b6ff3539-088c-43ba-9a61-ec868f2cdf2a": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "7a1459ca-96be-424b-8d8e-6f9d7fc976a2": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "049101e8-6156-4a20-a6e6-cf58a64705e3": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "c8816bea-88c5-4eca-b630-095e14f6a650": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "009419a8-f77d-4ff5-a9ac-e9bf638477f4": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "387549f4-1351-44e0-9f36-4aa630602189": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "eb0e0f86-6871-4149-97d7-b9580334103d": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "23039aaa-fe50-4d4e-96bd-bbac881a9561": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "3aaa71cd-17a8-4a6c-ba76-a2579799b66e": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "cfcfc683-94cd-4c38-bcec-f8d1307cd3a7": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "9f78747e-6c0a-4bf5-b4fd-13cc5993d3c8": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "fdc550e7-5648-4b4d-9eb9-513ae42bee68": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "78fa8ebc-5f6a-4616-8c18-a599b2ae4ce9": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "04e30e49-7904-4339-a1f4-2b7a2e5b0e5c": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "5c9847d8-ae79-4d83-a292-0c8916f81389": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "1414b7c6-d746-45b1-833b-cf285c30ce28": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0cacd4d5-4367-4b85-b31f-8d1b67a678cd": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "591d1fb3-0706-4dcf-9812-14259dd5df58": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "8b75393b-54bc-44db-b336-6c4e2e3dba74": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "3d6d3b80-025d-4ed2-b8f2-da7b7f5cfac8": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0e617f55-0ff6-4550-92e2-13218e865d16": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "8663de38-4609-4731-bef7-d974066342c2": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "4fff2630-ab04-4987-a901-5463bc6dd592": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "5886f4fa-5f6e-438a-9576-5d72bdc129cd": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "3e006ca7-f208-41bc-a575-29a073b2fabc": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "e77416b5-022a-4060-a91b-be3f4f2823c9": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "12d39460-7504-4a43-b6ec-a95dfb5bf2dd": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "1ab90aeb-9da2-4ed4-887f-20078c0ab302": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "f812cb15-9a35-44e9-a50d-2f1861c94f29": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "b5780140-cf2b-4f78-858a-c00bd5a4ff90": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "369216c3-2255-4935-b055-78f4736dac51": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "8ae6a1dd-206a-478e-90f4-6f56651a7573": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0600ba84-78a6-49f7-92e2-3008a78f191c": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "5756aa16-5847-4734-8e88-0b6ca9151f29": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "a416676d-fc1c-4533-9adf-1316ac7e22d7": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "64f0befe-0ce3-48e3-a177-9876a3b6935f": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0d34fe99-307c-41ea-81b3-d1a7da763084": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "b56de4f9-eed3-45b0-8cfb-f4d4c091bda9": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "33ed7eb8-f608-475d-9576-ca69cbeaee52": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "9c79f55a-1e74-4721-86da-91e9dba2a1cd": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "2ead6007-0be8-4c78-b70f-934192f85e85": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "68f865a3-c8e0-46da-959e-bac2983af82a": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "66b6d42b-db14-4a25-bdb7-c978882416ac": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "0e85949f-9396-4520-9e3e-f7b6dc7f5a80": [
+                "resources/textures/game/role",
+                "cc.SpriteFrame",
+                1
+            ],
+            "4eacebf4-93d3-49ef-91ea-338303916930": [
+                "resources/textures/game/role.plist",
+                "cc.SpriteAtlas"
+            ],
+            "05323254-96d6-4f86-b947-39edd33004c4": [
+                "resources/textures/game/role.png",
+                "cc.Texture2D"
+            ],
+            "27ad33f4-56db-4b91-9f93-39545daba03a": [
+                "resources/textures/game/sideBar",
+                "cc.SpriteFrame",
+                1
+            ],
+            "ed2df72d-95ad-4e29-b0cb-fa673570f597": [
+                "resources/textures/game/sideBar.png",
+                "cc.Texture2D"
+            ]
+        },
+        internal: {
+            "71561142-4c83-4933-afca-cb7a17f67053": [
+                "image/default_btn_disabled.png",
+                "cc.Texture2D"
+            ],
+            "e851e89b-faa2-4484-bea6-5c01dd9f06e2": [
+                "image/default_btn_normal.png",
+                "cc.Texture2D"
+            ],
+            "b43ff3c2-02bb-4874-81f7-f2dea6970f18": [
+                "image/default_btn_pressed.png",
+                "cc.Texture2D"
+            ],
+            "d81ec8ad-247c-4e62-aa3c-d35c4193c7af": [
+                "image/default_panel.png",
+                "cc.Texture2D"
+            ],
+            "cfef78f1-c8df-49b7-8ed0-4c953ace2621": [
+                "image/default_progressbar.png",
+                "cc.Texture2D"
+            ],
+            "99170b0b-d210-46f1-b213-7d9e3f23098a": [
+                "image/default_progressbar_bg.png",
+                "cc.Texture2D"
+            ],
+            "567dcd80-8bf4-4535-8a5a-313f1caf078a": [
+                "image/default_radio_button_off.png",
+                "cc.Texture2D"
+            ],
+            "9d60001f-b5f4-4726-a629-2659e3ded0b8": [
+                "image/default_radio_button_on.png",
+                "cc.Texture2D"
+            ],
+            "0291c134-b3da-4098-b7b5-e397edbe947f": [
+                "image/default_scrollbar.png",
+                "cc.Texture2D"
+            ],
+            "4bab67cb-18e6-4099-b840-355f0473f890": [
+                "image/default_scrollbar_bg.png",
+                "cc.Texture2D"
+            ],
+            "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": [
+                "image/default_scrollbar_vertical.png",
+                "cc.Texture2D"
+            ],
+            "617323dd-11f4-4dd3-8eec-0caf6b3b45b9": [
+                "image/default_scrollbar_vertical_bg.png",
+                "cc.Texture2D"
+            ],
+            "6e056173-d285-473c-b206-40a7fff5386e": [
+                "image/default_sprite.png",
+                "cc.Texture2D"
+            ],
+            "0275e94c-56a7-410f-bd1a-fc7483f7d14a": [
+                "image/default_sprite_splash.png",
+                "cc.Texture2D"
+            ],
+            "73a0903d-d80e-4e3c-aa67-f999543c08f5": [
+                "image/default_toggle_checkmark.png",
+                "cc.Texture2D"
+            ],
+            "c25b9d50-c8fc-4d27-beeb-6e7c1f2e5c0f": [
+                "image/default_toggle_disabled.png",
+                "cc.Texture2D"
+            ],
+            "d29077ba-1627-4a72-9579-7b56a235340c": [
+                "image/default_toggle_normal.png",
+                "cc.Texture2D"
+            ],
+            "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": [
+                "image/default_toggle_pressed.png",
+                "cc.Texture2D"
+            ],
+            "2be36297-9abb-4fee-8049-9ed5e271da8a": [
+                "misc/default_video.mp4",
+                "cc.RawAsset"
+            ],
+            "b8223619-7e38-47c4-841f-9160c232495a": [
+                "obsolete/atom.plist",
+                "cc.ParticleAsset"
+            ],
+            "b2687ac4-099e-403c-a192-ff477686f4f5": [
+                "particle/atom.plist",
+                "cc.ParticleAsset"
+            ]
+        }
+    },
+    launchScene: "db://assets/Scene/GameMainScene.fire",
+    scenes: [
+        {
+            url: "db://assets/Scene/GameMainScene.fire",
+            uuid: "b0ae6330-9d66-42c3-ac4d-ecfd698eecc6"
+        },
+        {
+            url: "db://assets/Scene/GameStartScene.fire",
+            uuid: "c386cf89-1d44-44a7-b908-ccc9d544f41b"
+        },
+        {
+            url: "db://assets/Scene/helloworld.fire",
+            uuid: "2d2f792f-a40c-49bb-a189-ed176a246e49"
+        }
+    ],
+    debug: true
+};
