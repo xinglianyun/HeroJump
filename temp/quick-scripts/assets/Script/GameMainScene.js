@@ -177,11 +177,9 @@ cc.Class({
         var action = cc.sequence(moveAction, callfuncAction);
         this.heroNode.runAction(action);
     },
-    // mouse event
     onMouseDown: function onMouseDown(event) {},
     onMouseMove: function onMouseMove(event) {},
     onMouseUp: function onMouseUp(event) {},
-    // touch event
     onTouchStart: function onTouchStart(event) {
         this.heroJump();
     },
