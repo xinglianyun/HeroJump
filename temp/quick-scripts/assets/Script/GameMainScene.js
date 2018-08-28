@@ -4,35 +4,10 @@ cc._RF.push(module, '506d7uUvMFH9b3xgNCCwpgT', 'GameMainScene', __filename);
 
 "use strict";
 
-// Learn cc.Class:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
         heroNode: {
             default: null,
             type: cc.Node
@@ -189,23 +164,23 @@ cc.Class({
             this._enemyTimeInteval -= timeInteval;
             var enemyInfo = this._gameManager.generateEnemy(this._distance - this._startEnemyDistance);
             if (enemyInfo) {
-                if (enemyInfo.type === "bird") {
+                if (enemyInfo.type === Global.enemyType.bird) {
                     this.dealWithBird(enemyInfo.enemyNode);
-                } else if (enemyInfo.type === "dart2") {
+                } else if (enemyInfo.type === Global.enemyType.dart2) {
                     this.dealWithDartEnemy(enemyInfo.enemyNode);
-                } else if (enemyInfo.type === "line") {
+                } else if (enemyInfo.type === Global.enemyType.line) {
                     this.dealWithLine(enemyInfo.enemyNode);
-                } else if (enemyInfo.type === "linecat") {
+                } else if (enemyInfo.type === Global.enemyType.linecat) {
                     this.dealWithLineCat(enemyInfo.enemyNode);
-                } else if (enemyInfo.type === "shortBarrier") {
+                } else if (enemyInfo.type === Global.enemyType.shortbarrier) {
                     this.dealWithShortBarrier(enemyInfo.enemyNode);
-                } else if (enemyInfo.type === "longBarrier") {
+                } else if (enemyInfo.type === Global.enemyType.longbarrier) {
                     this.dealWithLongBarrier(enemyInfo.enemyNode);
-                } else if (enemyInfo.type === "enemyRun") {
+                } else if (enemyInfo.type === Global.enemyType.enemyrun) {
                     this.dealWithRunEnemy(enemyInfo.enemyNode);
                 }
                 // todo : for test
-                this._stopCreateEnemy = true;
+                this._stopCreateEnemy = false;
             }
         }
     },
@@ -216,7 +191,6 @@ cc.Class({
         birdNode.scaleX *= this._leftOrRight;
         birdNode.getComponent("Bird").setStartSide(-this._leftOrRight);
         birdNode.getComponent("Bird").setTargetWorldPos(targetWorldPos);
-        birdNode.getComponent("Bird").setGameManager(this._gameManager);
     },
     dealWithDartEnemy: function dealWithDartEnemy(dartEnemyNode) {
         dartEnemyNode.parent = this._leftOrRight > 0 ? this.enemyNodeLeft : this.enemyNodeRight;
@@ -224,7 +198,6 @@ cc.Class({
         dartEnemyNode.scaleX *= this._leftOrRight;
         dartEnemyNode.getComponent("DartEnemy").setStartSide(-this._leftOrRight);
         dartEnemyNode.getComponent("DartEnemy").setTargetWorldPos(targetWorldPos);
-        dartEnemyNode.getComponent("DartEnemy").setGameManager(this._gameManager);
     },
     dealWithLine: function dealWithLine(lineEnemyNode) {
         lineEnemyNode.parent = this.enemyNodeLeft;

@@ -38,10 +38,10 @@ var GameData = {
                     enemyType:"line",rate:10
                 },
                 {
-                    enemyType:"doubleDart",rate:10
+                    enemyType:"dart2",rate:10
                 },
                 {
-                    enemyType:"shortBarrier",rate:10
+                    enemyType:"shortbarrier",rate:10
                 }
             ],
         },
@@ -62,10 +62,10 @@ var GameData = {
                     enemyType:"line",rate:10
                 },
                 {
-                    enemyType:"doubleDart",rate:10
+                    enemyType:"dart2",rate:10
                 },
                 {
-                    enemyType:"shortBarrier",rate:10
+                    enemyType:"shortbarrier",rate:10
                 }
             ],
         },
@@ -86,16 +86,16 @@ var GameData = {
                     enemyType:"line",rate:10
                 },
                 {
-                    enemyType:"doubleDart",rate:10
+                    enemyType:"dart2",rate:10
                 },
                 {
-                    enemyType:"shortBarrier",rate:10
+                    enemyType:"shortbarrier",rate:10
                 },
                 {
-                    enemyType:"longBarrier",rate:10
+                    enemyType:"longbarrier",rate:10
                 },
                 {
-                    enemyType:"enemyRun",rate:10
+                    enemyType:"enemyrun",rate:10
                 }
             ],
         },
@@ -119,16 +119,16 @@ var GameData = {
                     enemyType:"line",rate:10
                 },
                 {
-                    enemyType:"doubleDart",rate:10
+                    enemyType:"dart2",rate:10
                 },
                 {
-                    enemyType:"shortBarrier",rate:10
+                    enemyType:"shortbarrier",rate:10
                 },
                 {
-                    enemyType:"longBarrier",rate:10
+                    enemyType:"longbarrier",rate:10
                 },
                 {
-                    enemyType:"enemyRun",rate:10
+                    enemyType:"enemyrun",rate:10
                 }
             ],
         },
@@ -143,25 +143,22 @@ var GameData = {
                     enemyType:"bird",rate:10
                 },
                 {
-                    enemyType:"dart",rate:10
-                },
-                {
                     enemyType:"linecat",rate:10
                 },
                 {
                     enemyType:"line",rate:10
                 },
                 {
-                    enemyType:"doubleDart",rate:10
+                    enemyType:"dart2",rate:10
                 },
                 {
-                    enemyType:"shortBarrier",rate:10
+                    enemyType:"shortbarrier",rate:10
                 },
                 {
-                    enemyType:"longBarrier",rate:10
+                    enemyType:"longbarrier",rate:10
                 },
                 {
-                    enemyType:"enemyRun",rate:10
+                    enemyType:"enemyrun",rate:10
                 }
             ],
         },

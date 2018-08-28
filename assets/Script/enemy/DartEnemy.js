@@ -1,15 +1,9 @@
-
-var Global = require("Global")
 var dartNodes = [];
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        type : {
-            default : "dartenemy",
-            type : cc.String
-        },
         // emit the dart when the dart enemy go throw the screen
         emitDartTime : {
             default : 0.3,
@@ -28,7 +22,6 @@ cc.Class({
 
     //logic
     addChildDartNode : function(dartNode){
-        dartNode.getComponent("DartNode").setGameManager(this._gameManager)
         dartNode.parent = this.node
         dartNodes.push(dartNode)
     },
@@ -37,12 +30,13 @@ cc.Class({
 
     onLoad () {
         this._game = cc.find("Game")
-        this._gameMainScene = this._game.getComponent("GameMainScene")
         this._totalOffsetY = 0.0
         this._startSide = -1
         this._targetWorldPos = cc.Vec2(0, 0)
         this._isEmitDart = false
         this.node.getComponent("Enemy").setRealListener(this)
+        this._enemyNodeType = Global.enemyNodeType.dartenemy
+
     },
 
     start () {
@@ -50,7 +44,7 @@ cc.Class({
     },
 
     update (dt) {
-        var gameMainSceneSpeed = this._gameMainScene.getRunSpeed()
+        var gameMainSceneSpeed = Global.gameMainScene.getRunSpeed()
         var offsetY = gameMainSceneSpeed * dt
         this.node.y += offsetY
         this._totalOffsetY += offsetY
@@ -64,7 +58,7 @@ cc.Class({
         }
 
         if(Math.abs(this._totalOffsetY) >= cc.director.getWinSize() * 1.5){
-            this._gameManager.collectEnemy(this.node, this.type)
+            Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
         }
         
     },
@@ -72,10 +66,6 @@ cc.Class({
     // logic
     setStartSide : function(startSide){
         this._startSide = startSide
-    },
-
-    setGameManager : function(gameManager){
-        this._gameManager = gameManager
     },
 
     setTargetWorldPos : function(worldPos){
@@ -88,7 +78,7 @@ cc.Class({
 
     beKilled : function(){
         this.node.stopAllActions()
-        this._gameManager.collectEnemy(this.node, this.type)
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
     },
 
     emitDartNode : function(){
@@ -99,9 +89,9 @@ cc.Class({
                 var moveToHeroPos = this.node.parent.convertToNodeSpace(this._targetWorldPos)
                 moveToHeroPos.x += this._startSide*this._overScreenX
                 moveToHeroPos.y += (this._overScreenX * Math.abs(this.node.y - moveToHeroPos.y)) / (Math.abs(this.node.x - moveToHeroPos.x))
-                var moveAction = cc.moveTo(cc.director.getWinSize().height * (1- this.emitDartTime) / Math.abs(this._gameMainScene.getRunSpeed()) * 0.5, moveToHeroPos)
+                var moveAction = cc.moveTo(cc.director.getWinSize().height * (1- this.emitDartTime) / Math.abs(Global.gameMainScene.getRunSpeed()) * 0.5, moveToHeroPos)
                 var callfunc = cc.callFunc(function(target){
-                    this._gameManager.collectEnemy(dartNodes[i], "dartnode")
+                    Global.gameManager.collectEnemy(dartNodes[i], "dartnode")
                 }, this)
                 var sequence = cc.sequence(moveAction, callfunc)
                 // change the dartnode's parent to the grandpa
@@ -111,10 +101,10 @@ cc.Class({
                 dartNodes[i].setPosition(tmpPos)
                 dartNodes[i].runAction(sequence)
             }else if(i === 1){
-                var moveAction = cc.moveBy(cc.director.getWinSize().height * (1- this.emitDartTime) / Math.abs(this._gameMainScene.getRunSpeed()), this._startSide * cc.director.getWinSize().width, 0)
+                var moveAction = cc.moveBy(cc.director.getWinSize().height * (1- this.emitDartTime) / Math.abs(Global.gameMainScene.getRunSpeed()), this._startSide * cc.director.getWinSize().width, 0)
 
                 var callfunc = cc.callFunc(function(target){
-                    this._gameManager.collectEnemy(dartNodes[i], "dartnode")
+                    Global.gameManager.collectEnemy(dartNodes[i], "dartnode")
                 }, this)
                 var sequence = cc.sequence(moveAction, callfunc)
                 dartNodes[i].runAction(sequence)

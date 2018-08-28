@@ -7,17 +7,13 @@ cc._RF.push(module, 'eb0b8lg6rZNxYc4PAE8E4q0', 'RunEnemy', __filename);
 cc.Class({
     extends: cc.Component,
 
-    properties: {
-        type: {
-            default: "runenemy",
-            type: cc.String
-        }
-    },
+    properties: {},
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
         this.node.getComponent("Enemy").setRealListener(this);
+        this._enemyNodeType = Global.enemyNodeType.runenemy;
     },
     start: function start() {
         this._totalOffsetY = 0.0;
@@ -41,7 +37,7 @@ cc.Class({
 
     beKilled: function beKilled() {
         this.node.stopAllActions();
-        Global.gameManager.collectEnemy(this.node, this.type);
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     }
 });
 

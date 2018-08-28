@@ -124,11 +124,6 @@
     "meta": 1533007976167,
     "relativePath": "resources\\textures\\game\\role.png"
   },
-  "8c841f8b-b8b6-44fb-8e3f-d5fb246947a0": {
-    "asset": 1533018536833,
-    "meta": 1533018546569,
-    "relativePath": "Script\\GameStartScene.js"
-  },
   "b0ae6330-9d66-42c3-ac4d-ecfd698eecc6": {
     "asset": 1535451911135,
     "meta": 1535451911161,
@@ -449,74 +444,79 @@
     "meta": 1534162726146,
     "relativePath": "prefab\\videoplayer.prefab"
   },
-  "9f07151f-5356-4371-84db-e568dcb77ced": {
-    "asset": 1534068117154,
-    "meta": 1534069252760,
-    "relativePath": "Script\\HeroColliderProxy.js"
+  "fbd32b4a-d99f-4b14-9e65-7f7f0d1b6601": {
+    "asset": 1535458084264,
+    "meta": 1535458528955,
+    "relativePath": "Script\\enemy\\Bird.js"
+  },
+  "0265caeb-3d0c-4512-ab9a-5cb1390be80d": {
+    "asset": 1535458128545,
+    "meta": 1535458529027,
+    "relativePath": "Script\\enemy\\CatEnemy.js"
+  },
+  "5be60a68-d5fb-4078-a402-5878ca7096e7": {
+    "asset": 1535458166192,
+    "meta": 1535458529058,
+    "relativePath": "Script\\enemy\\DartEnemy.js"
   },
   "4f469df8-134f-452e-bb55-b01d5961142e": {
-    "asset": 1535029764466,
-    "meta": 1535030109859,
+    "asset": 1535458191101,
+    "meta": 1535458529071,
     "relativePath": "Script\\enemy\\DartNode.js"
   },
+  "d64a0e53-e4c0-49d4-b01f-8683041850c4": {
+    "asset": 1535458205269,
+    "meta": 1535458529100,
+    "relativePath": "Script\\enemy\\LineEnemy.js"
+  },
+  "e89231fc-59e3-4243-89b2-d013078ea173": {
+    "asset": 1535458220055,
+    "meta": 1535458529112,
+    "relativePath": "Script\\enemy\\LongBarrierEnemy.js"
+  },
+  "eb0b8960-eab6-4dc5-8738-3c013c138ab4": {
+    "asset": 1535458231460,
+    "meta": 1535458529146,
+    "relativePath": "Script\\enemy\\RunEnemy.js"
+  },
+  "d1b70dee-35c2-4d40-bcf5-2dc1b4fa45ad": {
+    "asset": 1535458316756,
+    "meta": 1535458529173,
+    "relativePath": "Script\\enemy\\ShortBarrierEnemy.js"
+  },
+  "57abda39-cbd5-42e0-9848-9a432718c127": {
+    "asset": 1535453173325,
+    "meta": 1535458529307,
+    "relativePath": "Script\\GameData.js"
+  },
+  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
+    "asset": 1535458520051,
+    "meta": 1535458529394,
+    "relativePath": "Script\\GameMainScene.js"
+  },
+  "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
+    "asset": 1535456651802,
+    "meta": 1535458529417,
+    "relativePath": "Script\\GameManager.js"
+  },
+  "8c841f8b-b8b6-44fb-8e3f-d5fb246947a0": {
+    "asset": 1535452795033,
+    "meta": 1535458529423,
+    "relativePath": "Script\\GameStartScene.js"
+  },
   "d7899491-e587-46d1-a80c-96af06fe0cd2": {
-    "asset": 1535030756330,
-    "meta": 1535030778831,
+    "asset": 1535454264703,
+    "meta": 1535458529452,
     "relativePath": "Script\\Global.js"
   },
   "28463d8f-653c-40a0-8c76-e9c12366f99d": {
-    "asset": 1535030676794,
-    "meta": 1535030778832,
+    "asset": 1535452811597,
+    "meta": 1535458529459,
     "relativePath": "Script\\Hero.js"
   },
-  "fbd32b4a-d99f-4b14-9e65-7f7f0d1b6601": {
-    "asset": 1535081221155,
-    "meta": 1535081272678,
-    "relativePath": "Script\\enemy\\Bird.js"
-  },
-  "57abda39-cbd5-42e0-9848-9a432718c127": {
-    "asset": 1535092082816,
-    "meta": 1535092108339,
-    "relativePath": "Script\\GameData.js"
-  },
-  "5be60a68-d5fb-4078-a402-5878ca7096e7": {
-    "asset": 1535096333297,
-    "meta": 1535096910555,
-    "relativePath": "Script\\enemy\\DartEnemy.js"
-  },
-  "0265caeb-3d0c-4512-ab9a-5cb1390be80d": {
-    "asset": 1535111454339,
-    "meta": 1535112770850,
-    "relativePath": "Script\\enemy\\CatEnemy.js"
-  },
-  "e89231fc-59e3-4243-89b2-d013078ea173": {
-    "asset": 1535115002213,
-    "meta": 1535117148671,
-    "relativePath": "Script\\enemy\\LongBarrierEnemy.js"
-  },
-  "d1b70dee-35c2-4d40-bcf5-2dc1b4fa45ad": {
-    "asset": 1535114997893,
-    "meta": 1535117148765,
-    "relativePath": "Script\\enemy\\ShortBarrierEnemy.js"
-  },
-  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
-    "asset": 1535450534981,
-    "meta": 1535450572505,
-    "relativePath": "Script\\GameMainScene.js"
-  },
-  "d64a0e53-e4c0-49d4-b01f-8683041850c4": {
-    "asset": 1535451253082,
-    "meta": 1535451719592,
-    "relativePath": "Script\\enemy\\LineEnemy.js"
-  },
-  "eb0b8960-eab6-4dc5-8738-3c013c138ab4": {
-    "asset": 1535451715151,
-    "meta": 1535451719702,
-    "relativePath": "Script\\enemy\\RunEnemy.js"
-  },
-  "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
-    "asset": 1535451544604,
-    "meta": 1535451719732,
-    "relativePath": "Script\\GameManager.js"
+  "9f07151f-5356-4371-84db-e568dcb77ced": {
+    "asset": 1535452823470,
+    "meta": 1535458529476,
+    "relativePath": "Script\\HeroColliderProxy.js"
   }
 }

@@ -36,10 +36,6 @@ cc.Class({
             default : 100.0,
             type : cc.Float
         },
-        type : {
-            default : "bird",
-            type : cc.String
-        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -52,6 +48,7 @@ cc.Class({
         this.scheduleOnce(this.moveBird, 0)
 
         this.node.getComponent("Enemy").setRealListener(this)
+        this._enemyNodeType = Global.enemyNodeType.bird
     },
 
     start () {
@@ -74,7 +71,7 @@ cc.Class({
         var moveToHeroAction = cc.moveTo(this.flyToHeroTime, moveToHeroPos)
         
         var callfunc = cc.callFunc(function(target){
-             this._gameManager.collectEnemy(this.node, this.type)
+             Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
         }, this)
         var sequeenAction = cc.sequence(moveDownAction, delayAction, moveToHeroAction, callfunc)
         this.node.runAction(sequeenAction)
@@ -82,10 +79,6 @@ cc.Class({
 
     setTargetWorldPos : function(worldPos){
         this._targetWorldPos = worldPos
-    },
-
-    setGameManager : function(gameManager){
-        this._gameManager = gameManager
     },
 
     beVictory : function(){
@@ -96,6 +89,6 @@ cc.Class({
 
     beKilled : function(){
         this.node.stopAllActions()
-        this._gameManager.collectEnemy(this.node, this.type)
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
     }
 });

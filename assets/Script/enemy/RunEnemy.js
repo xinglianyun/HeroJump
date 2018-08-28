@@ -2,16 +2,13 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        type : {
-            default : "runenemy",
-            type : cc.String
-        },
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         this.node.getComponent("Enemy").setRealListener(this)
+        this._enemyNodeType = Global.enemyNodeType.runenemy
     },
 
     start () {
@@ -36,6 +33,6 @@ cc.Class({
 
     beKilled : function(){
         this.node.stopAllActions()
-        Global.gameManager.collectEnemy(this.node, this.type)
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
     },
 });

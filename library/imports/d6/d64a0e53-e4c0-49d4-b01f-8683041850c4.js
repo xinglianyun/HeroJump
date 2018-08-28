@@ -4,16 +4,6 @@ cc._RF.push(module, 'd64a05T5MBJ1LAfhoMEGFDE', 'LineEnemy');
 
 "use strict";
 
-// Learn cc.Class:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-
 cc.Class({
     extends: cc.Component,
 
@@ -21,10 +11,6 @@ cc.Class({
         catNode: {
             default: null,
             type: cc.Node
-        },
-        type: {
-            default: "line",
-            type: cc.String
         },
         _cat: {
             default: null,
@@ -34,9 +20,9 @@ cc.Class({
     },
 
     // LIFE-CYCLE CALLBACKS:
-
     onLoad: function onLoad() {
         this._totalOffsetY = 0.0;
+        this._enemyNodeType = Global.enemyNodeType.line;
     },
     start: function start() {},
     update: function update(dt) {
@@ -67,7 +53,7 @@ cc.Class({
 
     beKilled: function beKilled() {
         this.node.stopAllActions();
-        Global.gameManager.collectEnemy(this.node, this.type);
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     }
 });
 

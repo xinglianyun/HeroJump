@@ -41,10 +41,6 @@ cc.Class({
         _overScreenX: {
             default: 100.0,
             type: cc.Float
-        },
-        type: {
-            default: "bird",
-            type: cc.String
         }
     },
 
@@ -58,6 +54,7 @@ cc.Class({
         this.scheduleOnce(this.moveBird, 0);
 
         this.node.getComponent("Enemy").setRealListener(this);
+        this._enemyNodeType = Global.enemyNodeType.bird;
     },
     start: function start() {},
 
@@ -78,7 +75,7 @@ cc.Class({
         var moveToHeroAction = cc.moveTo(this.flyToHeroTime, moveToHeroPos);
 
         var callfunc = cc.callFunc(function (target) {
-            this._gameManager.collectEnemy(this.node, this.type);
+            Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
         }, this);
         var sequeenAction = cc.sequence(moveDownAction, delayAction, moveToHeroAction, callfunc);
         this.node.runAction(sequeenAction);
@@ -86,10 +83,6 @@ cc.Class({
 
     setTargetWorldPos: function setTargetWorldPos(worldPos) {
         this._targetWorldPos = worldPos;
-    },
-
-    setGameManager: function setGameManager(gameManager) {
-        this._gameManager = gameManager;
     },
 
     beVictory: function beVictory() {
@@ -100,7 +93,7 @@ cc.Class({
 
     beKilled: function beKilled() {
         this.node.stopAllActions();
-        this._gameManager.collectEnemy(this.node, this.type);
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     }
 });
 

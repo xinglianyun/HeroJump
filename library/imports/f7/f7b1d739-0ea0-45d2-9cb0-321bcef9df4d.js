@@ -180,27 +180,27 @@ cc.Class({
 
     generateEnemyByType: function generateEnemyByType(enemyType) {
         var enemy = null;
-        enemyType = "enemyRun"; //todo : test
+        enemyType = Global.enemyrun; //todo : test
         switch (enemyType) {
-            case "bird":
+            case Global.enemyType.bird:
                 enemy = this._createBird();
                 break;
-            case "dart2":
+            case Global.enemyType.dart2:
                 enemy = this._createDart2();
                 break;
-            case "line":
+            case Global.enemyType.line:
                 enemy = this._createLine();
                 break;
-            case "linecat":
+            case Global.enemyType.linecat:
                 enemy = this._createLineCat();
                 break;
-            case "shortBarrier":
+            case Global.enemyType.shortbarrier:
                 enemy = this._createShortBarrier();
                 break;
-            case "longBarrier":
+            case Global.enemyType.longbarrier:
                 enemy = this._createLongBarrier();
                 break;
-            case "enemyRun":
+            case Global.enemyType.enemyrun:
                 enemy = this._createRunEnemy();
                 break;
         }
@@ -285,25 +285,28 @@ cc.Class({
     //
     collectEnemy: function collectEnemy(node, type) {
         switch (type) {
-            case "bird":
+            case Global.enemyNodeType.bird:
                 this._birdEnemyPool.put(node);
                 break;
-            case "dartenemy":
+            case Global.enemyNodeType.dartenemy:
                 this._dartEnemyPool.put(node);
                 break;
-            case "dartnode":
+            case Global.enemyNodeType.dartnode:
                 this._dartNodePool.put(node);
                 break;
-            case "line":
+            case Global.enemyNodeType.line:
                 this._bannerEnemyPool.put(node);
                 break;
-            case "cat":
+            case Global.enemyNodeType.cat:
                 this._catEnemyPool.put(node);
                 break;
-            case "shortbarrier":
+            case Global.enemyNodeType.shortbarrier:
                 this._crackerShortEnemyPool.put(node);
                 break;
-            case "runenemy":
+            case Global.enemyNodeType.longbarrier:
+                this._crackerLongEnemyPool.put(node);
+                break;
+            case Global.enemyNodeType.runenemy:
                 this._runEnemyPool.put(node);
                 break;
         }
