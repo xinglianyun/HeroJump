@@ -209,6 +209,8 @@ cc.Class({
                     this.dealWithShortBarrier(enemyInfo.enemyNode)
                 }else if(enemyInfo.type === "longBarrier"){
                     this.dealWithLongBarrier(enemyInfo.enemyNode)
+                }else if(enemyInfo.type === "enemyRun"){
+                    this.dealWithRunEnemy(enemyInfo.enemyNode)
                 }
                 // todo : for test
                 this._stopCreateEnemy = true
@@ -247,6 +249,11 @@ cc.Class({
     dealWithLongBarrier : function(longBarrierNode){
         longBarrierNode.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
         longBarrierNode.scaleX *= -this._leftOrRight
+    },
+
+    dealWithRunEnemy : function(runEnemey){
+        runEnemey.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
+        runEnemey.scaleX *= (-this._leftOrRight)
     },
 
     //

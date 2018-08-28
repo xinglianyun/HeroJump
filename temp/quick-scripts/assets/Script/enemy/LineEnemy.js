@@ -40,12 +40,6 @@ cc.Class({
     },
     start: function start() {},
     update: function update(dt) {
-        /*
-        if(Math.abs(this._totalOffsetY) > 200){
-            return
-        }
-        */
-
         var speed = Global.gameMainScene.getRunSpeed();
         var offsetY = speed * dt;
         this.node.y += offsetY;

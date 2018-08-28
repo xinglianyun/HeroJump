@@ -176,7 +176,7 @@ cc.Class({
 
     generateEnemyByType : function(enemyType){
         let enemy = null
-        enemyType = "longBarrier" //todo : test
+        enemyType = "enemyRun" //todo : test
         switch(enemyType){
             case "bird":
                 enemy = this._createBird()
@@ -194,7 +194,10 @@ cc.Class({
                 enemy = this._createShortBarrier()
                 break;
             case "longBarrier":
-                enemy = this._createLongBarrier()
+                enemy = this._createLongBarrier()            
+                break;
+            case "enemyRun":
+                enemy = this._createRunEnemy()
                 break;
         }
         return {enemyNode : enemy, type : enemyType}
@@ -266,6 +269,15 @@ cc.Class({
         return barrier
     },
 
+    _createRunEnemy : function(){
+        var runEnemy = null
+        runEnemy = this._runEnemyPool.get()
+        if(!runEnemy){
+            runEnemy = cc.instantiate(this.runEnemyPrefab)
+        }
+        return runEnemy
+    },
+
     //
     collectEnemy : function(node, type)
     {
@@ -287,6 +299,9 @@ cc.Class({
                 break;
             case "shortbarrier":
                 this._crackerShortEnemyPool.put(node)
+                break;
+            case "runenemy":
+                this._runEnemyPool.put(node)
                 break;
         }
 
