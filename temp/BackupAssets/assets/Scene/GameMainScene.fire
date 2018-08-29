@@ -6178,6 +6178,9 @@
     "bannerPrefab": {
       "__uuid__": "48c5e178-a3c6-4409-8299-57e52ccde6dd"
     },
+    "circlePropPrefab": {
+      "__uuid__": "dda6f520-83de-4e30-97d9-fbbb29670b81"
+    },
     "_totalTime": 0
   },
   {

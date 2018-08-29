@@ -215,6 +215,8 @@ cc.Class({
                     this.dealWithLongBarrier(enemyInfo.enemyNode);
                 } else if (enemyInfo.type === Global.enemyType.enemyrun) {
                     this.dealWithRunEnemy(enemyInfo.enemyNode);
+                } else if (enemyInfo.type === Global.enemyType.circleprop) {
+                    this.dealWithCircleProp(enemyInfo.enemyNode);
                 }
                 // todo : for test
                 this._stopCreateEnemy = false;
@@ -275,11 +277,16 @@ cc.Class({
         runEnemey.scaleX *= -this._leftOrRight;
     },
 
+    dealWithCircleProp: function dealWithCircleProp(circleProp) {
+        runEnemey.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
+        runEnemey.scaleX *= -this._leftOrRight;
+    },
+
     /*
     *  desc: gameOver
     */
     gameOver: function gameOver() {
-        this._gameManager.gameOver();
+        cc.director.loadScene("GameStartScene");
     },
     //*******************************end logic******************************************************//
 

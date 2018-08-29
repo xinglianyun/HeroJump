@@ -46,6 +46,10 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        circlePropPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
         // 游戏运行时间
         _totalTime: {
             default: 0.0,
@@ -156,6 +160,13 @@ cc.Class({
             var _enemy7 = cc.instantiate(this.bannerPrefab); // banner enemy pool
             this._bannerEnemyPool.put(_enemy7);
         }
+
+        this._circlePropPool = new cc.NodePool();
+        this._circlePropPoolCapacity = 2;
+        for (var _i8 = 0; _i8 < this._circlePropPoolCapacity; ++_i8) {
+            var prop = cc.instantiate(this.circlePropPrefab); // circle prop pool
+            this._circlePropPool.put(prop);
+        }
     },
     /**
      * desc: create enemy according the distance
@@ -214,6 +225,9 @@ cc.Class({
                 break;
             case Global.enemyType.enemyrun:
                 enemy = this._createRunEnemy();
+                break;
+            case Global.enemyType.circleprop:
+                enemy = this._createCircleProp();
                 break;
         }
         return { enemyNode: enemy, type: enemyType };
@@ -315,6 +329,18 @@ cc.Class({
     },
 
     /**
+     * desc: create circle prop
+     */
+    _createCircleProp: function _createCircleProp() {
+        var prop = null;
+        prop = this._circlePropPool.get();
+        if (!prop) {
+            prop = cc.instantiate(this.circlePropPrefab);
+        }
+        return prop;
+    },
+
+    /**
      * desc: re collect the node of no use
      */
     collectEnemy: function collectEnemy(node, type) {
@@ -342,6 +368,9 @@ cc.Class({
                 break;
             case Global.enemyNodeType.runenemy:
                 this._runEnemyPool.put(node);
+                break;
+            case Global.enemyNodeType.circleprop:
+                this._circlePropPool.put(node);
                 break;
         }
     },

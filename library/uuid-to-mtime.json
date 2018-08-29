@@ -125,8 +125,8 @@
     "relativePath": "resources\\textures\\game\\role.png"
   },
   "b0ae6330-9d66-42c3-ac4d-ecfd698eecc6": {
-    "asset": 1535451911135,
-    "meta": 1535451911161,
+    "asset": 1535532123060,
+    "meta": 1535532123087,
     "relativePath": "Scene\\GameMainScene.fire"
   },
   "61b632d2-55e1-464c-82c2-b4da94d516f9": {
@@ -439,84 +439,109 @@
     "meta": 1534162726146,
     "relativePath": "prefab\\videoplayer.prefab"
   },
-  "8c841f8b-b8b6-44fb-8e3f-d5fb246947a0": {
-    "asset": 1535452795033,
-    "meta": 1535458945097,
-    "relativePath": "Script\\GameStartScene.js"
-  },
-  "d7899491-e587-46d1-a80c-96af06fe0cd2": {
-    "asset": 1535454264703,
-    "meta": 1535458945128,
-    "relativePath": "Script\\Global.js"
-  },
   "57abda39-cbd5-42e0-9848-9a432718c127": {
     "asset": 1535462737319,
     "meta": 1535464786269,
     "relativePath": "Script\\GameData.js"
   },
-  "fbd32b4a-d99f-4b14-9e65-7f7f0d1b6601": {
-    "asset": 1535515457813,
-    "meta": 1535526978977,
-    "relativePath": "Script\\enemy\\Bird.js"
-  },
   "0265caeb-3d0c-4512-ab9a-5cb1390be80d": {
     "asset": 1535515801137,
-    "meta": 1535526979040,
+    "meta": 1535527809624,
     "relativePath": "Script\\enemy\\CatEnemy.js"
   },
   "5be60a68-d5fb-4078-a402-5878ca7096e7": {
     "asset": 1535526146644,
-    "meta": 1535526979093,
+    "meta": 1535527809662,
     "relativePath": "Script\\enemy\\DartEnemy.js"
   },
   "4f469df8-134f-452e-bb55-b01d5961142e": {
     "asset": 1535526270690,
-    "meta": 1535526979107,
+    "meta": 1535527809674,
     "relativePath": "Script\\enemy\\DartNode.js"
   },
   "dc0106ea-0886-4bbf-846b-eeefd59b55f8": {
     "asset": 1535526290073,
-    "meta": 1535526979168,
+    "meta": 1535527809711,
     "relativePath": "Script\\enemy\\Enemy.js"
   },
   "d64a0e53-e4c0-49d4-b01f-8683041850c4": {
     "asset": 1535526561262,
-    "meta": 1535526979188,
+    "meta": 1535527809726,
     "relativePath": "Script\\enemy\\LineEnemy.js"
   },
   "e89231fc-59e3-4243-89b2-d013078ea173": {
     "asset": 1535526708269,
-    "meta": 1535526979224,
+    "meta": 1535527809759,
     "relativePath": "Script\\enemy\\LongBarrierEnemy.js"
   },
   "eb0b8960-eab6-4dc5-8738-3c013c138ab4": {
     "asset": 1535526968245,
-    "meta": 1535526979234,
+    "meta": 1535527809773,
     "relativePath": "Script\\enemy\\RunEnemy.js"
   },
   "d1b70dee-35c2-4d40-bcf5-2dc1b4fa45ad": {
     "asset": 1535526853640,
-    "meta": 1535526979338,
+    "meta": 1535527809899,
     "relativePath": "Script\\enemy\\ShortBarrierEnemy.js"
   },
-  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
-    "asset": 1535513586720,
-    "meta": 1535526979437,
-    "relativePath": "Script\\GameMainScene.js"
-  },
-  "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
-    "asset": 1535513118395,
-    "meta": 1535526979483,
-    "relativePath": "Script\\GameManager.js"
-  },
-  "28463d8f-653c-40a0-8c76-e9c12366f99d": {
-    "asset": 1535513856140,
-    "meta": 1535526979494,
-    "relativePath": "Script\\Hero.js"
+  "8c841f8b-b8b6-44fb-8e3f-d5fb246947a0": {
+    "asset": 1535527541981,
+    "meta": 1535527810028,
+    "relativePath": "Script\\GameStartScene.js"
   },
   "9f07151f-5356-4371-84db-e568dcb77ced": {
     "asset": 1535513932223,
-    "meta": 1535526979507,
+    "meta": 1535527810051,
     "relativePath": "Script\\HeroColliderProxy.js"
+  },
+  "10c2bd39-3a47-4b57-b45a-f1fdebd12b94": {
+    "asset": 1535528074966,
+    "meta": 1535528074972,
+    "relativePath": "Script\\propenemy"
+  },
+  "fbd32b4a-d99f-4b14-9e65-7f7f0d1b6601": {
+    "asset": 1535528256970,
+    "meta": 1535528910188,
+    "relativePath": "Script\\enemy\\Bird.js"
+  },
+  "dda6f520-83de-4e30-97d9-fbbb29670b81": {
+    "asset": 1535534015987,
+    "meta": 1535534016010,
+    "relativePath": "prefabs\\CircleProp.prefab"
+  },
+  "b1c8e671-b538-476b-baac-78354c67be2a": {
+    "asset": 1535534010313,
+    "meta": 1535534010344,
+    "relativePath": "clips\\CirclePropBreath.anim"
+  },
+  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
+    "asset": 1535531102161,
+    "meta": 1535531957262,
+    "relativePath": "Script\\GameMainScene.js"
+  },
+  "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
+    "asset": 1535530912542,
+    "meta": 1535531957273,
+    "relativePath": "Script\\GameManager.js"
+  },
+  "d7899491-e587-46d1-a80c-96af06fe0cd2": {
+    "asset": 1535530233601,
+    "meta": 1535531957314,
+    "relativePath": "Script\\Global.js"
+  },
+  "28463d8f-653c-40a0-8c76-e9c12366f99d": {
+    "asset": 1535538186912,
+    "meta": 1535538215363,
+    "relativePath": "Script\\Hero.js"
+  },
+  "88208cf0-f5d7-4b5f-8b8d-5a771f9e916f": {
+    "asset": 1535535234067,
+    "meta": 1535538215381,
+    "relativePath": "Script\\propenemy\\CircleProp.js"
+  },
+  "e3c22484-e8bc-47f7-84e2-87e85ba6c911": {
+    "asset": 1535536218045,
+    "meta": 1535538215395,
+    "relativePath": "Script\\propenemy\\Prop.js"
   }
 }

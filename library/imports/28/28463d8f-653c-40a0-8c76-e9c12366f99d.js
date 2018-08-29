@@ -16,9 +16,15 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        // 碰撞代理组件
         colliderProxy: {
             default: null,
             type: require("HeroColliderProxy")
+        },
+        // 圆圈道具指针
+        _circlePropNode: {
+            default: null,
+            type: cc.node
         }
     },
 
@@ -30,7 +36,11 @@ cc.Class({
     start: function start() {
         this._status = HeroStatus.running;
         this._leftOrRight = -1;
+        this._circlePropNode = null;
         this.colliderProxy.setRealListener(this);
+        this._allProps = {
+            circleprop: 0
+        };
     },
 
 
@@ -68,6 +78,43 @@ cc.Class({
     },
 
     /**
+     * desc: add the prop
+     */
+    addProp: function addProp(propNode) {
+        propNode.getComponent("Prop").beOnHero();
+        var propEnemyType = propNode.getComponent("Prop").getPropEnemyType();
+        switch (propEnemyType) {
+            case Global.enemyType.circleprop:
+                this.addCircleProp(propNode);
+                break;
+        }
+    },
+
+    /**
+     * desc: add the circle prop
+     */
+    addCircleProp: function addCircleProp(propNode) {
+        this._allProps.circleprop += 1;
+        propNode.parent = this.node;
+        if (!this._circlePropNode) {
+            this._circlePropNode = propNode;
+        }
+    },
+
+    /**
+     * desc: delete one circle prop
+     */
+    deleteCircleProp: function deleteCircleProp() {
+        this._allProps.circleprop -= 1;
+        if (this._allProps.circleprop <= 0) {
+            this._allProps.circleprop = 0;
+            this._circlePropNode.getComponent("Prop").beCollected();
+            this._circlePropNode = null;
+        }
+    },
+
+
+    /**
      * desc: 当碰撞产生的时候调用
      * @param  {Collider} other 产生碰撞的另一个碰撞组件
      * @param  {Collider} self  产生碰撞的自身的碰撞组件
@@ -79,14 +126,21 @@ cc.Class({
             var group = cc.game.groupList[other.node.groupIndex];
             if (group === "enemy") {
                 if (this._status === HeroStatus.running) {
-                    // dead, game oveer
-                    this.dead();
-                    Global.gameMainScene.gameOver();
-                    other.node.getComponent("Enemy").beVictory();
+                    if (this._allProps.circleprop > 0) {
+                        this.deleteCircleProp();
+                        other.node.getComponent("Enemy").beKilled();
+                    } else {
+                        // dead, game oveer
+                        this.dead();
+                        Global.gameMainScene.gameOver();
+                        other.node.getComponent("Enemy").beVictory();
+                    }
                 } else {
                     other.node.getComponent("Enemy").beKilled();
                 }
-            } else {}
+            } else if (group === "prop") {
+                this.addProp(other.node);
+            }
         }
     }
     //************************************end logic*************************************************//

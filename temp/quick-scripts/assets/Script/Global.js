@@ -15,7 +15,8 @@ window.Global = {
         linecat: "linecat",
         shortbarrier: "shortbarrier",
         longbarrier: "longbarrier",
-        enemyrun: "enemyrun"
+        enemyrun: "enemyrun",
+        circleprop: "circleprop"
     },
     enemyNodeType: {
         bird: "bird",
@@ -25,7 +26,8 @@ window.Global = {
         cat: "cat",
         shortbarrier: "shortbarrier",
         longbarrier: "longbarrier",
-        runenemy: "runenemy"
+        runenemy: "runenemy",
+        circleprop: "circleprop"
     }
 };
 
