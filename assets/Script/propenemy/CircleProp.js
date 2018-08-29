@@ -2,7 +2,10 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        
+        effectTime : {
+            default : 1.0,
+            type : cc.Float
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -20,6 +23,10 @@ cc.Class({
 
     update (dt) {
         if(this._onHero){
+            this._keepTime += dt
+            if(this._keepTime >= this.effectTime){
+                Global.hero.deleteCircleProp()
+            }
             return
         }
 
