@@ -20,12 +20,8 @@ cc.Class({
         colliderProxy: {
             default: null,
             type: require("HeroColliderProxy")
-        },
-        // 圆圈道具指针
-        _circlePropNode: {
-            default: null,
-            type: cc.node
         }
+
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -36,10 +32,12 @@ cc.Class({
     start: function start() {
         this._status = HeroStatus.running;
         this._leftOrRight = -1;
-        this._circlePropNode = null;
         this.colliderProxy.setRealListener(this);
         this._allProps = {
-            circleprop: 0
+            circleprop: {
+                count: 0,
+                circlePropNode: null
+            }
         };
     },
 
@@ -94,10 +92,10 @@ cc.Class({
      * desc: add the circle prop
      */
     addCircleProp: function addCircleProp(propNode) {
-        this._allProps.circleprop += 1;
+        this._allProps.circleprop.count += 1;
         propNode.parent = this.node;
-        if (!this._circlePropNode) {
-            this._circlePropNode = propNode;
+        if (!this._allProps.circleprop.circlePropNode) {
+            this._allProps.circleprop.circlePropNode = propNode;
         }
     },
 
@@ -105,11 +103,11 @@ cc.Class({
      * desc: delete one circle prop
      */
     deleteCircleProp: function deleteCircleProp() {
-        this._allProps.circleprop -= 1;
-        if (this._allProps.circleprop <= 0) {
-            this._allProps.circleprop = 0;
-            this._circlePropNode.getComponent("Prop").beCollected();
-            this._circlePropNode = null;
+        this._allProps.circleprop.count -= 1;
+        if (this._allProps.circleprop.count <= 0) {
+            this._allProps.circleprop.count = 0;
+            this._allProps.circleprop.circlePropNode.getComponent("Prop").beCollected();
+            this._allProps.circleprop.circlePropNode = null;
         }
     },
 

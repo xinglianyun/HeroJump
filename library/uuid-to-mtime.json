@@ -439,11 +439,6 @@
     "meta": 1534162726146,
     "relativePath": "prefab\\videoplayer.prefab"
   },
-  "57abda39-cbd5-42e0-9848-9a432718c127": {
-    "asset": 1535462737319,
-    "meta": 1535464786269,
-    "relativePath": "Script\\GameData.js"
-  },
   "0265caeb-3d0c-4512-ab9a-5cb1390be80d": {
     "asset": 1535515801137,
     "meta": 1535527809624,
@@ -529,19 +524,24 @@
     "meta": 1535531957314,
     "relativePath": "Script\\Global.js"
   },
-  "28463d8f-653c-40a0-8c76-e9c12366f99d": {
-    "asset": 1535538186912,
-    "meta": 1535538215363,
-    "relativePath": "Script\\Hero.js"
+  "57abda39-cbd5-42e0-9848-9a432718c127": {
+    "asset": 1535544630578,
+    "meta": 1535550579789,
+    "relativePath": "Script\\GameData.js"
   },
   "88208cf0-f5d7-4b5f-8b8d-5a771f9e916f": {
-    "asset": 1535535234067,
-    "meta": 1535538215381,
+    "asset": 1535549379326,
+    "meta": 1535550579852,
     "relativePath": "Script\\propenemy\\CircleProp.js"
   },
   "e3c22484-e8bc-47f7-84e2-87e85ba6c911": {
     "asset": 1535536218045,
-    "meta": 1535538215395,
+    "meta": 1535550579853,
     "relativePath": "Script\\propenemy\\Prop.js"
+  },
+  "28463d8f-653c-40a0-8c76-e9c12366f99d": {
+    "asset": 1535550860178,
+    "meta": 1535551758779,
+    "relativePath": "Script\\Hero.js"
   }
 }

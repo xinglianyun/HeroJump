@@ -7,7 +7,12 @@ cc._RF.push(module, '88208zw9ddLX4uNWncfnpFv', 'CircleProp', __filename);
 cc.Class({
     extends: cc.Component,
 
-    properties: {},
+    properties: {
+        effectTime: {
+            default: 1.0,
+            type: cc.Float
+        }
+    },
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -18,9 +23,14 @@ cc.Class({
     start: function start() {
         this._totalOffsetY = 0.0;
         this._onHero = false;
+        this._keepTime = 0.0;
     },
     update: function update(dt) {
         if (this._onHero) {
+            this._keepTime += dt;
+            if (this._keepTime >= this.effectTime) {
+                Global.hero.deleteCircleProp();
+            }
             return;
         }
 
