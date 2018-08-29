@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2018-08-29T02:40:11.663Z - normal: Load ~/.CocosCreator/settings.json
 2018-08-29T02:40:11.668Z - normal: checking language setting...
 2018-08-29T02:40:11.669Z - normal: Language: zh
@@ -122,3 +123,63 @@
 2018-08-29T14:25:24.326Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
 2018-08-29T14:25:24.328Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
 2018-08-29T14:25:58.943Z - info: shutdown preview server
+=======
+2018-08-29T14:23:39.521Z - normal: Load ~/.CocosCreator/settings.json
+2018-08-29T14:23:39.524Z - normal: checking language setting...
+2018-08-29T14:23:39.524Z - normal: Language: zh
+2018-08-29T14:23:40.301Z - success: protocol editor-framework registered
+2018-08-29T14:23:40.301Z - success: protocol app registered
+2018-08-29T14:23:40.301Z - success: protocol theme registered
+2018-08-29T14:23:40.301Z - success: protocol packages registered
+2018-08-29T14:23:40.302Z - success: protocol unpack registerred
+2018-08-29T14:23:40.302Z - success: protocol disable-commonjs registerred
+2018-08-29T14:23:40.508Z - normal: connected!
+2018-08-29T14:23:40.511Z - normal: Check project /Users/xinghui/Documents/code/LightGame/HeroJump
+2018-08-29T14:23:40.513Z - normal: Initializing Cocos2d
+2018-08-29T14:23:40.735Z - normal: Initializing Asset Database
+2018-08-29T14:23:40.769Z - success: protocol uuid registerred
+2018-08-29T14:23:40.769Z - success: protocol db registerred
+2018-08-29T14:23:40.769Z - success: protocol thumbnail registerred
+2018-08-29T14:23:40.769Z - normal: Loading editor/builtin packages
+2018-08-29T14:23:40.794Z - success: anysdk loaded
+2018-08-29T14:23:40.917Z - success: assets loaded
+2018-08-29T14:23:40.922Z - success: builder loaded
+2018-08-29T14:23:40.924Z - success: cocos-analytics loaded
+2018-08-29T14:23:40.929Z - success: console loaded
+2018-08-29T14:23:40.960Z - success: fb-instant-games loaded
+2018-08-29T14:23:40.964Z - success: hierarchy loaded
+2018-08-29T14:23:40.969Z - success: inspector loaded
+2018-08-29T14:23:40.971Z - success: keystore loaded
+2018-08-29T14:23:40.975Z - success: node-library loaded
+2018-08-29T14:23:40.977Z - success: package-asset loaded
+2018-08-29T14:23:40.979Z - success: preferences loaded
+2018-08-29T14:23:40.990Z - success: project-exporter loaded
+2018-08-29T14:23:41.006Z - success: project-importer loaded
+2018-08-29T14:23:41.009Z - success: project-settings loaded
+2018-08-29T14:23:41.014Z - success: ui-kit loaded
+2018-08-29T14:23:41.019Z - success: ui-grid loaded
+2018-08-29T14:23:41.023Z - success: scene loaded
+2018-08-29T14:23:41.025Z - success: sprite-editor loaded
+2018-08-29T14:23:41.029Z - success: store loaded
+2018-08-29T14:23:41.036Z - success: timeline loaded
+2018-08-29T14:23:41.036Z - normal: Loading builtin packages
+2018-08-29T14:23:41.045Z - success: asset-db-debugger loaded
+2018-08-29T14:23:41.046Z - success: color-picker loaded
+2018-08-29T14:23:41.050Z - success: package-manager loaded
+2018-08-29T14:23:41.051Z - success: qqplay-adapter loaded
+2018-08-29T14:23:41.057Z - success: sdkbox loaded
+2018-08-29T14:23:41.062Z - success: tester loaded
+2018-08-29T14:23:41.065Z - success: ui-kit-preview-extra loaded
+2018-08-29T14:23:41.070Z - success: ui-kit-preview loaded
+2018-08-29T14:23:41.073Z - success: ui-tree loaded
+2018-08-29T14:23:41.075Z - success: weapp-adapter loaded
+2018-08-29T14:23:42.095Z - normal: Initializing project /Users/xinghui/Documents/code/LightGame/HeroJump
+2018-08-29T14:23:42.096Z - normal: Loading packages
+2018-08-29T14:23:42.102Z - normal: Watching packages
+2018-08-29T14:23:42.200Z - normal: Run Application
+2018-08-29T14:23:42.952Z - warn: [SpriteAtlas import] Some of the frame keys have been reformatted : ["barrier/barrier_line.png","barrier/barrier_long.png","barrier/barrier_short.png","birdFly/bird_fly_01.png","birdFly/bird_fly_02.png","birdFly/bird_fly_03.png","birdFly/bird_fly_04.png","birdFly/bird_fly_05.png","birdFly/bird_fly_06.png","birdFly/bird_fly_07.png","birdFly/bird_fly_08.png","birdFly/bird_fly_09.png","birdFly/bird_fly_10.png","birdFly/bird_fly_11.png","birdFly/bird_fly_12.png","catRun/cat_run_01.png","catRun/cat_run_02.png","catRun/cat_run_03.png","catRun/cat_run_04.png","catRun/cat_run_05.png","catRun/cat_run_06.png","catRun/cat_run_07.png","catRun/cat_run_08.png","catRun/cat_run_09.png","cracker/cracker_01.png","cracker/cracker_02.png","cracker/cracker_03.png","cracker/cracker_04.png","cracker/cracker_05.png","cracker/cracker_06.png","dart/dart_01.png","dart/dart_02.png","dart/dart_03.png","dart/dart_04.png","dart/dart_enemy.png","enemyRun/enemy_run_01.png","enemyRun/enemy_run_02.png","enemyRun/enemy_run_03.png","enemyRun/enemy_run_04.png","enemyRun/enemy_run_05.png","enemyRun/enemy_run_06.png","enemyRun/enemy_run_07.png","enemyRun/enemy_run_08.png","enemyRun/enemy_run_09.png","enemyRun/enemy_run_10.png","enemyRun/enemy_run_11.png","enemyRun/enemy_run_12.png","enemyRun/enemy_run_13.png","enemyRun/enemy_run_14.png","enemyRun/enemy_run_15.png","enemyRun/enemy_run_16.png"]
+2018-08-29T14:23:44.540Z - success: preview server running at http://localhost:7456
+2018-08-29T14:23:48.962Z - normal: 1.9.3
+2018-08-29T14:23:49.142Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T14:23:49.143Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+>>>>>>> 118a8f688eb7a7e6426c426d8220ce1c38e69ab8
