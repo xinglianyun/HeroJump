@@ -58,3 +58,67 @@
 2018-08-29T02:40:28.401Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
 2018-08-29T07:16:20.345Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
 2018-08-29T07:16:20.347Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T07:30:10.732Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T07:30:10.735Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T07:34:30.586Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T07:34:30.589Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T07:35:09.650Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T07:35:09.651Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T07:35:09.920Z - error: Can't generate child path for node.
+    at Object.showTrajectoryGizmo (E:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3828)
+    at Object.activate (E:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4483)
+    at Object.activate (E:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:17882)
+    at HTMLElement.selection:activated (file:///E:/Program%20Files/CocosCreator/resources/app.asar/editor/builtin/scene/panel/scene.js:1:14236)
+    at EventEmitter.e.on.t (E:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\polymer-utils.js:1:353)
+    at emitThree (events.js:121:20)
+    at EventEmitter.emit (events.js:197:7)
+2018-08-29T07:35:24.428Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T07:35:24.428Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T07:35:24.691Z - error: Can't generate child path for node.
+    at Object.showTrajectoryGizmo (E:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3828)
+    at Object.activate (E:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4483)
+    at Object.activate (E:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:17882)
+    at HTMLElement.selection:activated (file:///E:/Program%20Files/CocosCreator/resources/app.asar/editor/builtin/scene/panel/scene.js:1:14236)
+    at EventEmitter.e.on.t (E:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\polymer-utils.js:1:353)
+    at emitThree (events.js:121:20)
+    at EventEmitter.emit (events.js:197:7)
+2018-08-29T07:48:30.474Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T07:48:30.476Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T07:49:14.565Z - warn: Can not select this node in Animation Edit Mode
+2018-08-29T08:00:06.148Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:186011
+2018-08-29T08:00:06.150Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:186012
+2018-08-29T08:00:06.150Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:186013
+2018-08-29T08:00:06.150Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:186014
+2018-08-29T08:05:26.024Z - normal: Introduced global variable while editing: i
+2018-08-29T08:05:26.027Z - normal: Introduced global variable while editing: l
+2018-08-29T08:05:26.082Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T08:05:26.082Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T08:09:17.488Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T08:09:17.490Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T08:39:17.862Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T08:39:17.864Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T08:39:30.779Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T08:39:30.780Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T08:39:34.103Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T08:39:34.104Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T08:39:43.358Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T08:39:43.359Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T09:08:04.209Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T09:08:04.210Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T09:10:58.629Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T09:10:58.631Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T09:32:17.168Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T09:32:17.170Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T09:32:33.595Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T09:32:33.596Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T10:23:35.765Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T10:23:35.767Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T10:23:35.773Z - warn: The 'type' attribute of 'Hero._circlePropNode' is undefined when loading script
+2018-08-29T13:49:41.271Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T13:49:41.274Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T13:49:41.330Z - warn: The 'type' attribute of 'Hero._circlePropNode' is undefined when loading script
+2018-08-29T14:09:19.090Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T14:09:19.092Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T14:25:24.326Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T14:25:24.328Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T14:25:58.943Z - info: shutdown preview server

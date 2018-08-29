@@ -5,7 +5,7 @@
       "id": "mount-assets"
     },
     {
-      "folded": true,
+      "folded": false,
       "id": "52f9d5b1-2c62-4518-9794-587faf427752"
     },
     {
@@ -33,7 +33,7 @@
       "id": "3c0b69f2-350b-44c3-a3fb-1895a2f18937"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "b3ce0e22-5896-426d-bf0f-6b6c07442417"
     },
     {
@@ -53,7 +53,7 @@
       "id": "05323254-96d6-4f86-b947-39edd33004c4"
     },
     {
-      "folded": true,
+      "folded": false,
       "id": "4eacebf4-93d3-49ef-91ea-338303916930"
     },
     {
@@ -65,12 +65,16 @@
       "id": "f5e2a721-dde3-49ad-b9e2-9aaf507814b9"
     },
     {
-      "folded": true,
+      "folded": false,
       "id": "af6b85d7-117e-4ab2-9fdc-fee288144be2"
     },
     {
       "folded": true,
       "id": "ba6751e3-07c4-4091-b514-19129919738f"
+    },
+    {
+      "folded": false,
+      "id": "10c2bd39-3a47-4b57-b45a-f1fdebd12b94"
     }
   ]
 }
