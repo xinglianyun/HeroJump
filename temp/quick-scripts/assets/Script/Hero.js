@@ -4,6 +4,7 @@ cc._RF.push(module, '284632PZTxAoIx26cEjZvmd', 'Hero', __filename);
 
 "use strict";
 
+// 英雄状态
 var HeroStatus = cc.Enum({
     dead: -1,
     running: -1,
@@ -25,10 +26,9 @@ cc.Class({
 
     onLoad: function onLoad() {
         Global.hero = this;
-        this._status = HeroStatus.running;
-        this._gameMainScene = null;
     },
     start: function start() {
+        this._status = HeroStatus.running;
         this._leftOrRight = -1;
         this.colliderProxy.setRealListener(this);
     },
@@ -36,15 +36,17 @@ cc.Class({
 
     // update (dt) {},
 
-    // logic
-    setGameMainScene: function setGameMainScene(mainScene) {
-        this._gameMainScene = mainScene;
-    },
-
-
+    //************************************start logic*************************************************//
+    /**
+     * desc: left(-1) or right(1)
+     */
     setLeftOrRight: function setLeftOrRight(leftOrRight) {
         this._leftOrRight = leftOrRight;
     },
+
+    /**
+     * desc: return left or right
+     */
     getLeftOrRight: function getLeftOrRight() {
         return this._leftOrRight;
     },
@@ -66,7 +68,7 @@ cc.Class({
     },
 
     /**
-     * 当碰撞产生的时候调用
+     * desc: 当碰撞产生的时候调用
      * @param  {Collider} other 产生碰撞的另一个碰撞组件
      * @param  {Collider} self  产生碰撞的自身的碰撞组件
      */
@@ -79,7 +81,7 @@ cc.Class({
                 if (this._status === HeroStatus.running) {
                     // dead, game oveer
                     this.dead();
-                    this._gameMainScene.gameOver();
+                    Global.gameMainScene.gameOver();
                     other.node.getComponent("Enemy").beVictory();
                 } else {
                     other.node.getComponent("Enemy").beKilled();
@@ -87,7 +89,7 @@ cc.Class({
             } else {}
         }
     }
-
+    //************************************end logic*************************************************//
 });
 
 cc._RF.pop();

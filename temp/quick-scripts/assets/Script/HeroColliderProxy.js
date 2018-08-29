@@ -19,7 +19,7 @@ cc.Class({
 
     // update (dt) {},
 
-    //logic
+    //************************************start logic*************************************************//
     setRealListener: function setRealListener(realListener) {
         this._realListener = realListener;
     },
@@ -29,6 +29,7 @@ cc.Class({
             this._realListener.onCollisionEnter(other, self);
         }
     }
+    //************************************start logic*************************************************//
 });
 
 cc._RF.pop();

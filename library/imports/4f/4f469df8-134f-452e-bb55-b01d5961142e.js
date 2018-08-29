@@ -20,15 +20,29 @@ cc.Class({
 
     // update (dt) {},
 
-    //logic
+    //************************************start logic*************************************************//
+    /**
+     * desc: kill the hero
+     */
     beVictory: function beVictory() {
         this.node.stopAllActions();
     },
-
+    /**
+     * desc: killed by the hero
+     */
     beKilled: function beKilled() {
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
+    },
+
+    /**
+     * desc: node to be collected
+     */
+    beCollected: function beCollected() {
+        this.node.stopAllActions();
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     }
+    //************************************end logic*************************************************//
 });
 
 cc._RF.pop();

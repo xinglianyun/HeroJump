@@ -305,7 +305,6 @@ cc.Class({
         this.node.on("MSG_GameOver", this.gameOver, this)
 
         this._gameManager = this.getComponent("GameManager")
-        this.heroNode.getComponent("Hero").setGameMainScene(this)
     },
 
     start () {

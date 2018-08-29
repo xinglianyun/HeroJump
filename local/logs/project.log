@@ -1,136 +1,60 @@
-2018-08-28T09:40:10.012Z - normal: Load ~/.CocosCreator/settings.json
-2018-08-28T09:40:10.016Z - normal: checking language setting...
-2018-08-28T09:40:10.016Z - normal: Language: zh
-2018-08-28T09:40:13.523Z - success: protocol editor-framework registered
-2018-08-28T09:40:13.523Z - success: protocol app registered
-2018-08-28T09:40:13.523Z - success: protocol theme registered
-2018-08-28T09:40:13.524Z - success: protocol packages registered
-2018-08-28T09:40:13.524Z - success: protocol unpack registerred
-2018-08-28T09:40:13.524Z - success: protocol disable-commonjs registerred
-2018-08-28T09:40:13.799Z - normal: connected!
-2018-08-28T09:40:13.825Z - normal: Check project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
-2018-08-28T09:40:13.829Z - normal: Initializing Cocos2d
-2018-08-28T09:40:14.993Z - normal: Initializing Asset Database
-2018-08-28T09:40:15.069Z - success: protocol uuid registerred
-2018-08-28T09:40:15.069Z - success: protocol db registerred
-2018-08-28T09:40:15.069Z - success: protocol thumbnail registerred
-2018-08-28T09:40:15.070Z - normal: Loading editor/builtin packages
-2018-08-28T09:40:15.122Z - success: anysdk loaded
-2018-08-28T09:40:15.331Z - success: assets loaded
-2018-08-28T09:40:15.334Z - success: builder loaded
-2018-08-28T09:40:15.338Z - success: cocos-analytics loaded
-2018-08-28T09:40:15.412Z - success: console loaded
-2018-08-28T09:40:15.561Z - success: fb-instant-games loaded
-2018-08-28T09:40:15.567Z - success: hierarchy loaded
-2018-08-28T09:40:15.571Z - success: inspector loaded
-2018-08-28T09:40:15.572Z - success: keystore loaded
-2018-08-28T09:40:15.576Z - success: node-library loaded
-2018-08-28T09:40:15.577Z - success: package-asset loaded
-2018-08-28T09:40:15.580Z - success: preferences loaded
-2018-08-28T09:40:15.582Z - success: project-exporter loaded
-2018-08-28T09:40:15.605Z - success: project-importer loaded
-2018-08-28T09:40:15.608Z - success: project-settings loaded
-2018-08-28T09:40:15.611Z - success: ui-kit loaded
-2018-08-28T09:40:15.637Z - success: ui-grid loaded
-2018-08-28T09:40:15.642Z - success: scene loaded
-2018-08-28T09:40:15.643Z - success: sprite-editor loaded
-2018-08-28T09:40:15.647Z - success: store loaded
-2018-08-28T09:40:15.653Z - success: timeline loaded
-2018-08-28T09:40:15.654Z - normal: Loading builtin packages
-2018-08-28T09:40:15.758Z - success: asset-db-debugger loaded
-2018-08-28T09:40:15.767Z - success: code-editor loaded
-2018-08-28T09:40:15.769Z - success: color-picker loaded
-2018-08-28T09:40:15.777Z - success: package-manager loaded
-2018-08-28T09:40:15.781Z - success: qqplay-adapter loaded
-2018-08-28T09:40:15.789Z - success: sdkbox loaded
-2018-08-28T09:40:15.796Z - success: tester loaded
-2018-08-28T09:40:15.800Z - success: ui-kit-preview-extra loaded
-2018-08-28T09:40:15.813Z - success: ui-kit-preview loaded
-2018-08-28T09:40:15.816Z - success: ui-tree loaded
-2018-08-28T09:40:15.816Z - success: weapp-adapter loaded
-2018-08-28T09:40:18.024Z - normal: Initializing project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
-2018-08-28T09:40:18.055Z - normal: Loading packages
-2018-08-28T09:40:18.061Z - normal: Watching packages
-2018-08-28T09:40:18.655Z - normal: Run Application
-2018-08-28T09:40:20.699Z - success: preview server running at http://localhost:7456
-2018-08-28T09:40:30.187Z - normal: 1.9.2
-2018-08-28T09:40:30.589Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T09:40:30.590Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T09:40:30.623Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-28T09:40:30.625Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
-2018-08-28T09:40:30.628Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-28T09:40:30.630Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
-2018-08-28T09:40:30.634Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
-2018-08-28T09:40:30.636Z - warn: No needs to indicate the 'cc.String' attribute for "LongBarrierEnemy.type", which its default value is type of String.
-2018-08-28T09:40:30.638Z - warn: No needs to indicate the 'cc.String' attribute for "ShortBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:02:52.957Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T10:02:52.959Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T10:02:53.003Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-28T10:02:53.012Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
-2018-08-28T10:02:53.014Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-28T10:02:53.015Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
-2018-08-28T10:02:53.026Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
-2018-08-28T10:02:53.029Z - warn: No needs to indicate the 'cc.String' attribute for "LongBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:02:53.030Z - warn: No needs to indicate the 'cc.String' attribute for "ShortBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:02:59.611Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T10:02:59.612Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T10:02:59.618Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-28T10:02:59.619Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
-2018-08-28T10:02:59.620Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-28T10:02:59.621Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
-2018-08-28T10:02:59.623Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
-2018-08-28T10:02:59.623Z - warn: No needs to indicate the 'cc.String' attribute for "LongBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:02:59.625Z - warn: No needs to indicate the 'cc.String' attribute for "ShortBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:03:03.644Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T10:03:03.645Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T10:03:03.651Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-28T10:03:03.652Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
-2018-08-28T10:03:03.654Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-28T10:03:03.655Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
-2018-08-28T10:03:03.656Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
-2018-08-28T10:03:03.657Z - warn: No needs to indicate the 'cc.String' attribute for "LongBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:03:03.658Z - warn: No needs to indicate the 'cc.String' attribute for "ShortBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:18:39.991Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T10:18:39.993Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T10:18:40.001Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-28T10:18:40.002Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
-2018-08-28T10:18:40.004Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-28T10:18:40.006Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
-2018-08-28T10:18:40.008Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
-2018-08-28T10:18:40.010Z - warn: No needs to indicate the 'cc.String' attribute for "LongBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:18:40.011Z - warn: No needs to indicate the 'cc.String' attribute for "RunEnemy.type", which its default value is type of String.
-2018-08-28T10:18:40.012Z - warn: No needs to indicate the 'cc.String' attribute for "ShortBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:22:00.045Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T10:22:00.047Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T10:22:00.050Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-28T10:22:00.051Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
-2018-08-28T10:22:00.054Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-28T10:22:00.055Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
-2018-08-28T10:22:00.058Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
-2018-08-28T10:22:00.060Z - warn: No needs to indicate the 'cc.String' attribute for "LongBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:22:00.061Z - warn: No needs to indicate the 'cc.String' attribute for "RunEnemy.type", which its default value is type of String.
-2018-08-28T10:22:00.063Z - warn: No needs to indicate the 'cc.String' attribute for "ShortBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:31:29.897Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T10:31:29.899Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T10:31:29.907Z - warn: No needs to indicate the 'cc.String' attribute for "Bird.type", which its default value is type of String.
-2018-08-28T10:31:29.909Z - warn: No needs to indicate the 'cc.String' attribute for "CatEnemy.type", which its default value is type of String.
-2018-08-28T10:31:29.910Z - warn: No needs to indicate the 'cc.String' attribute for "DartEnemy.type", which its default value is type of String.
-2018-08-28T10:31:29.912Z - warn: No needs to indicate the 'cc.String' attribute for "DartNode.type", which its default value is type of String.
-2018-08-28T10:31:29.914Z - warn: No needs to indicate the 'cc.String' attribute for "LineEnemy.type", which its default value is type of String.
-2018-08-28T10:31:29.915Z - warn: No needs to indicate the 'cc.String' attribute for "LongBarrierEnemy.type", which its default value is type of String.
-2018-08-28T10:31:29.917Z - warn: No needs to indicate the 'cc.String' attribute for "RunEnemy.type", which its default value is type of String.
-2018-08-28T10:31:29.918Z - warn: No needs to indicate the 'cc.String' attribute for "ShortBarrierEnemy.type", which its default value is type of String.
-2018-08-28T12:12:48.075Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T12:12:48.076Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T12:15:29.970Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T12:15:29.973Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T12:22:25.668Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T12:22:25.671Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T12:24:04.821Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T12:24:04.821Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T12:28:57.306Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T12:28:57.307Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T12:29:17.169Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T12:29:17.170Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
-2018-08-28T13:59:51.539Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
-2018-08-28T13:59:51.549Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T02:40:11.663Z - normal: Load ~/.CocosCreator/settings.json
+2018-08-29T02:40:11.668Z - normal: checking language setting...
+2018-08-29T02:40:11.669Z - normal: Language: zh
+2018-08-29T02:40:15.235Z - success: protocol editor-framework registered
+2018-08-29T02:40:15.235Z - success: protocol app registered
+2018-08-29T02:40:15.235Z - success: protocol theme registered
+2018-08-29T02:40:15.236Z - success: protocol packages registered
+2018-08-29T02:40:15.236Z - success: protocol unpack registerred
+2018-08-29T02:40:15.236Z - success: protocol disable-commonjs registerred
+2018-08-29T02:40:15.464Z - normal: connected!
+2018-08-29T02:40:15.466Z - normal: Check project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
+2018-08-29T02:40:15.469Z - normal: Initializing Cocos2d
+2018-08-29T02:40:15.722Z - normal: Initializing Asset Database
+2018-08-29T02:40:15.799Z - success: protocol uuid registerred
+2018-08-29T02:40:15.799Z - success: protocol db registerred
+2018-08-29T02:40:15.799Z - success: protocol thumbnail registerred
+2018-08-29T02:40:15.799Z - normal: Loading editor/builtin packages
+2018-08-29T02:40:15.867Z - success: anysdk loaded
+2018-08-29T02:40:16.032Z - success: assets loaded
+2018-08-29T02:40:16.035Z - success: builder loaded
+2018-08-29T02:40:16.044Z - success: cocos-analytics loaded
+2018-08-29T02:40:16.048Z - success: console loaded
+2018-08-29T02:40:16.090Z - success: fb-instant-games loaded
+2018-08-29T02:40:16.094Z - success: hierarchy loaded
+2018-08-29T02:40:16.098Z - success: inspector loaded
+2018-08-29T02:40:16.100Z - success: keystore loaded
+2018-08-29T02:40:16.104Z - success: node-library loaded
+2018-08-29T02:40:16.107Z - success: package-asset loaded
+2018-08-29T02:40:16.109Z - success: preferences loaded
+2018-08-29T02:40:16.111Z - success: project-exporter loaded
+2018-08-29T02:40:16.135Z - success: project-importer loaded
+2018-08-29T02:40:16.137Z - success: project-settings loaded
+2018-08-29T02:40:16.140Z - success: ui-kit loaded
+2018-08-29T02:40:16.165Z - success: ui-grid loaded
+2018-08-29T02:40:16.171Z - success: scene loaded
+2018-08-29T02:40:16.172Z - success: sprite-editor loaded
+2018-08-29T02:40:16.178Z - success: store loaded
+2018-08-29T02:40:16.186Z - success: timeline loaded
+2018-08-29T02:40:16.186Z - normal: Loading builtin packages
+2018-08-29T02:40:16.287Z - success: asset-db-debugger loaded
+2018-08-29T02:40:16.298Z - success: code-editor loaded
+2018-08-29T02:40:16.300Z - success: color-picker loaded
+2018-08-29T02:40:16.310Z - success: package-manager loaded
+2018-08-29T02:40:16.318Z - success: qqplay-adapter loaded
+2018-08-29T02:40:16.330Z - success: sdkbox loaded
+2018-08-29T02:40:16.336Z - success: tester loaded
+2018-08-29T02:40:16.339Z - success: ui-kit-preview-extra loaded
+2018-08-29T02:40:16.350Z - success: ui-kit-preview loaded
+2018-08-29T02:40:16.352Z - success: ui-tree loaded
+2018-08-29T02:40:16.353Z - success: weapp-adapter loaded
+2018-08-29T02:40:17.768Z - normal: Initializing project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
+2018-08-29T02:40:17.780Z - normal: Loading packages
+2018-08-29T02:40:17.788Z - normal: Watching packages
+2018-08-29T02:40:18.332Z - normal: Run Application
+2018-08-29T02:40:20.067Z - success: preview server running at http://localhost:7456
+2018-08-29T02:40:28.069Z - normal: 1.9.2
+2018-08-29T02:40:28.401Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T02:40:28.401Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-08-29T07:16:20.345Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-08-29T07:16:20.347Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.

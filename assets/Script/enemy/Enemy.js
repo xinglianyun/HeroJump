@@ -17,7 +17,7 @@ cc.Class({
 
     // update (dt) {},
 
-    //logic
+    //************************************start logic*************************************************//
     setRealListener : function(realListener){
         this._realListener = realListener
     },
@@ -32,4 +32,5 @@ cc.Class({
             this._realListener.beKilled()
         }
     }
+    //************************************end logic*************************************************//
 });

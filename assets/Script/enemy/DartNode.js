@@ -17,13 +17,27 @@ cc.Class({
 
     // update (dt) {},
 
-    //logic
+    //************************************start logic*************************************************//
+    /**
+     * desc: kill the hero
+     */    
     beVictory : function(){
         this.node.stopAllActions()
     },
-
+    /**
+     * desc: killed by the hero
+     */
     beKilled : function(){
         this.node.stopAllActions()
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
     },
+
+    /**
+     * desc: node to be collected
+     */
+    beCollected : function(){
+        this.node.stopAllActions()
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
+    },
+    //************************************end logic*************************************************//
 });

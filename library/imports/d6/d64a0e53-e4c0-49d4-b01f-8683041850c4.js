@@ -8,6 +8,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        // 挂载猫节点的位置
         catNode: {
             default: null,
             type: cc.Node
@@ -34,27 +35,32 @@ cc.Class({
         if (Math.abs(this._totalOffsetY) > cc.director.getWinSize().height * 1.5) {
             if (this.catNode.childrenCount > 0) {
                 if (this._cat) {
-                    this._cat.getComponent("CatEnemy").beKilled();
+                    this._cat.getComponent("CatEnemy").beCollected();
                 }
             }
-
-            this.beKilled();
+            this.beCollected();
         }
     },
 
 
-    // logic
+    //************************************start logic*************************************************//
+    /**
+     * desc: add the cat to lin
+     */
     addCat: function addCat(cat) {
         if (this.catNode) {
             this.catNode.addChild(cat);
             this._cat = cat;
         }
     },
-
-    beKilled: function beKilled() {
+    /**
+     * desc: be collected
+     */
+    beCollected: function beCollected() {
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     }
+    //************************************end logic*************************************************//
 });
 
 cc._RF.pop();

@@ -24,16 +24,29 @@ cc.Class({
         this._totalOffsetY += offsetY;
 
         if (Math.abs(this._totalOffsetY) >= cc.director.getWinSize().height * 1.5) {
-            this.beKilled();
+            this.beCollected();
         }
     },
 
 
-    // logic
+    //************************************start logic*************************************************//
+    /**
+     * desc: kill the hero
+     */
     beVictory: function beVictory() {
         this.node.stopAllActions();
     },
+    /**
+     * desc: killed by hero
+     */
     beKilled: function beKilled() {
+        this.node.stopAllActions();
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
+    },
+    /**
+     * desc: be collected
+     */
+    beCollected: function beCollected() {
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     }

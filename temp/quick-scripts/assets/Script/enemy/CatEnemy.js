@@ -8,6 +8,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        // 左右移动一次需要的时间
         runTime: {
             default: 1.5,
             type: cc.Float
@@ -34,16 +35,29 @@ cc.Class({
 
     // update (dt) {},
 
-    //logic
+    //************************************start logic*************************************************//
+    /**
+     * desc: when victory (kill the hero)
+     */
     beVictory: function beVictory() {
         this.node.stopAllActions();
     },
-
+    /**
+     * desc: when killed by hero
+     */
     beKilled: function beKilled() {
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
-    }
+    },
 
+    /**
+     * desc: node to be collected
+     */
+    beCollected: function beCollected() {
+        this.node.stopAllActions();
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
+    }
+    //************************************end logic*************************************************//
 });
 
 cc._RF.pop();

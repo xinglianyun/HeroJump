@@ -46,12 +46,44 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        // 游戏运行时间
         _totalTime: {
             default: 0.0,
             type: cc.Float
         }
     },
-    //logic func
+
+    // LIFE-CYCLE CALLBACKS:
+    onLoad: function onLoad() {
+        Global.gameManager = this;
+        cc.game.addPersistRootNode(this.Node);
+        cc.director.getCollisionManager().enabled = true;
+    },
+    start: function start() {
+        // Game Over
+        this.gameOveer = false;
+        // enemy level
+        this._enemyLevel = 0;
+
+        // enemy rate
+        this._enemyRate = [];
+        this._enemyTotalRate = [];
+        this.initEnemyRate();
+
+        // enemy pool 
+        this.initEnemyPool();
+    },
+    update: function update(dt) {
+        this._totalTime += dt;
+    },
+
+
+    //************************************start logic*************************************************//
+    /**
+     * desc: calaulate the apperence rate of enemy according to the rate
+     *       the varible _enemyTotalRate contains the total rate of the enemys in one level
+     *       the _enemyRate contains the seperate rate of the enemys
+     */
     initEnemyRate: function initEnemyRate() {
         for (var level = 0; level < GameData.EnemyConfig.length; ++level) {
             var config = GameData.EnemyConfig[level];
@@ -65,6 +97,9 @@ cc.Class({
         }
     },
 
+    /**
+     * desc: init all the pool of the enemy
+     */
     initEnemyPool: function initEnemyPool() {
         this._birdEnemyPool = new cc.NodePool();
         this._birdPoolCapacity = 2;
@@ -122,34 +157,9 @@ cc.Class({
             this._bannerEnemyPool.put(_enemy7);
         }
     },
-
-    // LIFE-CYCLE CALLBACKS:
-    onLoad: function onLoad() {
-        Global.gameManager = this;
-        cc.game.addPersistRootNode(this.Node);
-        cc.director.getCollisionManager().enabled = true;
-    },
-    start: function start() {
-        // Game Over
-        this.gameOveer = false;
-        // enemy level
-        this._enemyLevel = 0;
-
-        // enemy rate
-        this._enemyRate = [];
-        this._enemyTotalRate = [];
-        this.initEnemyRate();
-
-        // enemy pool 
-        this.initEnemyPool();
-    },
-    update: function update(dt) {
-        this._totalTime += dt;
-    },
-
-
-    // logic
-    // 
+    /**
+     * desc: create enemy according the distance
+     */
     generateEnemy: function generateEnemy(distance) {
         var enemy = null;
         // get config
@@ -178,9 +188,11 @@ cc.Class({
         return enemy;
     },
 
+    /**
+     * desc: create enemy by type
+     */
     generateEnemyByType: function generateEnemyByType(enemyType) {
         var enemy = null;
-        enemyType = Global.enemyrun; //todo : test
         switch (enemyType) {
             case Global.enemyType.bird:
                 enemy = this._createBird();
@@ -207,6 +219,9 @@ cc.Class({
         return { enemyNode: enemy, type: enemyType };
     },
 
+    /**
+     * desc: create bird
+     */
     _createBird: function _createBird() {
         var bird = null;
         bird = this._birdEnemyPool.get();
@@ -215,7 +230,9 @@ cc.Class({
         }
         return bird;
     },
-
+    /**
+     * desc: create dartenemy with 2 dart 
+     */
     _createDart2: function _createDart2() {
         var dart2 = null;
         dart2 = this._dartEnemyPool.get();
@@ -234,6 +251,9 @@ cc.Class({
         return dart2;
     },
 
+    /**
+     * desc: create line alone
+     */
     _createLine: function _createLine() {
         var line = null;
         line = this._bannerEnemyPool.get();
@@ -243,6 +263,9 @@ cc.Class({
         return line;
     },
 
+    /**
+     * desc: create line with cat
+     */
     _createLineCat: function _createLineCat() {
         var line = this._createLine();
 
@@ -255,6 +278,9 @@ cc.Class({
         return line;
     },
 
+    /**
+     * desc: create short barrier
+     */
     _createShortBarrier: function _createShortBarrier() {
         var barrier = null;
         barrier = this._crackerShortEnemyPool.get();
@@ -264,6 +290,9 @@ cc.Class({
         return barrier;
     },
 
+    /**
+     * desc: create long barrier
+     */
     _createLongBarrier: function _createLongBarrier() {
         var barrier = null;
         barrier = this._crackerLongEnemyPool.get();
@@ -273,6 +302,9 @@ cc.Class({
         return barrier;
     },
 
+    /**
+     * desc: create run enemy
+     */
     _createRunEnemy: function _createRunEnemy() {
         var runEnemy = null;
         runEnemy = this._runEnemyPool.get();
@@ -282,7 +314,9 @@ cc.Class({
         return runEnemy;
     },
 
-    //
+    /**
+     * desc: re collect the node of no use
+     */
     collectEnemy: function collectEnemy(node, type) {
         switch (type) {
             case Global.enemyNodeType.bird:
@@ -312,6 +346,9 @@ cc.Class({
         }
     },
 
+    /**
+     * desc: get the enenmy appare time inteval accroding the distance
+     */
     getTimeIntevalWithDistance: function getTimeIntevalWithDistance(distance) {
         for (var level = 0; level < GameData.EnemyConfig.length; ++level) {
             var config = GameData.EnemyConfig[level];
@@ -320,11 +357,13 @@ cc.Class({
         return GameData.EnemyConfig[GameData.EnemyConfig.length - 1].space;
     },
 
-    gameOver: function gameOver() {
-        // game over
+    /**
+     * desc: game over
+     */
+    gameOver: function gameOver() {}
+    // game over
 
-    }
-
+    //************************************start logic*************************************************//
 });
 
 cc._RF.pop();

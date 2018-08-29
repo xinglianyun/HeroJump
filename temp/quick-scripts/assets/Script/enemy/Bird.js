@@ -4,40 +4,36 @@ cc._RF.push(module, 'fbd32tK2Z9LFJ5lf38NG2YB', 'Bird', __filename);
 
 "use strict";
 
-// Learn cc.Class:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-
 cc.Class({
     extends: cc.Component,
 
     properties: {
+        // 鸟儿向下移动进场时间
         flyDownTime: {
             default: 0.5,
             type: cc.Float
         },
+        // 定点飞行的时间
         flyTime: {
             default: 1.0,
             type: cc.Float
         },
+        // 飞向enemy的时间
         flyToHeroTime: {
             default: 5.0,
             type: cc.Float
         },
+        // 杀死hero之后的飞行动作时间
         flyVictoryTime: {
             default: 0.8,
             type: cc.Float
         },
+        // 鸟儿出现的位置
         _startSide: {
             default: -1,
             type: cc.Integer
         },
+        // 飞向hero的时候，终点在x方向的延长
         _overScreenX: {
             default: 100.0,
             type: cc.Float
@@ -61,11 +57,14 @@ cc.Class({
 
     // update (dt) {},
 
-    //logic
+    //************************************start logic*************************************************//
     setStartSide: function setStartSide(startSide) {
         this._startSide = startSide;
     },
 
+    /**
+     * desc: move the bird
+     */
     moveBird: function moveBird() {
         var moveDownAction = cc.moveBy(this.flyDownTime, 0, this._startOffsetY * -1);
         var delayAction = cc.delayTime(this.flyTime);
@@ -75,26 +74,48 @@ cc.Class({
         var moveToHeroAction = cc.moveTo(this.flyToHeroTime, moveToHeroPos);
 
         var callfunc = cc.callFunc(function (target) {
-            Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
+            this.beKilled();
         }, this);
         var sequeenAction = cc.sequence(moveDownAction, delayAction, moveToHeroAction, callfunc);
         this.node.runAction(sequeenAction);
     },
 
+    /**
+     * desc: set the target world pos
+     */
     setTargetWorldPos: function setTargetWorldPos(worldPos) {
         this._targetWorldPos = worldPos;
     },
 
+    /**
+     * desc: when victory (kill the hero)
+     */
     beVictory: function beVictory() {
         this.node.stopAllActions();
         var moveHorizon = cc.moveBy(this.flyVictoryTime, -this._startSide * 200, 0);
-        this.node.runAction(moveHorizon);
+        var callback = cc.callfunc(function (target) {
+            this.beCollected();
+        }, this);
+        var sequenceAction = cc.sequence(moveHorizon, callback);
+        this.node.runAction(sequenceAction);
     },
 
+    /**
+     * desc: when killed by hero
+     */
     beKilled: function beKilled() {
+        //todo: run dead animation
+        this.node.stopAllActions();
+        Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
+    },
+    /**
+     * desc: node to be collected
+     */
+    beCollected: function beCollected() {
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     }
+    //************************************start logic*************************************************//
 });
 
 cc._RF.pop();
