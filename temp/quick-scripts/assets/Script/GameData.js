@@ -13,7 +13,7 @@ var GameData = {
             rate: 10
         }, {
             enemyType: "bird",
-            ate: 10
+            rate: 10
         }, {
             enemyType: "dart2",
             rate: 10
@@ -97,7 +97,7 @@ var GameData = {
             rate: 10
         }, {
             enemyType: "enemyrun",
-            ate: 10
+            rate: 10
         }]
     }, {
         height: 3800,

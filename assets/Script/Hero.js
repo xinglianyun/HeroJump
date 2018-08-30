@@ -15,6 +15,10 @@ cc.Class({
             default : null,
             type : require("HeroColliderProxy")
         },
+        propCenterNode : {
+            default : null,
+            type : cc.Node
+        }
         
     },
 
@@ -88,10 +92,13 @@ cc.Class({
      */
     addCircleProp(propNode){
         this._allProps.circleprop.count += 1
-        propNode.parent = this.node
+        propNode.parent = this.propCenterNode
+        propNode.setPosition(0, 0)
+        
         if(!this._allProps.circleprop.circlePropNode){
             this._allProps.circleprop.circlePropNode= propNode
         }
+        
     },
     /**
      * desc: delete one circle prop

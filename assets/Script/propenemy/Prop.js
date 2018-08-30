@@ -25,9 +25,11 @@ cc.Class({
         }
     },
     getPropEnemyType : function(){
+        var propEnemyType = null
         if(this._realListener){
-            this._realListener.getPropEnemyType()
+            propEnemyType = this._realListener.getPropEnemyType()
         }
+        return propEnemyType
     },
     beCollected : function(){
         if(this._realListener){

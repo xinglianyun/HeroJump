@@ -10,7 +10,7 @@ var GameData = {
                 },
                 {
                     enemyType:"bird",
-                    ate:10
+                    rate:10
                 },
                 {
                     enemyType:"dart2",
@@ -124,7 +124,7 @@ var GameData = {
                 },
                 {
                     enemyType:"enemyrun",
-                    ate:10
+                    rate:10
                 }
             ],
         },

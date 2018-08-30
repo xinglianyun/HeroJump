@@ -226,7 +226,7 @@ cc.Class({
                     this.dealWithCircleProp(enemyInfo.enemyNode)
                 }
                 // todo : for test
-                this._stopCreateEnemy = false
+                this._stopCreateEnemy = true
             }
         }
     },
@@ -285,8 +285,8 @@ cc.Class({
     },
 
     dealWithCircleProp : function(circleProp){
-        runEnemey.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
-        runEnemey.scaleX *= (-this._leftOrRight)
+        circleProp.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
+        circleProp.scaleX *= (-this._leftOrRight)
     },
 
     /*
