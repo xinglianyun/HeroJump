@@ -400,8 +400,8 @@
     "relativePath": "Scene"
   },
   "b0ae6330-9d66-42c3-ac4d-ecfd698eecc6": {
-    "asset": 1535616438200,
-    "meta": 1535616438223,
+    "asset": 1535697623369,
+    "meta": 1535697623389,
     "relativePath": "Scene\\GameMainScene.fire"
   },
   "c386cf89-1d44-44a7-b908-ccc9d544f41b": {
@@ -514,11 +514,6 @@
     "meta": 1535552922799,
     "relativePath": "Texture\\HelloWorld.png"
   },
-  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
-    "asset": 1535595605585,
-    "meta": 1535595737336,
-    "relativePath": "Script\\GameMainScene.js"
-  },
   "f7b1d739-0ea0-45d2-9cb0-321bcef9df4d": {
     "asset": 1535595437109,
     "meta": 1535595737338,
@@ -539,9 +534,14 @@
     "meta": 1535616517472,
     "relativePath": "Script\\propenemy\\CircleProp.js"
   },
+  "506d7b94-bcc1-47f5-bdf1-80d082c29813": {
+    "asset": 1535699995691,
+    "meta": 1535700067443,
+    "relativePath": "Script\\GameMainScene.js"
+  },
   "28463d8f-653c-40a0-8c76-e9c12366f99d": {
-    "asset": 1535617649283,
-    "meta": 1535617668901,
+    "asset": 1535700966837,
+    "meta": 1535700967652,
     "relativePath": "Script\\Hero.js"
   }
 }

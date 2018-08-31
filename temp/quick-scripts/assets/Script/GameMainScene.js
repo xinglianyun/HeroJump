@@ -27,6 +27,11 @@ cc.Class({
             default: null,
             type: cc.Node
         },
+        // 中间英雄节点
+        centerHeroPosNode: {
+            default: null,
+            type: cc.Node
+        },
         // 左侧墙体：需要移动
         sideLeft: {
             default: null,
@@ -106,7 +111,8 @@ cc.Class({
         _stopCreateEnemy: {
             default: false,
             type: cc.Boolean
-        }
+        },
+        deadEnemyNodes: [cc.Node]
     },
 
     //************************************start logic*************************************************//
@@ -282,6 +288,45 @@ cc.Class({
         circleProp.scaleX *= -this._leftOrRight;
     },
 
+    /**
+     * desc: collect the dead enemy
+     */
+    showDeadEnemy: function showDeadEnemy(enemyType) {
+        if (this._deadEnemy.enemyType !== enemyType) {
+            this.collectOldDeadEnemy();
+            this._deadEnemy.enemyType = enemyType;
+            this._deadEnemy.deadCount = 1;
+        } else {
+            this._deadEnemy.deadCount += 1;
+        }
+        if (this._deadEnemy.deadCount >= 3) {
+            Global.hero.setInvincible(true, this._deadEnemy.enemyType);
+            this.collectOldDeadEnemy();
+        } else {
+            this.refreshDeadEnemyShow();
+        }
+    },
+
+    /**
+     * desc: collect the old dead enemy node
+     */
+    collectOldDeadEnemy: function collectOldDeadEnemy() {
+        for (var i = 0; i < this._deadEnemy.enemyNode.length; ++i) {
+            this._gameManager.collectEnemy(this._deadEnemy.enemyNode[i], this._deadEnemy.enemyType);
+        }
+        this._deadEnemy.enemyNode = [];
+    },
+
+    /**
+     * desc: refresh the dead enemy show
+     */
+    refreshDeadEnemyShow: function refreshDeadEnemyShow() {
+        var enemyNode = this._gameManager.generateEnemyByType(this._deadEnemy.enemyType);
+        if (enemyNode) {
+            enemyNode.parent = this.deadEnemyNodes[this._deadEnemy.deadCount - 1];
+        }
+    },
+
     /*
     *  desc: gameOver
     */
@@ -310,6 +355,11 @@ cc.Class({
         this._leftOrRight = -1;
         this._distance = 0;
         this._enemyTimeInteval = 0.0;
+        this._deadEnemy = {
+            enemyType: "none",
+            deadCount: 0,
+            enemyNode: []
+        };
     },
     update: function update(dt) {
         this.scrollSide(dt);

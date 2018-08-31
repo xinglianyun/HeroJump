@@ -64,6 +64,7 @@ cc.Class({
     moveBird : function(){
         var moveDownAction = cc.moveBy(this.flyDownTime, 0, this._startOffsetY * (-1))
         var delayAction = cc.delayTime(this.flyTime)
+
         var moveToHeroPos = this.node.parent.convertToNodeSpace(this._targetWorldPos)
         moveToHeroPos.x += -this._startSide*this._overScreenX
         moveToHeroPos.y -= (this._overScreenX * Math.abs(this.node.y - moveToHeroPos.y)) / (Math.abs(this.node.x - moveToHeroPos.x))

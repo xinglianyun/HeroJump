@@ -24,6 +24,10 @@ cc.Class({
         propCenterNode: {
             default: null,
             type: cc.Node
+        },
+        invincibleTime: {
+            default: 3.0,
+            type: cc.Float
         }
 
     },
@@ -43,10 +47,19 @@ cc.Class({
                 circlePropNode: null
             }
         };
+        this._invincible = false;
+        this._invincibleDurTime = 0.0;
+        this._oldParentNode = null;
+    },
+    update: function update(dt) {
+        if (this._invincible) {
+            this._invincibleDurTime += dt;
+            if (this._invincibleDurTime >= this.invincibleTime) {
+                this.setInvincible(false);
+            }
+        }
     },
 
-
-    // update (dt) {},
 
     //************************************start logic*************************************************//
     /**
@@ -117,6 +130,37 @@ cc.Class({
         }
     },
 
+    /**
+     * desc: set the hero invincible
+     */
+    setInvincible: function setInvincible(invincible, type) {
+        this._invincible = invincible;
+        if (invincible) {
+            this._oldParentNode = this.node.parent;
+            this.node.parent = Global.gameMainScene.centerHeroPosNode;
+            switch (type) {
+                case Global.enemyType.bird:
+                    this.getComponent(cc.Animation).play("HeroBirdRushClip");
+                    break;
+                case Global.enemyType.dart2:
+                    this.getComponent(cc.Animation).play("HeroDartRushClip");
+                    break;
+                case Global.enemyType.linecat:
+                    this.getComponent(cc.Animation).play("HeroCatRushClip");
+                    break;
+            }
+        } else {
+            this.node.parent = this._oldParentNode;
+            this.getComponent(cc.Animation).play("HeroRushClip");
+        }
+    },
+
+    /**
+     * desc: get the hero invincible
+     */
+    getInvincible: function getInvincible() {
+        return this._invincible;
+    },
 
     /**
      * desc: 当碰撞产生的时候调用
@@ -129,7 +173,7 @@ cc.Class({
         if (this._status !== HeroStatus.dead) {
             var group = cc.game.groupList[other.node.groupIndex];
             if (group === "enemy") {
-                if (this._status === HeroStatus.running) {
+                if (this._status === HeroStatus.running && !this._invincible) {
                     if (this._allProps.circleprop > 0) {
                         this.deleteCircleProp();
                         other.node.getComponent("Enemy").beKilled();
