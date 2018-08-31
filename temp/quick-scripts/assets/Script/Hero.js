@@ -151,7 +151,7 @@ cc.Class({
             }
         } else {
             this.node.parent = this._oldParentNode;
-            this.getComponent(cc.Animation).play("HeroRushClip");
+            this.getComponent(cc.Animation).play("HeroRunClip");
         }
     },
 

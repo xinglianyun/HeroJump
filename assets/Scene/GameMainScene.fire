@@ -4674,7 +4674,8 @@
     },
     "propCenterNode": {
       "__id__": 139
-    }
+    },
+    "invincibleTime": 3
   },
   {
     "__type__": "cc.Widget",
