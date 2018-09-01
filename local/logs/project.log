@@ -1,0 +1,70 @@
+2018-09-01T02:09:56.513Z - normal: Load ~/.CocosCreator/settings.json
+2018-09-01T02:09:56.520Z - normal: checking language setting...
+2018-09-01T02:09:56.520Z - normal: Language: zh
+2018-09-01T02:10:02.659Z - success: protocol editor-framework registered
+2018-09-01T02:10:02.660Z - success: protocol app registered
+2018-09-01T02:10:02.660Z - success: protocol theme registered
+2018-09-01T02:10:02.660Z - success: protocol packages registered
+2018-09-01T02:10:02.660Z - success: protocol unpack registerred
+2018-09-01T02:10:02.660Z - success: protocol disable-commonjs registerred
+2018-09-01T02:10:02.883Z - normal: connected!
+2018-09-01T02:10:02.890Z - normal: Check project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
+2018-09-01T02:10:02.923Z - normal: Initializing Cocos2d
+2018-09-01T02:10:04.898Z - normal: Initializing Asset Database
+2018-09-01T02:10:05.011Z - success: protocol uuid registerred
+2018-09-01T02:10:05.011Z - success: protocol db registerred
+2018-09-01T02:10:05.012Z - success: protocol thumbnail registerred
+2018-09-01T02:10:05.012Z - normal: Loading editor/builtin packages
+2018-09-01T02:10:05.280Z - success: anysdk loaded
+2018-09-01T02:10:05.639Z - success: assets loaded
+2018-09-01T02:10:05.642Z - success: builder loaded
+2018-09-01T02:10:05.651Z - success: cocos-analytics loaded
+2018-09-01T02:10:05.655Z - success: console loaded
+2018-09-01T02:10:05.698Z - success: fb-instant-games loaded
+2018-09-01T02:10:05.703Z - success: hierarchy loaded
+2018-09-01T02:10:05.708Z - success: inspector loaded
+2018-09-01T02:10:05.710Z - success: keystore loaded
+2018-09-01T02:10:05.715Z - success: node-library loaded
+2018-09-01T02:10:05.718Z - success: package-asset loaded
+2018-09-01T02:10:05.722Z - success: preferences loaded
+2018-09-01T02:10:05.725Z - success: project-exporter loaded
+2018-09-01T02:10:05.752Z - success: project-importer loaded
+2018-09-01T02:10:05.754Z - success: project-settings loaded
+2018-09-01T02:10:05.757Z - success: ui-kit loaded
+2018-09-01T02:10:05.785Z - success: ui-grid loaded
+2018-09-01T02:10:05.789Z - success: scene loaded
+2018-09-01T02:10:05.790Z - success: sprite-editor loaded
+2018-09-01T02:10:05.818Z - success: store loaded
+2018-09-01T02:10:05.855Z - success: timeline loaded
+2018-09-01T02:10:05.855Z - normal: Loading builtin packages
+2018-09-01T02:10:06.052Z - success: asset-db-debugger loaded
+2018-09-01T02:10:06.061Z - success: code-editor loaded
+2018-09-01T02:10:06.063Z - success: color-picker loaded
+2018-09-01T02:10:06.074Z - success: package-manager loaded
+2018-09-01T02:10:06.079Z - success: qqplay-adapter loaded
+2018-09-01T02:10:06.091Z - success: sdkbox loaded
+2018-09-01T02:10:06.117Z - success: tester loaded
+2018-09-01T02:10:06.120Z - success: ui-kit-preview-extra loaded
+2018-09-01T02:10:06.144Z - success: ui-kit-preview loaded
+2018-09-01T02:10:06.147Z - success: ui-tree loaded
+2018-09-01T02:10:06.147Z - success: weapp-adapter loaded
+2018-09-01T02:10:11.462Z - normal: Initializing project E:\Com4lovesCode\LightGame\CocosCreator\HeroJump
+2018-09-01T02:10:11.482Z - normal: Loading packages
+2018-09-01T02:10:11.489Z - normal: Watching packages
+2018-09-01T02:10:12.085Z - normal: Run Application
+2018-09-01T02:10:18.035Z - success: preview server running at http://localhost:7456
+2018-09-01T02:10:29.862Z - normal: 1.9.2
+2018-09-01T02:10:30.863Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-09-01T02:10:30.863Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-09-01T03:51:21.361Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-09-01T03:51:21.389Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-09-01T04:09:43.162Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-09-01T04:09:43.164Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-09-01T04:09:43.170Z - warn: No needs to indicate the 'cc.Boolean' attribute for "Bird._beCollected", which its default value is type of Boolean.
+2018-09-01T12:20:32.995Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._bottomBGScroll", which its default value is type of Boolean.
+2018-09-01T12:20:32.997Z - warn: No needs to indicate the 'cc.Boolean' attribute for "GameMainScene._stopCreateEnemy", which its default value is type of Boolean.
+2018-09-01T12:20:33.119Z - warn: No needs to indicate the 'cc.Boolean' attribute for "Bird._idle", which its default value is type of Boolean.
+2018-09-01T12:20:33.121Z - warn: No needs to indicate the 'cc.Boolean' attribute for "CatEnemy._idle", which its default value is type of Boolean.
+2018-09-01T12:20:33.124Z - warn: No needs to indicate the 'cc.Boolean' attribute for "DartEnemy._idle", which its default value is type of Boolean.
+2018-09-01T12:20:33.126Z - warn: No needs to indicate the 'cc.Boolean' attribute for "DartNode._idle", which its default value is type of Boolean.
+2018-09-01T12:20:36.210Z - info: shutdown preview server

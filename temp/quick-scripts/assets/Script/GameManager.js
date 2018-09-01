@@ -204,7 +204,7 @@ cc.Class({
      */
     generateEnemyByType: function generateEnemyByType(enemyType) {
         var enemy = null;
-        enemyType = Global.enemyType.circleprop;
+        //enemyType = Global.enemyType.circleprop
         switch (enemyType) {
             case Global.enemyType.bird:
                 enemy = this._createBird();

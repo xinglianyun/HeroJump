@@ -22,6 +22,12 @@ cc.Class({
         this._realListener = realListener
     },
 
+    setIdle : function(idle){
+        if(this._realListener){
+            this._realListener.setIdle(idle)
+        }
+    },
+
     beVictory : function(){
         if(this._realListener){
             this._realListener.beVictory()

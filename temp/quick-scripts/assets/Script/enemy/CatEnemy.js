@@ -12,6 +12,10 @@ cc.Class({
         runTime: {
             default: 1.5,
             type: cc.Float
+        },
+        _idle: {
+            default: false,
+            type: cc.Boolean
         }
     },
 
@@ -22,6 +26,9 @@ cc.Class({
         this._enemyNodeType = Global.enemyNodeType.cat;
     },
     start: function start() {
+        if (this._idle) {
+            return;
+        }
         var moveAction = cc.moveBy(this.runTime, cc.director.getWinSize().width, 0);
         var callfunc = cc.callFunc(function (target) {
             this.node.scaleX *= -1;
@@ -56,6 +63,13 @@ cc.Class({
     beCollected: function beCollected() {
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
+    },
+
+    /**
+     * desc: set the enemy state
+     */
+    setIdle: function setIdle(idle) {
+        this._idle = idle;
     }
     //************************************end logic*************************************************//
 });

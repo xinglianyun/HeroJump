@@ -232,7 +232,7 @@ cc.Class({
                     this.dealWithCircleProp(enemyInfo.enemyNode)
                 }
                 // todo : for test
-                this._stopCreateEnemy = true
+                //this._stopCreateEnemy = true
             }
         }
     },
@@ -330,6 +330,7 @@ cc.Class({
     refreshDeadEnemyShow : function(){
         var enemyNode = this._gameManager.generateEnemyByType(this._deadEnemy.enemyType)
         if(enemyNode){
+            enemyNode.getComponent("Enemy").setCollect(true)
             enemyNode.parent = this.deadEnemyNodes[this._deadEnemy.deadCount - 1]
         }
     },

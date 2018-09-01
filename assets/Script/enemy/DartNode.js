@@ -2,6 +2,10 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        _idle : {
+            default : false,
+            type : cc.Boolean
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -39,5 +43,13 @@ cc.Class({
         this.node.stopAllActions()
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
     },
+
+    /**
+     * desc: set the enemy state
+     */
+    setIdle : function(idle){
+        this._idle= idle
+    },
+
     //************************************end logic*************************************************//
 });

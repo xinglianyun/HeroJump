@@ -6,7 +6,11 @@ cc.Class({
         runTime : {
             default : 1.5,
             type : cc.Float
-        }
+        },
+        _idle : {
+            default : false,
+            type : cc.Boolean
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -17,6 +21,9 @@ cc.Class({
     },
 
     start () {
+        if(this._idle){
+            return
+        }
         var moveAction = cc.moveBy(this.runTime, cc.director.getWinSize().width, 0)
         var callfunc = cc.callFunc( function(target){
             this.node.scaleX *= -1
@@ -50,6 +57,13 @@ cc.Class({
     beCollected : function(){
         this.node.stopAllActions()
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
-    }
+    },
+
+    /**
+     * desc: set the enemy state
+     */
+    setIdle : function(idle){
+        this._idle= idle
+    },
     //************************************end logic*************************************************//
 });

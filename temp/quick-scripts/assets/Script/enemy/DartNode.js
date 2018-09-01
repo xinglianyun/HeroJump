@@ -7,7 +7,12 @@ cc._RF.push(module, '4f46934E09FLrtVsB1ZYRQu', 'DartNode', __filename);
 cc.Class({
     extends: cc.Component,
 
-    properties: {},
+    properties: {
+        _idle: {
+            default: false,
+            type: cc.Boolean
+        }
+    },
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -41,7 +46,15 @@ cc.Class({
     beCollected: function beCollected() {
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
+    },
+
+    /**
+     * desc: set the enemy state
+     */
+    setIdle: function setIdle(idle) {
+        this._idle = idle;
     }
+
     //************************************end logic*************************************************//
 });
 

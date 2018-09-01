@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "catRun-cat_run_06",
+    "texture": "af6b85d7-117e-4ab2-9fdc-fee288144be2",
+    "atlas": "ba6751e3-07c4-4091-b514-19129919738f",
+    "rect": [
+      202,
+      166,
+      100,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      100,
+      50
+    ]
+  }
+}

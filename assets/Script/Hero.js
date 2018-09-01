@@ -176,8 +176,8 @@ cc.Class({
                     }else{
                         // dead, game oveer
                         this.dead()
-                        Global.gameMainScene.gameOver()
                         other.node.getComponent("Enemy").beVictory()
+                        Global.gameMainScene.gameOver()
                     }
                 }else{
                     other.node.getComponent("Enemy").beKilled()

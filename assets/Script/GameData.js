@@ -5,10 +5,6 @@ var GameData = {
             space : 3,
             enemy : [
                 {
-                    enemyType:"nothing",
-                    rate:10
-                },
-                {
                     enemyType:"bird",
                     rate:10
                 },
@@ -35,10 +31,6 @@ var GameData = {
             space : 2.5,
             enemy : [
                 {
-                    enemyType:"nothing",
-                    rate:10
-                },
-                {
                     enemyType:"bird",
                     rate:10
                 },
@@ -57,7 +49,11 @@ var GameData = {
                 {
                     enemyType:"shortbarrier",
                     rate:10
-                }
+                },
+                {
+                    enemyType:"circleprop",
+                    rate:10,
+                },
             ],
         },
         {
@@ -65,10 +61,6 @@ var GameData = {
             space : 2,
             enemy : [
                 {
-                    enemyType:"nothing",
-                    rate:10
-                },
-                {
                     enemyType:"bird",
                     rate:10
                 },
@@ -87,17 +79,17 @@ var GameData = {
                 {
                     enemyType:"shortbarrier",
                     rate:10
-                }
+                },
+                {
+                    enemyType:"circleprop",
+                    rate:10,
+                },
             ],
         },
         {
             height : 2800,
             space : 1.5,
             enemy : [
-                {
-                    enemyType:"nothing",
-                    rate:10
-                },
                 {
                     enemyType:"bird",
                     rate:10
@@ -125,17 +117,17 @@ var GameData = {
                 {
                     enemyType:"enemyrun",
                     rate:10
-                }
+                },
+                {
+                    enemyType:"circleprop",
+                    rate:10,
+                },
             ],
         },
         {
             height : 3800,
             space : 1,
             enemy : [
-                {
-                    enemyType:"nothing",
-                    rate:10
-                },
                 {
                     enemyType:"bird",
                     rate:10
@@ -167,17 +159,17 @@ var GameData = {
                 {
                     enemyType:"enemyrun",
                     rate:10
-                }
+                },
+                {
+                    enemyType:"circleprop",
+                    rate:10,
+                },
             ],
         },
         {
             height : 4800,
             space : 1,
             enemy : [
-                {
-                    enemyType:"nothing",
-                    rate:10
-                },
                 {
                     enemyType:"bird",
                     rate:10
@@ -205,7 +197,11 @@ var GameData = {
                 {
                     enemyType:"enemyrun",
                     rate:10
-                }
+                },
+                {
+                    enemyType:"circleprop",
+                    rate:10,
+                },
             ],
         },
     ]

@@ -32,6 +32,10 @@ cc.Class({
             default : 100.0,
             type : cc.Float
         },
+        _idle : {
+            default : false,
+            type : cc.Boolean
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -41,14 +45,13 @@ cc.Class({
         this._startSide = -1
         this._targetWorldPos = cc.Vec2(0, 0)
         this.node.y += this._startOffsetY
-        this.scheduleOnce(this.moveBird, 0)
 
         this.node.getComponent("Enemy").setRealListener(this)
         this._enemyNodeType = Global.enemyNodeType.bird
     },
 
     start () {
-        
+        this.scheduleOnce(this.moveBird, 0)
     },
 
     // update (dt) {},
@@ -59,9 +62,19 @@ cc.Class({
     },
 
     /**
+     * desc: set the enemy state
+     */
+    setIdle : function(idle){
+        this._idle= idle
+    },
+
+    /**
      * desc: move the bird
      */
     moveBird : function(){
+        if(this._idle){
+            return
+        }
         var moveDownAction = cc.moveBy(this.flyDownTime, 0, this._startOffsetY * (-1))
         var delayAction = cc.delayTime(this.flyTime)
 

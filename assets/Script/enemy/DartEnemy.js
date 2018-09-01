@@ -19,6 +19,10 @@ cc.Class({
             default : -100.0,
             type : cc.Float
         },
+        _idle : {
+            default : false,
+            type : cc.Boolean
+        },
     },
 
 
@@ -42,6 +46,10 @@ cc.Class({
     },
 
     update (dt) {
+        if(this._idle){
+            return
+        }
+
         var gameMainSceneSpeed = Global.gameMainScene.getRunSpeed()
         var offsetY = gameMainSceneSpeed * dt
         this.node.y += offsetY
@@ -115,6 +123,13 @@ cc.Class({
             }
         }
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
+    },
+
+    /**
+     * desc: set the enemy state
+     */
+    setIdle : function(idle){
+        this._idle= idle
     },
 
     /**

@@ -24,6 +24,12 @@ cc.Class({
         this._realListener = realListener;
     },
 
+    setIdle: function setIdle(idle) {
+        if (this._realListener) {
+            this._realListener.setIdle(idle);
+        }
+    },
+
     beVictory: function beVictory() {
         if (this._realListener) {
             this._realListener.beVictory();
