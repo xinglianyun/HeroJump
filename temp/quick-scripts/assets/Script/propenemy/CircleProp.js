@@ -66,6 +66,13 @@ cc.Class({
     },
 
     /**
+     * 
+     */
+    beOffHero: function beOffHero() {
+        this.setOnHero(false);
+    },
+
+    /**
      * desc: be collected
      */
     beCollected: function beCollected() {

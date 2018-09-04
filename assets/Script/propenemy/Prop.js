@@ -24,6 +24,11 @@ cc.Class({
             this._realListener.beOnHero()
         }
     },
+    beOffHero : function(){
+        if(this._realListener){
+            this._realListener.beOffHero()
+        }
+    },
     getPropEnemyType : function(){
         var propEnemyType = null
         if(this._realListener){

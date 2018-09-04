@@ -105,7 +105,7 @@ cc.Class({
      * desc: init all the pool of the enemy
      */
     initEnemyPool: function initEnemyPool() {
-        this._birdEnemyPool = new cc.NodePool();
+        this._birdEnemyPool = new cc.NodePool("Enemy");
         this._birdPoolCapacity = 2;
         for (var i = 0; i < this._birdPoolCapacity; ++i) {
             var enemy = cc.instantiate(this.birdEnemyPrefab); // bird pool
@@ -204,7 +204,7 @@ cc.Class({
      */
     generateEnemyByType: function generateEnemyByType(enemyType) {
         var enemy = null;
-        //enemyType = Global.enemyType.circleprop
+        enemyType = Global.enemyType.bird;
         switch (enemyType) {
             case Global.enemyType.bird:
                 enemy = this._createBird();
@@ -231,6 +231,9 @@ cc.Class({
                 enemy = this._createCircleProp();
                 break;
         }
+        if (enemy) {
+            enemy.setPosition(0, 0);
+        }
         return { enemyNode: enemy, type: enemyType };
     },
 
@@ -242,6 +245,9 @@ cc.Class({
         bird = this._birdEnemyPool.get();
         if (!bird) {
             bird = cc.instantiate(this.birdEnemyPrefab);
+            console.log("Game Manager : _createBird, From prfab");
+        } else {
+            console.log("Game Manager : _createBird, From pool");
         }
         return bird;
     },

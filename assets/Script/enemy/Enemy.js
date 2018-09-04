@@ -12,7 +12,13 @@ cc.Class({
     },
 
     start () {
+        
+    },
 
+    reuse : function(){
+        if(this._realListener){
+            this._realListener.reuse()
+        }
     },
 
     // update (dt) {},
@@ -20,6 +26,12 @@ cc.Class({
     //************************************start logic*************************************************//
     setRealListener : function(realListener){
         this._realListener = realListener
+    },
+
+    onInit : function(){
+        if(this._realListener){
+            this._realListener.onInit()
+        }
     },
 
     setIdle : function(idle){
@@ -36,6 +48,16 @@ cc.Class({
     beKilled : function(){
         if(this._realListener){
             this._realListener.beKilled()
+        }
+    },
+    getEnemyNodeType : function(){
+        if(this._realListener){
+            this._realListener.getEnemyNodeType()
+        }
+    },
+    DisplayDeadEnemyState : function(){
+        if(this._realListener){
+            this._realListener.DisplayDeadEnemyState()
         }
     }
     //************************************end logic*************************************************//

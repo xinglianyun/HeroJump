@@ -47,24 +47,43 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
-        this._startOffsetY = 100;
-        this._startSide = -1;
-        this._targetWorldPos = cc.Vec2(0, 0);
-        this.node.y += this._startOffsetY;
-
         this.node.getComponent("Enemy").setRealListener(this);
         this._enemyNodeType = Global.enemyNodeType.bird;
+        console.log("Jump Hero : Bird onLoad " + this.node.uuid);
     },
     start: function start() {
-        this.scheduleOnce(this.moveBird, 0);
+        console.log("Jump Hero :  Bird start " + this.node.uuid);
     },
 
+
+    reuse: function reuse() {
+        console.log("Jump Hero :  Bird reuse " + this.node.uuid);
+    },
 
     // update (dt) {},
 
     //************************************start logic*************************************************//
+    onInit: function onInit() {
+        this.node.setPosition(0, 0);
+        this.node.setScale(1);
+
+        this._startOffsetY = 100;
+        this._startSide = -1;
+        this._targetWorldPos = cc.Vec2(0, 0);
+        this.node.y += this._startOffsetY;
+        this._idle = false;
+
+        this.scheduleOnce(this.moveBird, 0.1);
+
+        console.log("Jump Hero :  Bird onInit " + this.node.uuid);
+    },
+
+    /**
+     * desc: set the start side
+     */
     setStartSide: function setStartSide(startSide) {
         this._startSide = startSide;
+        console.log("Jump Hero :  Bird setStartSide " + this.node.uuid);
     },
 
     /**
@@ -72,6 +91,7 @@ cc.Class({
      */
     setIdle: function setIdle(idle) {
         this._idle = idle;
+        console.log("Jump Hero : Bird setIdle " + this.node.uuid);
     },
 
     /**
@@ -90,7 +110,7 @@ cc.Class({
         var moveToHeroAction = cc.moveTo(this.flyToHeroTime, moveToHeroPos);
 
         var callfunc = cc.callFunc(function (target) {
-            this.beKilled();
+            this.beCollected();
         }, this);
         var sequeenAction = cc.sequence(moveDownAction, delayAction, moveToHeroAction, callfunc);
         this.node.runAction(sequeenAction);
@@ -101,6 +121,7 @@ cc.Class({
      */
     setTargetWorldPos: function setTargetWorldPos(worldPos) {
         this._targetWorldPos = worldPos;
+        console.log("Jump Hero : Bird setTargetWorldPos " + this.node.uuid);
     },
 
     /**
@@ -109,11 +130,13 @@ cc.Class({
     beVictory: function beVictory() {
         this.node.stopAllActions();
         var moveHorizon = cc.moveBy(this.flyVictoryTime, -this._startSide * 200, 0);
-        var callback = cc.callfunc(function (target) {
+        var callback = cc.callFunc(function (target) {
             this.beCollected();
         }, this);
         var sequenceAction = cc.sequence(moveHorizon, callback);
         this.node.runAction(sequenceAction);
+
+        console.log("Jump Hero : Bird beVictory " + this.node.uuid);
     },
 
     /**
@@ -123,6 +146,7 @@ cc.Class({
         //todo: run dead animation
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
+        console.log("Jump Hero : Bird beKilled " + this.node.uuid);
     },
     /**
      * desc: node to be collected
@@ -130,6 +154,21 @@ cc.Class({
     beCollected: function beCollected() {
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
+        console.log("Jump Hero : Bird beCollected " + this.node.uuid);
+    },
+
+    /**
+     * desc: get enemy node type
+     */
+    getEnemyNodeType: function getEnemyNodeType() {
+        return this._enemyNodeType;
+    },
+    /**
+     * desc: display the dead enemy when killed
+     */
+    DisplayDeadEnemyState: function DisplayDeadEnemyState() {
+        this.getComponent(cc.BoxCollider).enabled = false;
+        this.setIdle(true);
     }
     //************************************start logic*************************************************//
 });

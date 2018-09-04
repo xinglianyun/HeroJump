@@ -234,6 +234,8 @@ cc.Class({
     */
     dealWithBird: function dealWithBird(birdNode) {
         birdNode.parent = this._leftOrRight > 0 ? this.enemyNodeLeft : this.enemyNodeRight;
+        birdNode.getComponent("Bird").onInit();
+
         var targetWorldPos = this._leftOrRight > 0 ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0));
         birdNode.scaleX *= this._leftOrRight;
         birdNode.getComponent("Bird").setStartSide(-this._leftOrRight);
@@ -291,7 +293,7 @@ cc.Class({
     /**
      * desc: collect the dead enemy
      */
-    showDeadEnemy: function showDeadEnemy(enemyType) {
+    showDeadEnemyNode: function showDeadEnemyNode(enemyType) {
         if (this._deadEnemy.enemyType !== enemyType) {
             this.collectOldDeadEnemy();
             this._deadEnemy.enemyType = enemyType;
@@ -321,10 +323,11 @@ cc.Class({
      * desc: refresh the dead enemy show
      */
     refreshDeadEnemyShow: function refreshDeadEnemyShow() {
-        var enemyNode = this._gameManager.generateEnemyByType(this._deadEnemy.enemyType);
-        if (enemyNode) {
-            enemyNode.getComponent("Enemy").setCollect(true);
-            enemyNode.parent = this.deadEnemyNodes[this._deadEnemy.deadCount - 1];
+        var enemy = this._gameManager.generateEnemyByType(this._deadEnemy.enemyType);
+        if (enemy && enemy.enemyNode) {
+            enemy.enemyNode.parent = this.deadEnemyNodes[this._deadEnemy.deadCount - 1];
+            enemy.enemyNode.getComponent("Enemy").onInit(true);
+            enemy.enemyNode.getComponent("Enemy").DisplayDeadEnemyState();
         }
     },
 

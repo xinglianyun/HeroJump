@@ -59,6 +59,13 @@ cc.Class({
         this.setOnHero(true)
         this.getComponent(cc.Animation).play("CirclePropBreath")
     },
+
+    /**
+     * 
+     */
+    beOffHero : function(){
+        this.setOnHero(false)
+    },
     
     /**
      * desc: be collected

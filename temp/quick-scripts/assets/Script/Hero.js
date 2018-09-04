@@ -125,8 +125,11 @@ cc.Class({
         this._allProps.circleprop.count -= 1;
         if (this._allProps.circleprop.count <= 0) {
             this._allProps.circleprop.count = 0;
-            this._allProps.circleprop.circlePropNode.getComponent("Prop").beCollected();
-            this._allProps.circleprop.circlePropNode = null;
+            if (this._allProps.circleprop.circlePropNode) {
+                this._allProps.circleprop.circlePropNode.getComponent("Prop").beOffHero();
+                this._allProps.circleprop.circlePropNode.getComponent("Prop").beCollected();
+                this._allProps.circleprop.circlePropNode = null;
+            }
         }
     },
 
@@ -139,13 +142,13 @@ cc.Class({
             this._oldParentNode = this.node.parent;
             this.node.parent = Global.gameMainScene.centerHeroPosNode;
             switch (type) {
-                case Global.enemyType.bird:
+                case Global.enemyNodeType.bird:
                     this.getComponent(cc.Animation).play("HeroBirdRushClip");
                     break;
-                case Global.enemyType.dart2:
+                case Global.enemyNodeType.dartnode:
                     this.getComponent(cc.Animation).play("HeroDartRushClip");
                     break;
-                case Global.enemyType.linecat:
+                case Global.enemyNodeType.cat:
                     this.getComponent(cc.Animation).play("HeroCatRushClip");
                     break;
             }
@@ -184,6 +187,8 @@ cc.Class({
                         Global.gameMainScene.gameOver();
                     }
                 } else {
+                    var enemyNodeType = other.node.getComponent("Enemy").getEnemyNodeType();
+                    Global.gameMainScene.showDeadEnemyNode(enemyNodeType);
                     other.node.getComponent("Enemy").beKilled();
                 }
             } else if (group === "prop") {

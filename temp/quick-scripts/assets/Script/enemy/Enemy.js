@@ -17,11 +17,23 @@ cc.Class({
     start: function start() {},
 
 
+    reuse: function reuse() {
+        if (this._realListener) {
+            this._realListener.reuse();
+        }
+    },
+
     // update (dt) {},
 
     //************************************start logic*************************************************//
     setRealListener: function setRealListener(realListener) {
         this._realListener = realListener;
+    },
+
+    onInit: function onInit() {
+        if (this._realListener) {
+            this._realListener.onInit();
+        }
     },
 
     setIdle: function setIdle(idle) {
@@ -38,6 +50,16 @@ cc.Class({
     beKilled: function beKilled() {
         if (this._realListener) {
             this._realListener.beKilled();
+        }
+    },
+    getEnemyNodeType: function getEnemyNodeType() {
+        if (this._realListener) {
+            this._realListener.getEnemyNodeType();
+        }
+    },
+    DisplayDeadEnemyState: function DisplayDeadEnemyState() {
+        if (this._realListener) {
+            this._realListener.DisplayDeadEnemyState();
         }
     }
     //************************************end logic*************************************************//
