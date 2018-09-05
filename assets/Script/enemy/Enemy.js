@@ -59,6 +59,6 @@ cc.Class({
         if(this._realListener){
             this._realListener.DisplayDeadEnemyState(isDeadState)
         }
-    }
+    },
     //************************************end logic*************************************************//
 });

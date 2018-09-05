@@ -166,6 +166,9 @@ cc.Class({
     *  desc: hero jump from oneside to another
     */
     heroJump: function heroJump() {
+        if (this.heroNode.getComponent("Hero").getInvincible()) {
+            return;
+        }
         // change the side
         this._leftOrRight *= -1;
         this.heroNode.getComponent("Hero").setLeftOrRight(this._leftOrRight);
