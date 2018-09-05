@@ -51,6 +51,7 @@ cc.Class({
         if(this._invincible){
             this._invincibleDurTime += dt
             if(this._invincibleDurTime >= this.invincibleTime){
+                this._invincibleDurTime = 0
                 this.setInvincible(false)
             }
         }
@@ -150,6 +151,13 @@ cc.Class({
             }
         }else{
             this.node.parent = this._oldParentNode
+            this.node.scaleX *= -1
+            this.node.setPosition(0, 0)
+            if(this._leftOrRight === 1){
+                var worldPos = Global.gameMainScene.rightHeroPosNode.parent.convertToWorldSpaceAR(Global.gameMainScene.rightHeroPosNode.position)
+                var nodePos = Global.gameMainScene.leftHeroPosNode.convertToNodeSpaceAR(worldPos)
+                this.node.setPosition(nodePos)
+            }
             this.getComponent(cc.Animation).play("HeroRunClip")
         }
     },

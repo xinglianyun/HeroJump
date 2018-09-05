@@ -235,6 +235,31 @@ cc.Class({
     },
 
     /**
+     * 
+     */
+    generateEnemyNodeByNodeType : function(enemyNodeType){
+        let enemy = null
+        switch(enemyNodeType){
+            case Global.enemyNodeType.bird:
+                enemy = this._createBird()
+                break;
+            case Global.enemyNodeType.dartnode:
+                enemy = this._createDartNode()
+                break;
+            case Global.enemyNodeType.cat:
+                enemy = this._createCat()
+                break;
+            case Global.enemyNodeType.runenemy:
+                enemy = this._createRunEnemy()
+                break;
+        }
+        if(enemy){
+            enemy.setPosition(0, 0)
+        }
+        return enemy
+    },
+
+    /**
      * desc: create bird
      */
     _createBird : function(){
@@ -270,6 +295,18 @@ cc.Class({
     },
 
     /**
+     * desc: create dart node
+     */
+    _createDartNode : function(){
+        let dartNode = null
+        dartNode = this._dartNodePool.get()
+        if(!dartNode){
+            dartNode = cc.instantiate(this.dartPrefab)
+        }
+        return dartnode
+    },
+
+    /**
      * desc: create line alone
      */
     _createLine : function(){
@@ -294,6 +331,18 @@ cc.Class({
         }
         line.getComponent("LineEnemy").addCat(cat)
         return line
+    },
+
+    /**
+     * desc: create cat
+     */
+    _createCat : function(){
+        let cat = null
+        cat = this._catEnemyPool.get()
+        if(!cat){
+            cat = cc.instantiate(this.catEnemyPrefab)
+        }
+        return cat
     },
 
     /**

@@ -54,12 +54,12 @@ cc.Class({
     },
     getEnemyNodeType: function getEnemyNodeType() {
         if (this._realListener) {
-            this._realListener.getEnemyNodeType();
+            return this._realListener.getEnemyNodeType();
         }
     },
-    DisplayDeadEnemyState: function DisplayDeadEnemyState() {
+    DisplayDeadEnemyState: function DisplayDeadEnemyState(isDeadState) {
         if (this._realListener) {
-            this._realListener.DisplayDeadEnemyState();
+            this._realListener.DisplayDeadEnemyState(isDeadState);
         }
     }
     //************************************end logic*************************************************//

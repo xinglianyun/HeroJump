@@ -293,17 +293,21 @@ cc.Class({
     /**
      * desc: collect the dead enemy
      */
-    showDeadEnemyNode: function showDeadEnemyNode(enemyType) {
-        if (this._deadEnemy.enemyType !== enemyType) {
+    showDeadEnemyNode: function showDeadEnemyNode(enemyNodeType) {
+        if (this._deadEnemy.enemyNodeType !== enemyNodeType) {
             this.collectOldDeadEnemy();
-            this._deadEnemy.enemyType = enemyType;
+            this._deadEnemy.enemyNodeType = enemyNodeType;
             this._deadEnemy.deadCount = 1;
         } else {
             this._deadEnemy.deadCount += 1;
         }
         if (this._deadEnemy.deadCount >= 3) {
-            Global.hero.setInvincible(true, this._deadEnemy.enemyType);
+            Global.hero.node.stopAllActions();
+            Global.hero.node.setPosition(0, 0);
+            Global.hero.setInvincible(true, this._deadEnemy.enemyNodeType);
             this.collectOldDeadEnemy();
+            this._deadEnemy.deadCount = 0;
+            this._deadEnemy.enemyNodeType = "none";
         } else {
             this.refreshDeadEnemyShow();
         }
@@ -314,7 +318,8 @@ cc.Class({
      */
     collectOldDeadEnemy: function collectOldDeadEnemy() {
         for (var i = 0; i < this._deadEnemy.enemyNode.length; ++i) {
-            this._gameManager.collectEnemy(this._deadEnemy.enemyNode[i], this._deadEnemy.enemyType);
+            this._deadEnemy.enemyNode[i].getComponent("Enemy").DisplayDeadEnemyState(false);
+            this._gameManager.collectEnemy(this._deadEnemy.enemyNode[i], this._deadEnemy.enemyNodeType);
         }
         this._deadEnemy.enemyNode = [];
     },
@@ -323,11 +328,12 @@ cc.Class({
      * desc: refresh the dead enemy show
      */
     refreshDeadEnemyShow: function refreshDeadEnemyShow() {
-        var enemy = this._gameManager.generateEnemyByType(this._deadEnemy.enemyType);
-        if (enemy && enemy.enemyNode) {
-            enemy.enemyNode.parent = this.deadEnemyNodes[this._deadEnemy.deadCount - 1];
-            enemy.enemyNode.getComponent("Enemy").onInit(true);
-            enemy.enemyNode.getComponent("Enemy").DisplayDeadEnemyState();
+        var enemyNode = this._gameManager.generateEnemyNodeByNodeType(this._deadEnemy.enemyNodeType);
+        if (enemyNode) {
+            enemyNode.parent = this.deadEnemyNodes[this._deadEnemy.deadCount - 1];
+            enemyNode.getComponent("Enemy").onInit(true);
+            enemyNode.getComponent("Enemy").DisplayDeadEnemyState(true);
+            this._deadEnemy.enemyNode.push(enemyNode);
         }
     },
 
@@ -360,7 +366,7 @@ cc.Class({
         this._distance = 0;
         this._enemyTimeInteval = 0.0;
         this._deadEnemy = {
-            enemyType: "none",
+            enemyNodeType: "none",
             deadCount: 0,
             enemyNode: []
         };

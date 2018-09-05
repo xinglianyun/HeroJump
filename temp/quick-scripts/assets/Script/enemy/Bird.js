@@ -166,9 +166,9 @@ cc.Class({
     /**
      * desc: display the dead enemy when killed
      */
-    DisplayDeadEnemyState: function DisplayDeadEnemyState() {
-        this.getComponent(cc.BoxCollider).enabled = false;
-        this.setIdle(true);
+    DisplayDeadEnemyState: function DisplayDeadEnemyState(isDeadState) {
+        this.getComponent(cc.BoxCollider).enabled = !isDeadState;
+        this.setIdle(isDeadState);
     }
     //************************************start logic*************************************************//
 });
