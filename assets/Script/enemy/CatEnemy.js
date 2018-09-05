@@ -21,6 +21,29 @@ cc.Class({
     },
 
     start () {
+        
+    },
+
+    reuse : function(){
+        if(this._realListener){
+            this._realListener.reuse()
+        }
+    },
+
+    // update (dt) {},
+
+    //************************************start logic*************************************************//
+    onInit : function(){
+        this.node.setPosition(0, 0)
+        this.node.setScale(1)
+
+        this.scheduleOnce(this.runForwardBack, 0.1)
+    },
+
+    /**
+     * desc: 
+     */
+    runForwardBack : function(){
         if(this._idle){
             return
         }
@@ -33,10 +56,6 @@ cc.Class({
         var repeat = cc.repeatForever(sequence)
         this.node.runAction(repeat)
     },
-
-    // update (dt) {},
-
-    //************************************start logic*************************************************//
     /**
      * desc: when victory (kill the hero)
      */
@@ -65,5 +84,20 @@ cc.Class({
     setIdle : function(idle){
         this._idle= idle
     },
+
+        /**
+     * desc: get enemy node type
+     */
+    getEnemyNodeType : function(){
+        return this._enemyNodeType
+    },
+
+    /**
+     * desc: display the dead enemy when killed
+     */
+    DisplayDeadEnemyState : function(isDeadState){
+        this.getComponent(cc.BoxCollider).enabled = !isDeadState
+        this.setIdle(isDeadState)
+    }
     //************************************end logic*************************************************//
 });

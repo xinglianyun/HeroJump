@@ -201,7 +201,7 @@ cc.Class({
      */
     generateEnemyByType : function(enemyType){
         let enemy = null
-        enemyType = Global.enemyType.bird
+        enemyType = Global.enemyType.linecat
         switch(enemyType){
             case Global.enemyType.bird:
                 enemy = this._createBird()
@@ -329,6 +329,7 @@ cc.Class({
         if(!cat){
             cat = cc.instantiate(this.catEnemyPrefab)
         }
+        cat.getComponent("CatEnemy").onInit()
         line.getComponent("LineEnemy").addCat(cat)
         return line
     },

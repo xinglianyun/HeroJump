@@ -265,6 +265,8 @@ cc.Class({
     *  desc: dealWithLine
     */
     dealWithLine : function(lineEnemyNode){
+        dartEnemyNode.getComponent("LineEnemy").onInit()
+
         lineEnemyNode.parent = this.enemyNodeLeft
     },
     /*
@@ -341,7 +343,7 @@ cc.Class({
         var enemyNode = this._gameManager.generateEnemyNodeByNodeType(this._deadEnemy.enemyNodeType)
         if(enemyNode){
             enemyNode.parent = this.deadEnemyNodes[this._deadEnemy.deadCount - 1]
-            enemyNode.getComponent("Enemy").onInit(true)
+            enemyNode.getComponent("Enemy").onInit()
             enemyNode.getComponent("Enemy").DisplayDeadEnemyState(true)
             this._deadEnemy.enemyNode.push(enemyNode)
         }

@@ -16,7 +16,6 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
     onLoad () {
-        this._totalOffsetY = 0.0
         this._enemyNodeType = Global.enemyNodeType.line
     },
 
@@ -41,6 +40,12 @@ cc.Class({
     },
 
     //************************************start logic*************************************************//
+    onInit : function(){
+        this.node.setPosition(0, 0)
+        this.node.setScale(1)
+        this._totalOffsetY = 0.0
+
+    },
     /**
      * desc: add the cat to lin
      */

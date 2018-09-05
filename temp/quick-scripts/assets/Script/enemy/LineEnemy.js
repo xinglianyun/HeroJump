@@ -22,7 +22,6 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
     onLoad: function onLoad() {
-        this._totalOffsetY = 0.0;
         this._enemyNodeType = Global.enemyNodeType.line;
     },
     start: function start() {},
@@ -44,6 +43,11 @@ cc.Class({
 
 
     //************************************start logic*************************************************//
+    onInit: function onInit() {
+        this.node.setPosition(0, 0);
+        this.node.setScale(1);
+        this._totalOffsetY = 0.0;
+    },
     /**
      * desc: add the cat to lin
      */
