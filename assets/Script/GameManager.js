@@ -201,7 +201,7 @@ cc.Class({
      */
     generateEnemyByType : function(enemyType){
         let enemy = null
-        enemyType = Global.enemyType.dart2
+        //enemyType = Global.enemyType.dart2
         switch(enemyType){
             case Global.enemyType.bird:
                 enemy = this._createBird()
