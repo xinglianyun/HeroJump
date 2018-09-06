@@ -38,6 +38,7 @@ cc.Class({
 
     //************************************start logic*************************************************//
     onInit: function onInit() {
+        this._idle = false;
         this.node.setPosition(0, 0);
         this.node.setScale(1);
 
@@ -90,8 +91,8 @@ cc.Class({
     },
 
     /**
-    * desc: get enemy node type
-    */
+     * desc: get enemy node type
+     */
     getEnemyNodeType: function getEnemyNodeType() {
         return this._enemyNodeType;
     },

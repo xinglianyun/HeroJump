@@ -34,6 +34,7 @@ cc.Class({
 
     //************************************start logic*************************************************//
     onInit : function(){
+        this._idle = false
         this.node.setPosition(0, 0)
         this.node.setScale(1)
 
@@ -85,7 +86,7 @@ cc.Class({
         this._idle= idle
     },
 
-        /**
+    /**
      * desc: get enemy node type
      */
     getEnemyNodeType : function(){

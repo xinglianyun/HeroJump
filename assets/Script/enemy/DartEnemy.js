@@ -1,4 +1,3 @@
-var dartNodes = [];
 
 cc.Class({
     extends: cc.Component,
@@ -23,6 +22,7 @@ cc.Class({
             default : false,
             type : cc.Boolean
         },
+        _dartNodes : [cc.Node]
     },
 
 
@@ -32,13 +32,11 @@ cc.Class({
 
     onLoad () {
         this._game = cc.find("Game")
-        this._totalOffsetY = 0.0
-        this._startSide = -1
-        this._targetWorldPos = cc.Vec2(0, 0)
-        this._isEmitDart = false
+        
         this.node.getComponent("Enemy").setRealListener(this)
         this._enemyNodeType = Global.enemyNodeType.dartenemy
 
+        console.log("aaaaaaaaaaaaaaaaaa DartEnemy onLoad " + this.node.uuid)
     },
 
     start () {
@@ -68,18 +66,39 @@ cc.Class({
         }
     },
 
+    onDestroy : function(){
+        console.log("aaaaaaaaaaaaaaaaaa DartEnemy onDestroy " + this.node.uuid)
+        this._dartNodes = [];
+    },
+
     //************************************start logic*************************************************//
+    onInit : function(){
+        this._totalOffsetY = 0.0
+        this._startSide = -1
+        this._targetWorldPos = cc.Vec2(0, 0)
+        this._isEmitDart = false
+        this._idle = false
+
+        this.node.setPosition(0, 0)
+        this.node.setScale(1)
+        console.log("aaaaaaaaaaaaaaaaaa DartEnemy onInit " + this.node.uuid)
+
+    },
     /**
      * desc: add the dart node to dart
      */
     addChildDartNode : function(dartNode){
         dartNode.parent = this.node
-        dartNodes.push(dartNode)
+        this._dartNodes.push(dartNode)
+
+        console.log("aaaaaaaaaaaaaaaaaa DartEnemy addChildDartNode " + this.node.uuid + " " + dartNode.uuid)
+        
     },
     /**
      * desc: set the start side
      */
     setStartSide : function(startSide){
+        console.log("aaaaaaaaaaaaaaaaaa DartEnemy setStartSide " + this.node.uuid)
         this._startSide = startSide
     },
 
@@ -95,31 +114,36 @@ cc.Class({
      */
     beVictory : function(){
         this.node.stopAllActions()
+        console.log("aaaaaaaaaaaaaaaaaa DartEnemy beVictory " + this.node.uuid)
     },
 
     /**
      * desc: killed by the hero
      */
     beKilled : function(){
+        console.log("aaaaaaaaaaaaaaaaaa DartEnemy beKilled " + this.node.uuid)
+
         this.node.stopAllActions()
-        for(let i = 0; i < dartNodes.length; ++i){
-            if(dartNodes[i]){
-                dartNodes[i].stopAllActions()
-                dartNodes[i].getComponent("DartNode").beCollected()
+        for(let i = 0; i < this._dartNodes.length; ++i){
+            if(this._dartNodes[i]){
+                this._dartNodes[i].stopAllActions()
+                this._dartNodes[i].getComponent("DartNode").beCollected()
             }
         }
-        dartNodes = []
+        this._dartNodes = []
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
     },
     /**
      * desc: node to be collected
      */
     beCollected : function(){
+        console.log("aaaaaaaaaaaaaaaaaa DartEnemy beCollected " + this.node.uuid)
+
         this.node.stopAllActions()
-        for(let i = 0; i < dartNodes.length; ++i){
-            if(dartNodes[i]){
-                dartNodes[i].stopAllActions()
-                dartNodes[i].getComponent("DartNode").beCollected()
+        for(let i = 0; i < this._dartNodes.length; ++i){
+            if(this._dartNodes[i]){
+                this._dartNodes[i].stopAllActions()
+                this._dartNodes[i].getComponent("DartNode").beCollected()
             }
         }
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
@@ -133,26 +157,48 @@ cc.Class({
     },
 
     /**
+     * desc: get enemy node type
+     */
+    getEnemyNodeType : function(){
+        return this._enemyNodeType
+    },
+
+    /**
+     * desc: display the dead enemy when killed
+     */
+    DisplayDeadEnemyState : function(isDeadState){
+        this.getComponent(cc.BoxCollider).enabled = !isDeadState
+        this.setIdle(isDeadState)
+    },
+
+    /**
      * desc: emit the dart node
      */
     emitDartNode : function(){
-        for(let i = 0; i < dartNodes.length; ++i){
+        console.log("aaaaaaaaaaaaaaaaaa DartEnemy emitDartNode " + this.node.uuid)
+        
+        for(let i = 0; i < this._dartNodes.length; ++i){
             if(i === 0){
+                console.log("aaaaaaaaaaaaaaaaaa DartEnemy emitDartNode emit" + this._dartNodes[i].uuid)
                 // fly to hero
                 var moveToHeroPos = this.node.parent.convertToNodeSpace(this._targetWorldPos)
                 moveToHeroPos.x += this._startSide*this._overScreenX
                 moveToHeroPos.y += (this._overScreenX * Math.abs(this.node.y - moveToHeroPos.y)) / (Math.abs(this.node.x - moveToHeroPos.x))
                 var moveAction = cc.moveTo(cc.director.getWinSize().height * (1- this.emitDartTime) / Math.abs(Global.gameMainScene.getRunSpeed()) * 0.5, moveToHeroPos)
                 // change the dartnode's parent to the grandpa
-                var dartNodeWorldPos = this.node.convertToWorldSpace(dartNodes[i].getPosition())
+                var dartNodeWorldPos = this.node.convertToWorldSpace(this._dartNodes[i].getPosition())
                 var tmpPos = this.node.parent.convertToNodeSpace(dartNodeWorldPos)
-                dartNodes[i].parent = this.node.parent
-                dartNodes[i].setPosition(tmpPos)
-                dartNodes[i].runAction(moveAction)
+                this._dartNodes[i].parent = this.node.parent
+                this._dartNodes[i].setPosition(tmpPos)
+                this._dartNodes[i].runAction(moveAction)
             }else if(i === 1){
                 // fly horizon
-                var moveAction = cc.moveBy(cc.director.getWinSize().height * (1- this.emitDartTime) / Math.abs(Global.gameMainScene.getRunSpeed()), this._startSide * cc.director.getWinSize().width, 0)
-                dartNodes[i].runAction(moveAction)
+                var offsetX = -1 * this._startSide * cc.director.getWinSize().width * this.node.scaleX
+                var time = cc.director.getWinSize().height * (1- this.emitDartTime) / Math.abs(Global.gameMainScene.getRunSpeed())
+                var moveAction = cc.moveBy(time, offsetX, 0)
+                console.log("aaaaaaaaaaaaaaaaaa DartEnemy emitDartNode emit " + this._dartNodes[i].uuid + " _startSide " + this._startSide + " time " + time + " offsetX " + offsetX)
+
+                this._dartNodes[i].runAction(moveAction)
             }else if(i === 2){
 
             }

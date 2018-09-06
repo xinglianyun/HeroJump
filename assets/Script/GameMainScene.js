@@ -2,6 +2,8 @@
 * author:   xinghui
 * desc:     GameMainScene
 */
+var enemyCount = 0
+
 cc.Class({
     extends: cc.Component,
 
@@ -235,7 +237,12 @@ cc.Class({
                     this.dealWithCircleProp(enemyInfo.enemyNode)
                 }
                 // todo : for test
-                //this._stopCreateEnemy = true
+                /*
+                enemyCount += 1
+                if(enemyCount >=2){
+                    this._stopCreateEnemy = true
+                }
+                */
             }
         }
     },
@@ -256,6 +263,8 @@ cc.Class({
     */
     dealWithDartEnemy : function(dartEnemyNode){
         dartEnemyNode.parent = (this._leftOrRight > 0) ? this.enemyNodeLeft : this.enemyNodeRight
+        dartEnemyNode.getComponent("DartEnemy").onInit()
+
         var targetWorldPos = (this._leftOrRight > 0) ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0))
         dartEnemyNode.scaleX *= this._leftOrRight
         dartEnemyNode.getComponent("DartEnemy").setStartSide(-this._leftOrRight)
@@ -353,6 +362,7 @@ cc.Class({
     *  desc: gameOver
     */
     gameOver : function(){  
+        this._gameManager.gameOver()
         cc.director.loadScene("GameStartScene")
     },
     //*******************************end logic******************************************************//

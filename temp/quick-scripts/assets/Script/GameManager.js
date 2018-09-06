@@ -64,10 +64,10 @@ cc.Class({
         cc.director.getCollisionManager().enabled = true;
     },
     start: function start() {
-        // Game Over
-        this.gameOveer = false;
         // enemy level
         this._enemyLevel = 0;
+
+        this._totalTime = 0.0;
 
         // enemy rate
         this._enemyRate = [];
@@ -204,7 +204,7 @@ cc.Class({
      */
     generateEnemyByType: function generateEnemyByType(enemyType) {
         var enemy = null;
-        enemyType = Global.enemyType.linecat;
+        enemyType = Global.enemyType.dart2;
         switch (enemyType) {
             case Global.enemyType.bird:
                 enemy = this._createBird();
@@ -292,6 +292,7 @@ cc.Class({
                 dartNode = cc.instantiate(this.dartPrefab);
             }
             dart2.getComponent("DartEnemy").addChildDartNode(dartNode);
+            dartNode.getComponent("DartNode").onInit();
         }
 
         return dart2;
@@ -306,7 +307,7 @@ cc.Class({
         if (!dartNode) {
             dartNode = cc.instantiate(this.dartPrefab);
         }
-        return dartnode;
+        return dartNode;
     },
 
     /**
@@ -446,9 +447,27 @@ cc.Class({
     /**
      * desc: game over
      */
-    gameOver: function gameOver() {}
-    // game over
+    gameOver: function gameOver() {
+        // game over
+        // clear the pool
+        this._birdEnemyPool.clear();
 
+        this._catEnemyPool.clear();
+
+        this._crackerLongEnemyPool.clear();
+
+        this._crackerShortEnemyPool.clear();
+
+        this._dartNodePool.clear();
+
+        this._dartEnemyPool.clear();
+
+        this._runEnemyPool.clear();
+
+        this._bannerEnemyPool.clear();
+
+        this._circlePropPool.clear();
+    }
     //************************************start logic*************************************************//
 });
 
