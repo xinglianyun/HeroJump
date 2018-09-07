@@ -117,7 +117,7 @@
     "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 40,
+      "x": 0,
       "y": 0
     },
     "_skewX": 0,
@@ -174,7 +174,10 @@
       "__id__": 1
     },
     "_enabled": true,
-    "effectTime": 10
+    "effectTime": 10,
+    "spriteNode": {
+      "__id__": 2
+    }
   },
   {
     "__type__": "cc.BoxCollider",
@@ -215,11 +218,14 @@
     },
     "_enabled": true,
     "_defaultClip": {
-      "__uuid__": "b1c8e671-b538-476b-baac-78354c67be2a"
+      "__uuid__": "2aad3463-43fa-4978-aacb-2578b6b8a23d"
     },
     "_clips": [
       {
         "__uuid__": "b1c8e671-b538-476b-baac-78354c67be2a"
+      },
+      {
+        "__uuid__": "2aad3463-43fa-4978-aacb-2578b6b8a23d"
       }
     ],
     "playOnLoad": false

@@ -11,6 +11,10 @@ cc.Class({
         effectTime: {
             default: 1.0,
             type: cc.Float
+        },
+        spriteNode: {
+            default: null,
+            type: cc.Node
         }
     },
 
@@ -47,7 +51,12 @@ cc.Class({
         this._onHero = false;
         this._keepTime = 0.0;
 
+        this.node.setScale(1);
+        this.spriteNode.setScale(0.5);
+        this.spriteNode.setPosition(0, 0);
+
         this.node.setPosition(0, 0);
+        this.node.getComponent(cc.Animation).play("CirclePropIdle");
     },
 
 

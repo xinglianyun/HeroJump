@@ -305,6 +305,7 @@ cc.Class({
     dealWithCircleProp: function dealWithCircleProp(circleProp) {
         circleProp.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
         circleProp.getComponent("CircleProp").onInit();
+
         circleProp.scaleX *= -this._leftOrRight;
     },
 
