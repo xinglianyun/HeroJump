@@ -111,11 +111,13 @@ cc.Class({
      */
     addCircleProp: function addCircleProp(propNode) {
         this._allProps.circleprop.count += 1;
-        propNode.parent = this.propCenterNode;
-        propNode.setPosition(0, 0);
 
         if (!this._allProps.circleprop.circlePropNode) {
+            propNode.parent = this.propCenterNode;
+            propNode.setPosition(0, 0);
             this._allProps.circleprop.circlePropNode = propNode;
+        } else {
+            propNode.getComponent("Prop").beCollected();
         }
     },
 
@@ -131,6 +133,8 @@ cc.Class({
                 this._allProps.circleprop.circlePropNode.getComponent("Prop").beCollected();
                 this._allProps.circleprop.circlePropNode = null;
             }
+        } else {
+            this._allProps.circleprop.circlePropNode.getComponent("CircleProp").setKeepTime(0.0);
         }
     },
 
@@ -185,7 +189,7 @@ cc.Class({
             var group = cc.game.groupList[other.node.groupIndex];
             if (group === "enemy") {
                 if (this._status === HeroStatus.running && !this._invincible) {
-                    if (this._allProps.circleprop > 0) {
+                    if (this._allProps.circleprop.count > 0) {
                         this.deleteCircleProp();
                         other.node.getComponent("Enemy").beKilled();
                     } else {

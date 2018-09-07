@@ -16,9 +16,6 @@ cc.Class({
     },
 
     start () {
-        this._totalOffsetY = 0.0
-        this._onHero = false
-        this._keepTime = 0.0
     },
 
     update (dt) {
@@ -41,6 +38,14 @@ cc.Class({
     },
 
     //************************************start logic*************************************************//
+    onInit(){
+        this._totalOffsetY = 0.0
+        this._onHero = false
+        this._keepTime = 0.0
+
+        this.node.setPosition(0, 0)
+    },
+
     setOnHero : function(onHero){
         this._onHero = onHero
     },
@@ -48,10 +53,20 @@ cc.Class({
     getOnHero : function(){
         return this._onHero
     },
-
+    /**
+     * desc: get the enenmy node type
+     */
     getPropEnemyType : function(){
         return this._enemyNodeType
     },
+
+    /**
+     * desc: set the keep time
+     */
+    setKeepTime : function(time){
+        this._keepTime = time
+    },
+
     /**
      * desc: be on hero
      */
@@ -61,7 +76,7 @@ cc.Class({
     },
 
     /**
-     * 
+     * desc: be off hero 
      */
     beOffHero : function(){
         this.setOnHero(false)

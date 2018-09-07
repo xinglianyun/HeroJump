@@ -20,11 +20,7 @@ cc.Class({
         this.node.getComponent("Prop").setRealListener(this);
         this._enemyNodeType = Global.enemyNodeType.circleprop;
     },
-    start: function start() {
-        this._totalOffsetY = 0.0;
-        this._onHero = false;
-        this._keepTime = 0.0;
-    },
+    start: function start() {},
     update: function update(dt) {
         if (this._onHero) {
             this._keepTime += dt;
@@ -46,6 +42,15 @@ cc.Class({
 
 
     //************************************start logic*************************************************//
+    onInit: function onInit() {
+        this._totalOffsetY = 0.0;
+        this._onHero = false;
+        this._keepTime = 0.0;
+
+        this.node.setPosition(0, 0);
+    },
+
+
     setOnHero: function setOnHero(onHero) {
         this._onHero = onHero;
     },
@@ -53,10 +58,20 @@ cc.Class({
     getOnHero: function getOnHero() {
         return this._onHero;
     },
-
+    /**
+     * desc: get the enenmy node type
+     */
     getPropEnemyType: function getPropEnemyType() {
         return this._enemyNodeType;
     },
+
+    /**
+     * desc: set the keep time
+     */
+    setKeepTime: function setKeepTime(time) {
+        this._keepTime = time;
+    },
+
     /**
      * desc: be on hero
      */
@@ -66,7 +81,7 @@ cc.Class({
     },
 
     /**
-     * 
+     * desc: be off hero 
      */
     beOffHero: function beOffHero() {
         this.setOnHero(false);

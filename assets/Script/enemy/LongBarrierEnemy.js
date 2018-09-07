@@ -12,7 +12,6 @@ cc.Class({
     },
 
     start () {
-        this._totalOffsetY = 0.0
     },
 
     update (dt) {
@@ -26,6 +25,11 @@ cc.Class({
     },
 
     //************************************start logic*************************************************//
+    onInit : function(){
+        this._totalOffsetY = 0.0
+        this.node.setPosition(0, 0)
+        this.node.setScale(1)
+    },
     /**
      * desc: kill the hero
      */

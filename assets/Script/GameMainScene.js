@@ -274,21 +274,23 @@ cc.Class({
     *  desc: dealWithLine
     */
     dealWithLine : function(lineEnemyNode){
-        dartEnemyNode.getComponent("LineEnemy").onInit()
-
         lineEnemyNode.parent = this.enemyNodeLeft
+        lineEnemyNode.getComponent("LineEnemy").onInit()
     },
     /*
     *  desc: dealWithLineCat
     */
     dealWithLineCat : function(linecatEnemyNode){
         linecatEnemyNode.parent = this.enemyNodeLeft
+        lineEnemyNode.getComponent("LineEnemy").onInit()
+
     },
     /*
     *  desc: dealWithShortBarrier
     */
     dealWithShortBarrier : function(shortBarrierNode){
         shortBarrierNode.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
+        shortBarrierNode.getComponent("ShortBarrierEnemy").onInit()
         shortBarrierNode.scaleX *= -this._leftOrRight
     },
     /*
@@ -296,6 +298,7 @@ cc.Class({
     */
     dealWithLongBarrier : function(longBarrierNode){
         longBarrierNode.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
+        longBarrierNode.getComponent("LongBarrierEnemy").onInit()
         longBarrierNode.scaleX *= -this._leftOrRight
     },
     /*
@@ -303,11 +306,13 @@ cc.Class({
     */
     dealWithRunEnemy : function(runEnemey){
         runEnemey.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
+        runEnemey.getComponent("RunEnemy").onInit()
         runEnemey.scaleX *= (-this._leftOrRight)
     },
 
     dealWithCircleProp : function(circleProp){
         circleProp.parent = (this._leftOrRight > 0) ? this.enemyNodeRight : this.enemyNodeLeft
+        circleProp.getComponent("CircleProp").onInit()
         circleProp.scaleX *= (-this._leftOrRight)
     },
 
