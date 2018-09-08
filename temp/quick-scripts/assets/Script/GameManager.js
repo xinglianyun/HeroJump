@@ -59,7 +59,6 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
     onLoad: function onLoad() {
-        Global.gameManager = this;
         cc.game.addPersistRootNode(this.Node);
         cc.director.getCollisionManager().enabled = true;
     },

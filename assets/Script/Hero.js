@@ -29,7 +29,6 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        Global.hero = this
     },
 
     start () {

@@ -69,16 +69,18 @@ cc.Class({
             default: 0.0,
             type: cc.Float
         },
-        // 最大速度
+        // 最大速度，负数
         maxSpeed: {
             default: -250.0,
             type: cc.Float
         },
-        // 加速度
+        // 加速度，负数
         accSpeed: {
             default: -100.0,
             type: cc.Float
         },
+        // 死亡敌人的父节点
+        deadEnemyNodes: [cc.Node],
         // 开始敌人出现逻辑时，移动的距离，从这个距离开始，通过移动距离判断敌人类型和速度
         _startEnemyDistance: {
             default: 0.0,
@@ -113,11 +115,17 @@ cc.Class({
         _stopCreateEnemy: {
             default: false,
             type: cc.Boolean
-        },
-        deadEnemyNodes: [cc.Node]
+        }
     },
 
     //************************************start logic*************************************************//
+    calculateSpeed: function calculateSpeed(dt) {
+        // deal with runing speed
+        this._runSpeed += this.accSpeed * dt;
+        if (this._runSpeed < this.maxSpeed) {
+            this._runSpeed = this.maxSpeed;
+        }
+    },
     /*
     *  desc: get the speed of main scene at runtime
     */
@@ -128,12 +136,6 @@ cc.Class({
     *  desc: scroll side repeatedly
     */
     scrollSide: function scrollSide(dt) {
-        // deal with runing speed
-        this._runSpeed += this.accSpeed * dt;
-        if (this._runSpeed < this.maxSpeed) {
-            this._runSpeed = this.maxSpeed;
-        }
-
         // deal with the BG
         var offsetY = this._runSpeed * dt;
         this._posYInteval += offsetY;
@@ -158,7 +160,7 @@ cc.Class({
 
             this._bottomBGYInteval += offsetY;
             // bottom bg can stop
-            if (Math.abs(this._bottomBGYInteval) > cc.director.getWinSize().height / 2.0) {
+            if (Math.abs(this._bottomBGYInteval) > cc.director.getWinSize().height * 0.3) {
                 this._bottomBGScroll = false;
                 this._startEnemyDistance = this._distance;
             }
@@ -207,10 +209,10 @@ cc.Class({
 
         this._enemyTimeInteval += dt;
 
-        var timeInteval = this._gameManager.getTimeIntevalWithDistance(this._distance - this._startEnemyDistance);
+        var timeInteval = Global.gameManager.getTimeIntevalWithDistance(this._distance - this._startEnemyDistance);
         if (this._enemyTimeInteval >= timeInteval) {
             this._enemyTimeInteval -= timeInteval;
-            var enemyInfo = this._gameManager.generateEnemy(this._distance - this._startEnemyDistance);
+            var enemyInfo = Global.gameManager.generateEnemy(this._distance - this._startEnemyDistance);
             if (enemyInfo) {
                 if (enemyInfo.type === Global.enemyType.bird) {
                     this.dealWithBird(enemyInfo.enemyNode);
@@ -338,7 +340,7 @@ cc.Class({
     collectOldDeadEnemy: function collectOldDeadEnemy() {
         for (var i = 0; i < this._deadEnemy.enemyNode.length; ++i) {
             this._deadEnemy.enemyNode[i].getComponent("Enemy").DisplayDeadEnemyState(false);
-            this._gameManager.collectEnemy(this._deadEnemy.enemyNode[i], this._deadEnemy.enemyNodeType);
+            Global.gameManager.collectEnemy(this._deadEnemy.enemyNode[i], this._deadEnemy.enemyNodeType);
         }
         this._deadEnemy.enemyNode = [];
     },
@@ -347,7 +349,7 @@ cc.Class({
      * desc: refresh the dead enemy show
      */
     refreshDeadEnemyShow: function refreshDeadEnemyShow() {
-        var enemyNode = this._gameManager.generateEnemyNodeByNodeType(this._deadEnemy.enemyNodeType);
+        var enemyNode = Global.gameManager.generateEnemyNodeByNodeType(this._deadEnemy.enemyNodeType);
         if (enemyNode) {
             enemyNode.parent = this.deadEnemyNodes[this._deadEnemy.deadCount - 1];
             enemyNode.getComponent("Enemy").onInit();
@@ -360,15 +362,14 @@ cc.Class({
     *  desc: gameOver
     */
     gameOver: function gameOver() {
-        this._gameManager.gameOver();
+        Global.gameManager.gameOver();
         cc.director.loadScene("GameStartScene");
     },
-    //*******************************end logic******************************************************//
 
-    // LIFE-CYCLE CALLBACKS:
-    onLoad: function onLoad() {
-        Global.gameMainScene = this;
-
+    /**
+     * desc: register the handler
+     */
+    registHandler: function registHandler() {
         this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this);
         this.node.on(cc.Node.EventType.MOUSE_MOVE, this.onMouseMove, this);
         this.node.on(cc.Node.EventType.MOUSE_UP, this.onMouseUp, this);
@@ -378,10 +379,21 @@ cc.Class({
         this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
 
         this.node.on("MSG_GameOver", this.gameOver, this);
+    },
+    //*******************************end logic******************************************************//
 
-        this._gameManager = this.getComponent("GameManager");
+    // LIFE-CYCLE CALLBACKS:
+    onLoad: function onLoad() {
+        Global.gameMainScene = this;
+        Global.gameManager = this.getComponent("GameManager");
+        Global.hero = this.heroNode.getComponent("Hero");
     },
     start: function start() {
+        this._bottomBGScroll = true;
+        this._bottomBGYInteval = 0.0;
+        this._startEnemyDistance = 0.0;
+        this._posYInteval = 0.0;
+        this._runSpeed = 0.0;
         this._leftOrRight = -1;
         this._distance = 0;
         this._enemyTimeInteval = 0.0;
@@ -390,8 +402,10 @@ cc.Class({
             deadCount: 0,
             enemyNode: []
         };
+        this.registHandler();
     },
     update: function update(dt) {
+        this.calculateSpeed(dt);
         this.scrollSide(dt);
         this.moveBottomBG(dt);
         this.createEnemy(dt);

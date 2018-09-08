@@ -34,9 +34,7 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    onLoad: function onLoad() {
-        Global.hero = this;
-    },
+    onLoad: function onLoad() {},
     start: function start() {
         this._status = HeroStatus.running;
         this._leftOrRight = -1;
