@@ -17,8 +17,6 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
-        console.log("aaaaaaaaaaaaaaaaaa DartNode onLoad " + this.node.uuid);
-
         this.node.getComponent("Enemy").setRealListener(this);
         this._enemyNodeType = Global.enemyNodeType.dartnode;
     },
@@ -29,7 +27,6 @@ cc.Class({
 
     //************************************start logic*************************************************//
     onInit: function onInit() {
-        console.log("aaaaaaaaaaaaaaaaaa DartNode onInit " + this.node.uuid);
         this.node.setPosition(0, 0);
         this.node.setScale(1);
     },
@@ -37,16 +34,12 @@ cc.Class({
      * desc: kill the hero
      */
     beVictory: function beVictory() {
-        console.log("aaaaaaaaaaaaaaaaaa DartNode beVictory " + this.node.uuid);
-
         this.node.stopAllActions();
     },
     /**
      * desc: killed by the hero
      */
     beKilled: function beKilled() {
-        console.log("aaaaaaaaaaaaaaaaaa DartNode beKilled " + this.node.uuid);
-
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     },
@@ -55,8 +48,6 @@ cc.Class({
      * desc: node to be collected
      */
     beCollected: function beCollected() {
-        console.log("aaaaaaaaaaaaaaaaaa DartNode beCollected " + this.node.uuid);
-
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     },
@@ -65,8 +56,6 @@ cc.Class({
      * desc: set the enemy state
      */
     setIdle: function setIdle(idle) {
-        console.log("aaaaaaaaaaaaaaaaaa DartNode setIdle " + this.node.uuid);
-
         this._idle = idle;
     },
 
@@ -81,8 +70,6 @@ cc.Class({
      * desc: display the dead enemy when killed
      */
     DisplayDeadEnemyState: function DisplayDeadEnemyState(isDeadState) {
-        console.log("aaaaaaaaaaaaaaaaaa DartNode DisplayDeadEnemyState " + this.node.uuid);
-
         this.getComponent(cc.BoxCollider).enabled = !isDeadState;
         this.setIdle(isDeadState);
     }
