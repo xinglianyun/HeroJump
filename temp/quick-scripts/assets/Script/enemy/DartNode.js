@@ -19,9 +19,15 @@ cc.Class({
     onLoad: function onLoad() {
         this.node.getComponent("Enemy").setRealListener(this);
         this._enemyNodeType = Global.enemyNodeType.dartnode;
+
+        this.onInit();
     },
     start: function start() {},
 
+
+    reuse: function reuse() {
+        this.onInit();
+    },
 
     // update (dt) {},
 

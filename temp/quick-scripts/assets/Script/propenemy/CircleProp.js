@@ -23,6 +23,8 @@ cc.Class({
     onLoad: function onLoad() {
         this.node.getComponent("Prop").setRealListener(this);
         this._enemyNodeType = Global.enemyNodeType.circleprop;
+
+        this.onInit();
     },
     start: function start() {},
     update: function update(dt) {
@@ -44,6 +46,10 @@ cc.Class({
         }
     },
 
+
+    reuse: function reuse() {
+        this.onInit();
+    },
 
     //************************************start logic*************************************************//
     onInit: function onInit() {

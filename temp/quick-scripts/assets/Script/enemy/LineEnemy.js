@@ -23,6 +23,9 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
     onLoad: function onLoad() {
         this._enemyNodeType = Global.enemyNodeType.line;
+        this.node.getComponent("Enemy").setRealListener(this);
+
+        this.onInit();
     },
     start: function start() {},
     update: function update(dt) {
@@ -35,12 +38,17 @@ cc.Class({
             if (this.catNode.childrenCount > 0) {
                 if (this._cat) {
                     this._cat.getComponent("CatEnemy").beCollected();
+                    this._cat = null;
                 }
             }
             this.beCollected();
         }
     },
 
+
+    reuse: function reuse() {
+        this.onInit();
+    },
 
     //************************************start logic*************************************************//
     onInit: function onInit() {
@@ -61,6 +69,10 @@ cc.Class({
      * desc: be collected
      */
     beCollected: function beCollected() {
+        if (this._cat) {
+            this._cat.getComponent("CatEnemy").beCollected();
+            this._cat = null;
+        }
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     }

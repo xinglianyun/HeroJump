@@ -14,10 +14,10 @@ cc.Class({
     onLoad: function onLoad() {
         this.node.getComponent("Enemy").setRealListener(this);
         this._enemyNodeType = Global.enemyNodeType.runenemy;
+        console.log("aaaaaaaaaaaaaaaaaa RunEnemy onLoad " + this.node.uuid);
+        this.onInit();
     },
-    start: function start() {
-        this._totalOffsetY = 0.0;
-    },
+    start: function start() {},
     update: function update(dt) {
         var speed = Global.gameMainScene.getRunSpeed() * 1.2;
         var offsetY = speed * dt;
@@ -30,8 +30,15 @@ cc.Class({
     },
 
 
+    reuse: function reuse() {
+        console.log("aaaaaaaaaaaaaaaaaa RunEnemy reuse " + this.node.uuid);
+        this.onInit();
+    },
+
     //************************************start logic*************************************************//
     onInit: function onInit() {
+        console.log("aaaaaaaaaaaaaaaaaa RunEnemy onInit " + this.node.uuid);
+
         this._totalOffsetY = 0.0;
         this.node.setPosition(0, 0);
         this.node.setScale(1);
@@ -54,6 +61,8 @@ cc.Class({
      * desc: be collected
      */
     beCollected: function beCollected() {
+        console.log("aaaaaaaaaaaaaaaaaa RunEnemy beCollected " + this.node.uuid);
+
         this.node.stopAllActions();
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType);
     }

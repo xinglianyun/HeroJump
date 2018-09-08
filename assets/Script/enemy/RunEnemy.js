@@ -9,10 +9,11 @@ cc.Class({
     onLoad () {
         this.node.getComponent("Enemy").setRealListener(this)
         this._enemyNodeType = Global.enemyNodeType.runenemy
+        console.log("aaaaaaaaaaaaaaaaaa RunEnemy onLoad "+ this.node.uuid)
+        this.onInit()
     },
 
     start () {
-        this._totalOffsetY = 0.0
     },
 
     update (dt) {
@@ -26,8 +27,15 @@ cc.Class({
         }
     },
 
+    reuse : function(){
+        console.log("aaaaaaaaaaaaaaaaaa RunEnemy reuse "+ this.node.uuid)
+        this.onInit()
+    },
+
     //************************************start logic*************************************************//
     onInit : function(){
+        console.log("aaaaaaaaaaaaaaaaaa RunEnemy onInit "+ this.node.uuid)
+
         this._totalOffsetY = 0.0
         this.node.setPosition(0, 0)
         this.node.setScale(1)
@@ -50,6 +58,8 @@ cc.Class({
      * desc: be collected
      */
     beCollected : function(){
+        console.log("aaaaaaaaaaaaaaaaaa RunEnemy beCollected "+ this.node.uuid)
+
         this.node.stopAllActions()
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
     },

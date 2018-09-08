@@ -14,6 +14,8 @@ cc.Class({
     onLoad: function onLoad() {
         this.node.getComponent("Enemy").setRealListener(this);
         this._enemyNodeType = Global.enemyNodeType.shortbarrier;
+
+        this.onInit();
     },
     start: function start() {},
     update: function update(dt) {
@@ -26,6 +28,10 @@ cc.Class({
         }
     },
 
+
+    reuse: function reuse() {
+        this.onInit();
+    },
 
     //************************************start logic*************************************************//
     onInit: function onInit() {

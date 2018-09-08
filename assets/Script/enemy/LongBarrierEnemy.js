@@ -9,6 +9,8 @@ cc.Class({
     onLoad () {
         this.node.getComponent("Enemy").setRealListener(this)
         this._enemyNodeType = Global.enemyNodeType.longbarrier
+
+        this.onInit()
     },
 
     start () {
@@ -24,6 +26,9 @@ cc.Class({
         }
     },
 
+    reuse : function(){
+        this.onInit()
+    },
     //************************************start logic*************************************************//
     onInit : function(){
         this._totalOffsetY = 0.0

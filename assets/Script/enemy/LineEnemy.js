@@ -17,6 +17,9 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
     onLoad () {
         this._enemyNodeType = Global.enemyNodeType.line
+        this.node.getComponent("Enemy").setRealListener(this)
+
+        this.onInit()
     },
 
     start () {
@@ -33,10 +36,15 @@ cc.Class({
             if(this.catNode.childrenCount > 0){
                 if(this._cat){
                     this._cat.getComponent("CatEnemy").beCollected()
+                    this._cat = null
                 }
             }
             this.beCollected()
         }
+    },
+
+    reuse : function(){
+        this.onInit()
     },
 
     //************************************start logic*************************************************//
@@ -59,6 +67,10 @@ cc.Class({
      * desc: be collected
      */
     beCollected : function(){
+        if(this._cat){
+            this._cat.getComponent("CatEnemy").beCollected()
+            this._cat = null
+        }
         this.node.stopAllActions()
         Global.gameManager.collectEnemy(this.node, this._enemyNodeType)
     },

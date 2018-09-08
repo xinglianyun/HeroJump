@@ -18,6 +18,8 @@ cc.Class({
     onLoad () {
         this.node.getComponent("Enemy").setRealListener(this)
         this._enemyNodeType = Global.enemyNodeType.cat
+
+        this.onInit()
     },
 
     start () {
@@ -25,9 +27,7 @@ cc.Class({
     },
 
     reuse : function(){
-        if(this._realListener){
-            this._realListener.reuse()
-        }
+        this.onInit()
     },
 
     // update (dt) {},

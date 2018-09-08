@@ -71,7 +71,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 2
   },
   {
     "__type__": "cc.Node",
@@ -191,8 +191,7 @@
     "node": {
       "__id__": 1
     },
-    "_enabled": true,
-    "type": "runenemy"
+    "_enabled": true
   },
   {
     "__type__": "dc010bqCIZLv4Rr7u/Vm1X4",

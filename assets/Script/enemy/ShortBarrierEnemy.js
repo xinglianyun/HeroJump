@@ -9,6 +9,8 @@ cc.Class({
     onLoad () {
         this.node.getComponent("Enemy").setRealListener(this)
         this._enemyNodeType = Global.enemyNodeType.shortbarrier
+
+        this.onInit()
     },
 
     start () {
@@ -22,6 +24,10 @@ cc.Class({
         if(Math.abs(this._totalOffsetY) >= cc.director.getWinSize().height * 1.5){
             this.beCollected()
         }
+    },
+
+    reuse : function(){
+        this.onInit()
     },
 
     //************************************start logic*************************************************//

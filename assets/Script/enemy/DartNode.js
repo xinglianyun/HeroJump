@@ -13,10 +13,16 @@ cc.Class({
     onLoad () {
         this.node.getComponent("Enemy").setRealListener(this)
         this._enemyNodeType = Global.enemyNodeType.dartnode
+
+        this.onInit()
     },
 
     start () {
 
+    },
+
+    reuse : function(){
+        this.onInit()
     },
 
     // update (dt) {},

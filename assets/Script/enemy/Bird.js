@@ -43,7 +43,9 @@ cc.Class({
     onLoad () {
         this.node.getComponent("Enemy").setRealListener(this)
         this._enemyNodeType = Global.enemyNodeType.bird
+        
         console.log("Jump Hero : Bird onLoad " + this.node.uuid)
+        this.onInit()
     },
 
     start () {
@@ -51,6 +53,7 @@ cc.Class({
     },
 
     reuse : function(){
+        this.onInit()
         console.log("Jump Hero :  Bird reuse " + this.node.uuid)
     },
 

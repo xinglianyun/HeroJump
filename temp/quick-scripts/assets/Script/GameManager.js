@@ -111,56 +111,56 @@ cc.Class({
             this._birdEnemyPool.put(enemy);
         }
 
-        this._catEnemyPool = new cc.NodePool();
+        this._catEnemyPool = new cc.NodePool("Enemy");
         this._catPoolCapacity = 2;
         for (var _i = 0; _i < this._catPoolCapacity; ++_i) {
             var _enemy = cc.instantiate(this.catEnemyPrefab); // cat pool
             this._catEnemyPool.put(_enemy);
         }
 
-        this._crackerLongEnemyPool = new cc.NodePool();
+        this._crackerLongEnemyPool = new cc.NodePool("Enemy");
         this._crackerLongPoolCapacity = 2;
         for (var _i2 = 0; _i2 < this._crackerLongPoolCapacity; ++_i2) {
             var _enemy2 = cc.instantiate(this.crakerLongEnemyPrefab); // cracker long
             this._crackerLongEnemyPool.put(_enemy2);
         }
 
-        this._crackerShortEnemyPool = new cc.NodePool();
+        this._crackerShortEnemyPool = new cc.NodePool("Enemy");
         this._crackerShortPoolCapacity = 2;
         for (var _i3 = 0; _i3 < this._crackerShortPoolCapacity; ++_i3) {
             var _enemy3 = cc.instantiate(this.crakerShortEnemyPrefab); // cracker short
             this._crackerShortEnemyPool.put(_enemy3);
         }
 
-        this._dartEnemyPool = new cc.NodePool();
+        this._dartEnemyPool = new cc.NodePool("Enemy");
         this._dartEnemyPoolCapacity = 2;
         for (var _i4 = 0; _i4 < this._dartEnemyPoolCapacity; ++_i4) {
             var _enemy4 = cc.instantiate(this.dartEnemyPrefab); // dart enemy pool
             this._dartEnemyPool.put(_enemy4);
         }
 
-        this._dartNodePool = new cc.NodePool();
+        this._dartNodePool = new cc.NodePool("Enemy");
         this._dartNodePoolCapacity = 3;
         for (var _i5 = 0; _i5 < this._dartNodePoolCapacity; ++_i5) {
             var _enemy5 = cc.instantiate(this.dartPrefab); // dart node pool
             this._dartNodePool.put(_enemy5);
         }
 
-        this._runEnemyPool = new cc.NodePool();
+        this._runEnemyPool = new cc.NodePool("Enemy");
         this._runEnemyPoolCapacity = 2;
         for (var _i6 = 0; _i6 < this._runEnemyPoolCapacity; ++_i6) {
             var _enemy6 = cc.instantiate(this.runEnemyPrefab); // run enemy pool
             this._runEnemyPool.put(_enemy6);
         }
 
-        this._bannerEnemyPool = new cc.NodePool();
+        this._bannerEnemyPool = new cc.NodePool("Enemy");
         this._bannerEnemyPoolCapacity = 2;
         for (var _i7 = 0; _i7 < this._bannerEnemyPoolCapacity; ++_i7) {
             var _enemy7 = cc.instantiate(this.bannerPrefab); // banner enemy pool
             this._bannerEnemyPool.put(_enemy7);
         }
 
-        this._circlePropPool = new cc.NodePool();
+        this._circlePropPool = new cc.NodePool("Prop");
         this._circlePropPoolCapacity = 2;
         for (var _i8 = 0; _i8 < this._circlePropPoolCapacity; ++_i8) {
             var prop = cc.instantiate(this.circlePropPrefab); // circle prop pool
@@ -203,6 +203,7 @@ cc.Class({
      */
     generateEnemyByType: function generateEnemyByType(enemyType) {
         var enemy = null;
+        //enemyType = Global.enemyType.circleprop
         switch (enemyType) {
             case Global.enemyType.bird:
                 enemy = this._createBird();
@@ -290,7 +291,6 @@ cc.Class({
                 dartNode = cc.instantiate(this.dartPrefab);
             }
             dart2.getComponent("DartEnemy").addChildDartNode(dartNode);
-            dartNode.getComponent("DartNode").onInit();
         }
 
         return dart2;
@@ -331,7 +331,6 @@ cc.Class({
         if (!cat) {
             cat = cc.instantiate(this.catEnemyPrefab);
         }
-        cat.getComponent("CatEnemy").onInit();
         line.getComponent("LineEnemy").addCat(cat);
         return line;
     },

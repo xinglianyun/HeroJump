@@ -13,6 +13,12 @@ cc.Class({
 
     },
 
+    reuse : function(){
+        if(this._realListener){
+            this._realListener.reuse()
+        }
+    },
+
     // update (dt) {},
 
     //************************************start logic*************************************************//

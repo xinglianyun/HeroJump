@@ -6512,13 +6512,6 @@
     "_runSpeed": 0,
     "maxSpeed": -250,
     "accSpeed": -100,
-    "_startEnemyDistance": 0,
-    "_posYInteval": 0,
-    "maxPosYInteval": -128,
-    "_bottomBGYInteval": 0,
-    "_bottomBGScroll": true,
-    "_leftOrRight": 1,
-    "_stopCreateEnemy": false,
     "deadEnemyNodes": [
       {
         "__id__": 134
@@ -6529,7 +6522,15 @@
       {
         "__id__": 136
       }
-    ]
+    ],
+    "_startEnemyDistance": 0,
+    "_posYInteval": 0,
+    "maxPosYInteval": -128,
+    "_heroRunDistance": 0,
+    "_bottomBGScroll": true,
+    "_leftOrRight": 1,
+    "_enemyTimeInteval": 0,
+    "_stopCreateEnemy": false
   },
   {
     "__type__": "f7b1dc5DqBF0pywMhvO+d9N",

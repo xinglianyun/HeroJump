@@ -96,8 +96,8 @@ cc.Class({
             default: -128.0,
             type: cc.Float
         },
-        // 底部背景移动距离
-        _bottomBGYInteval: {
+        // 英雄移动距离
+        _heroRunDistance: {
             default: 0.0,
             type: cc.Float
         },
@@ -110,6 +110,11 @@ cc.Class({
         _leftOrRight: {
             default: -1,
             type: cc.Integer
+        },
+        // 出现一次英雄后经过的时间
+        _enemyTimeInteval: {
+            default: 0.0,
+            type: cc.Float
         },
         // todo : for test
         _stopCreateEnemy: {
@@ -147,8 +152,8 @@ cc.Class({
         this.sideRight.y = this.sideLeft.y;
 
         // deal with the total distance and the score
-        this._distance += Math.abs(offsetY / 3.0);
-        this.scoreLabel.string = Math.floor(this._distance);
+        this._heroRunDistance += offsetY;
+        this.scoreLabel.string = Math.floor(Math.abs(this._heroRunDistance * 0.33));
     },
     /*
     *  desc: move the Bottom BG
@@ -158,11 +163,10 @@ cc.Class({
             var offsetY = this._runSpeed * dt;
             this.bottomBG.y += offsetY;
 
-            this._bottomBGYInteval += offsetY;
             // bottom bg can stop
-            if (Math.abs(this._bottomBGYInteval) > cc.director.getWinSize().height * 0.3) {
+            if (Math.abs(this._heroRunDistance) > cc.director.getWinSize().height * 0.5) {
                 this._bottomBGScroll = false;
-                this._startEnemyDistance = this._distance;
+                this._startEnemyDistance = this._heroRunDistance;
             }
         }
     },
@@ -209,10 +213,10 @@ cc.Class({
 
         this._enemyTimeInteval += dt;
 
-        var timeInteval = Global.gameManager.getTimeIntevalWithDistance(this._distance - this._startEnemyDistance);
+        var timeInteval = Global.gameManager.getTimeIntevalWithDistance(this._heroRunDistance - this._startEnemyDistance);
         if (this._enemyTimeInteval >= timeInteval) {
             this._enemyTimeInteval -= timeInteval;
-            var enemyInfo = Global.gameManager.generateEnemy(this._distance - this._startEnemyDistance);
+            var enemyInfo = Global.gameManager.generateEnemy(this._heroRunDistance - this._startEnemyDistance);
             if (enemyInfo) {
                 if (enemyInfo.type === Global.enemyType.bird) {
                     this.dealWithBird(enemyInfo.enemyNode);
@@ -246,8 +250,6 @@ cc.Class({
     */
     dealWithBird: function dealWithBird(birdNode) {
         birdNode.parent = this._leftOrRight > 0 ? this.enemyNodeLeft : this.enemyNodeRight;
-        birdNode.getComponent("Bird").onInit();
-
         var targetWorldPos = this._leftOrRight > 0 ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0));
         birdNode.scaleX *= this._leftOrRight;
         birdNode.getComponent("Bird").setStartSide(-this._leftOrRight);
@@ -258,8 +260,6 @@ cc.Class({
     */
     dealWithDartEnemy: function dealWithDartEnemy(dartEnemyNode) {
         dartEnemyNode.parent = this._leftOrRight > 0 ? this.enemyNodeLeft : this.enemyNodeRight;
-        dartEnemyNode.getComponent("DartEnemy").onInit();
-
         var targetWorldPos = this._leftOrRight > 0 ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0));
         dartEnemyNode.scaleX *= this._leftOrRight;
         dartEnemyNode.getComponent("DartEnemy").setStartSide(-this._leftOrRight);
@@ -270,21 +270,18 @@ cc.Class({
     */
     dealWithLine: function dealWithLine(lineEnemyNode) {
         lineEnemyNode.parent = this.enemyNodeLeft;
-        lineEnemyNode.getComponent("LineEnemy").onInit();
     },
     /*
     *  desc: dealWithLineCat
     */
     dealWithLineCat: function dealWithLineCat(linecatEnemyNode) {
         linecatEnemyNode.parent = this.enemyNodeLeft;
-        linecatEnemyNode.getComponent("LineEnemy").onInit();
     },
     /*
     *  desc: dealWithShortBarrier
     */
     dealWithShortBarrier: function dealWithShortBarrier(shortBarrierNode) {
         shortBarrierNode.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
-        shortBarrierNode.getComponent("ShortBarrierEnemy").onInit();
         shortBarrierNode.scaleX *= -this._leftOrRight;
     },
     /*
@@ -292,7 +289,6 @@ cc.Class({
     */
     dealWithLongBarrier: function dealWithLongBarrier(longBarrierNode) {
         longBarrierNode.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
-        longBarrierNode.getComponent("LongBarrierEnemy").onInit();
         longBarrierNode.scaleX *= -this._leftOrRight;
     },
     /*
@@ -300,13 +296,11 @@ cc.Class({
     */
     dealWithRunEnemy: function dealWithRunEnemy(runEnemey) {
         runEnemey.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
-        runEnemey.getComponent("RunEnemy").onInit();
         runEnemey.scaleX *= -this._leftOrRight;
     },
 
     dealWithCircleProp: function dealWithCircleProp(circleProp) {
         circleProp.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
-        circleProp.getComponent("CircleProp").onInit();
 
         circleProp.scaleX *= -this._leftOrRight;
     },
@@ -352,7 +346,6 @@ cc.Class({
         var enemyNode = Global.gameManager.generateEnemyNodeByNodeType(this._deadEnemy.enemyNodeType);
         if (enemyNode) {
             enemyNode.parent = this.deadEnemyNodes[this._deadEnemy.deadCount - 1];
-            enemyNode.getComponent("Enemy").onInit();
             enemyNode.getComponent("Enemy").DisplayDeadEnemyState(true);
             this._deadEnemy.enemyNode.push(enemyNode);
         }
@@ -390,12 +383,11 @@ cc.Class({
     },
     start: function start() {
         this._bottomBGScroll = true;
-        this._bottomBGYInteval = 0.0;
         this._startEnemyDistance = 0.0;
         this._posYInteval = 0.0;
         this._runSpeed = 0.0;
         this._leftOrRight = -1;
-        this._distance = 0;
+        this._heroRunDistance = 0;
         this._enemyTimeInteval = 0.0;
         this._deadEnemy = {
             enemyNodeType: "none",

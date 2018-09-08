@@ -37,6 +37,8 @@ cc.Class({
         this._enemyNodeType = Global.enemyNodeType.dartenemy
 
         console.log("aaaaaaaaaaaaaaaaaa DartEnemy onLoad " + this.node.uuid)
+        this.onInit()
+
     },
 
     start () {
@@ -69,6 +71,10 @@ cc.Class({
     onDestroy : function(){
         console.log("aaaaaaaaaaaaaaaaaa DartEnemy onDestroy " + this.node.uuid)
         this._dartNodes = [];
+    },
+
+    reuse : function(){
+        this.onInit()
     },
 
     //************************************start logic*************************************************//
