@@ -275,7 +275,7 @@ cc.Class({
     */
     dealWithLineCat: function dealWithLineCat(linecatEnemyNode) {
         linecatEnemyNode.parent = this.enemyNodeLeft;
-        lineEnemyNode.getComponent("LineEnemy").onInit();
+        linecatEnemyNode.getComponent("LineEnemy").onInit();
     },
     /*
     *  desc: dealWithShortBarrier

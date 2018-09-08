@@ -282,7 +282,7 @@ cc.Class({
     */
     dealWithLineCat : function(linecatEnemyNode){
         linecatEnemyNode.parent = this.enemyNodeLeft
-        lineEnemyNode.getComponent("LineEnemy").onInit()
+        linecatEnemyNode.getComponent("LineEnemy").onInit()
 
     },
     /*

@@ -86,6 +86,10 @@ cc.Class({
 
     dead : function(){
         this._status = HeroStatus.dead
+        if(this._allProps.circleprop.circlePropNode){
+            this._allProps.circleprop.circlePropNode.destroy()
+            this._allProps.circleprop.count = 0
+        }
     },
 
 
