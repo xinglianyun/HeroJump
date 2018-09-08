@@ -8,7 +8,6 @@ cc._RF.push(module, '506d7uUvMFH9b3xgNCCwpgT', 'GameMainScene', __filename);
 * author:   xinghui
 * desc:     GameMainScene
 */
-var enemyCount = 0;
 
 cc.Class({
     extends: cc.Component,
@@ -106,11 +105,6 @@ cc.Class({
             default: true,
             type: cc.Boolean
         },
-        // 英雄在左侧(-1)或者右侧(1)
-        _leftOrRight: {
-            default: -1,
-            type: cc.Integer
-        },
         // 出现一次英雄后经过的时间
         _enemyTimeInteval: {
             default: 0.0,
@@ -174,25 +168,7 @@ cc.Class({
     *  desc: hero jump from oneside to another
     */
     heroJump: function heroJump() {
-        if (this.heroNode.getComponent("Hero").getInvincible()) {
-            return;
-        }
-        // change the side
-        this._leftOrRight *= -1;
-        this.heroNode.getComponent("Hero").setLeftOrRight(this._leftOrRight);
-        this.heroNode.getComponent("Hero").jump();
-        var offsetX = this.rightHeroPosNode.x - this.leftHeroPosNode.x;
-        offsetX *= this._leftOrRight;
-        this.heroNode.getComponent(cc.Animation).play("HeroJumpClip");
-
-        var moveAction = cc.moveBy(0.33, offsetX, 0);
-        var callfuncAction = cc.callFunc(function () {
-            this.heroNode.scaleX *= -1;
-            this.heroNode.getComponent("Hero").run();
-            this.heroNode.getComponent(cc.Animation).play("HeroRunClip");
-        }, this);
-        var action = cc.sequence(moveAction, callfuncAction);
-        this.heroNode.runAction(action);
+        Global.hero.jumpFromSideToSide();
     },
     onMouseDown: function onMouseDown(event) {},
     onMouseMove: function onMouseMove(event) {},
@@ -235,13 +211,6 @@ cc.Class({
                 } else if (enemyInfo.type === Global.enemyType.circleprop) {
                     this.dealWithCircleProp(enemyInfo.enemyNode);
                 }
-                // todo : for test
-                /*
-                enemyCount += 1
-                if(enemyCount >=2){
-                    this._stopCreateEnemy = true
-                }
-                */
             }
         }
     },
@@ -249,20 +218,23 @@ cc.Class({
     *  desc: dealWithBird
     */
     dealWithBird: function dealWithBird(birdNode) {
-        birdNode.parent = this._leftOrRight > 0 ? this.enemyNodeLeft : this.enemyNodeRight;
-        var targetWorldPos = this._leftOrRight > 0 ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0));
-        birdNode.scaleX *= this._leftOrRight;
-        birdNode.getComponent("Bird").setStartSide(-this._leftOrRight);
+        var leftOrRight = Global.hero.getLeftOrRight();
+        birdNode.parent = leftOrRight > 0 ? this.enemyNodeLeft : this.enemyNodeRight;
+        var targetWorldPos = leftOrRight > 0 ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0));
+        birdNode.scaleX *= leftOrRight;
+        birdNode.getComponent("Bird").setStartSide(-leftOrRight);
         birdNode.getComponent("Bird").setTargetWorldPos(targetWorldPos);
     },
     /*
     *  desc: dealWithDartEnemy
     */
     dealWithDartEnemy: function dealWithDartEnemy(dartEnemyNode) {
-        dartEnemyNode.parent = this._leftOrRight > 0 ? this.enemyNodeLeft : this.enemyNodeRight;
-        var targetWorldPos = this._leftOrRight > 0 ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0));
-        dartEnemyNode.scaleX *= this._leftOrRight;
-        dartEnemyNode.getComponent("DartEnemy").setStartSide(-this._leftOrRight);
+        var leftOrRight = Global.hero.getLeftOrRight();
+
+        dartEnemyNode.parent = leftOrRight > 0 ? this.enemyNodeLeft : this.enemyNodeRight;
+        var targetWorldPos = leftOrRight > 0 ? this.rightHeroPosNode.convertToWorldSpace(cc.v2(0, 0)) : this.leftHeroPosNode.convertToWorldSpace(cc.v2(0, 0));
+        dartEnemyNode.scaleX *= leftOrRight;
+        dartEnemyNode.getComponent("DartEnemy").setStartSide(-leftOrRight);
         dartEnemyNode.getComponent("DartEnemy").setTargetWorldPos(targetWorldPos);
     },
     /*
@@ -281,28 +253,32 @@ cc.Class({
     *  desc: dealWithShortBarrier
     */
     dealWithShortBarrier: function dealWithShortBarrier(shortBarrierNode) {
-        shortBarrierNode.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
-        shortBarrierNode.scaleX *= -this._leftOrRight;
+        var leftOrRight = Global.hero.getLeftOrRight();
+
+        shortBarrierNode.parent = leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
+        shortBarrierNode.scaleX *= -leftOrRight;
     },
     /*
     *  desc: dealWithLongBarrier
     */
     dealWithLongBarrier: function dealWithLongBarrier(longBarrierNode) {
-        longBarrierNode.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
-        longBarrierNode.scaleX *= -this._leftOrRight;
+        var leftOrRight = Global.hero.getLeftOrRight();
+        longBarrierNode.parent = leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
+        longBarrierNode.scaleX *= -leftOrRight;
     },
     /*
     *  desc: dealWithRunEnemy
     */
     dealWithRunEnemy: function dealWithRunEnemy(runEnemey) {
-        runEnemey.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
-        runEnemey.scaleX *= -this._leftOrRight;
+        var leftOrRight = Global.hero.getLeftOrRight();
+        runEnemey.parent = leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
+        runEnemey.scaleX *= -leftOrRight;
     },
 
     dealWithCircleProp: function dealWithCircleProp(circleProp) {
-        circleProp.parent = this._leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
-
-        circleProp.scaleX *= -this._leftOrRight;
+        var leftOrRight = Global.hero.getLeftOrRight();
+        circleProp.parent = leftOrRight > 0 ? this.enemyNodeRight : this.enemyNodeLeft;
+        circleProp.scaleX *= -leftOrRight;
     },
 
     /**
@@ -386,7 +362,6 @@ cc.Class({
         this._startEnemyDistance = 0.0;
         this._posYInteval = 0.0;
         this._runSpeed = 0.0;
-        this._leftOrRight = -1;
         this._heroRunDistance = 0;
         this._enemyTimeInteval = 0.0;
         this._deadEnemy = {

@@ -1,9 +1,9 @@
 // 英雄状态
 var HeroStatus = cc.Enum({
-    dead : -1,
-    running : -1,
-    jump : -1,
-    fly : -1,
+    dead : -1,//死亡，需要collect
+    running : -1,//跑
+    jump : -1,// 跳
+    fly : -1,// 无敌飞行
 })
 
 cc.Class({
@@ -15,10 +15,12 @@ cc.Class({
             default : null,
             type : require("HeroColliderProxy")
         },
+        // 道具的挂载节点
         propCenterNode : {
             default : null,
             type : cc.Node
         },
+        // 无敌时间
         invincibleTime : {
             default : 3.0,
             type : cc.Float
@@ -35,13 +37,16 @@ cc.Class({
         this._status = HeroStatus.running
         this._leftOrRight = -1
         this.colliderProxy.setRealListener(this)
+        // hero props
         this._allProps = {
             circleprop : {
                 count : 0,
                 circlePropNode : null
             }
         }
+        // invincible or not
         this._invincible = false
+        // invicble time
         this._invincibleDurTime = 0.0
         this._oldParentNode = null
     },
@@ -73,10 +78,7 @@ cc.Class({
 
     run : function(){
         this._status = HeroStatus.running
-    },
-
-    jump : function(){
-        this._status = HeroStatus.jump
+        this.getComponent(cc.Animation).play("HeroRunClip")
     },
 
     fly : function(){
@@ -91,6 +93,31 @@ cc.Class({
         }
     },
 
+
+    jumpFromSideToSide : function(){
+        if(this.getInvincible()){
+            return
+        }
+
+        this._status = HeroStatus.jump
+
+        this._leftOrRight *= -1
+
+
+        var offsetX = Global.gameMainScene.rightHeroPosNode.x - Global.gameMainScene.leftHeroPosNode.x
+        offsetX *= this._leftOrRight 
+        this.getComponent(cc.Animation).play("HeroJumpClip")
+
+        var moveAction = cc.moveBy(0.33, offsetX, 0)
+        var callfuncAction = cc.callFunc(
+            function(){
+                this.node.scaleX *= (-1)
+                this.run()
+            }, this
+        )
+        var action = cc.sequence(moveAction, callfuncAction)
+        this.node.runAction(action)
+    },
 
     /**
      * desc: add the prop
@@ -147,12 +174,15 @@ cc.Class({
             switch(type){
                 case Global.enemyNodeType.bird:
                     this.getComponent(cc.Animation).play("HeroBirdRushClip")
+                    this.fly()
                     break
                 case Global.enemyNodeType.dartnode:
                     this.getComponent(cc.Animation).play("HeroDartRushClip")
+                    this.fly()
                     break
                 case Global.enemyNodeType.cat:
                     this.getComponent(cc.Animation).play("HeroCatRushClip")
+                    this.fly()
                     break
             }
         }else{
@@ -164,7 +194,7 @@ cc.Class({
                 var nodePos = Global.gameMainScene.leftHeroPosNode.convertToNodeSpaceAR(worldPos)
                 this.node.setPosition(nodePos)
             }
-            this.getComponent(cc.Animation).play("HeroRunClip")
+            this.run()
         }
     },
 
