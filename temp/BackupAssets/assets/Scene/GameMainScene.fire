@@ -6511,6 +6511,7 @@
     },
     "_runSpeed": 0,
     "maxSpeed": -250,
+    "addSpecialMaxSpeed": -250,
     "accSpeed": -100,
     "deadEnemyNodes": [
       {
@@ -6528,7 +6529,6 @@
     "maxPosYInteval": -128,
     "_heroRunDistance": 0,
     "_bottomBGScroll": true,
-    "_leftOrRight": 1,
     "_enemyTimeInteval": 0,
     "_stopCreateEnemy": false
   },

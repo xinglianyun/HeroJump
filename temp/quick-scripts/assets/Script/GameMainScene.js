@@ -73,6 +73,11 @@ cc.Class({
             default: -250.0,
             type: cc.Float
         },
+        // 特殊效果需要加速时，增加的最大速度
+        addSpecialMaxSpeed: {
+            default: -250.0,
+            type: cc.Float
+        },
         // 加速度，负数
         accSpeed: {
             default: -100.0,
@@ -115,15 +120,32 @@ cc.Class({
             default: false,
             type: cc.Boolean
         }
+
     },
 
     //************************************start logic*************************************************//
     calculateSpeed: function calculateSpeed(dt) {
         // deal with runing speed
-        this._runSpeed += this.accSpeed * dt;
-        if (this._runSpeed < this.maxSpeed) {
+        if (this._runSpeed <= this.maxSpeed) {
             this._runSpeed = this.maxSpeed;
+        } else {
+            this._runSpeed += this.accSpeed * dt;
         }
+    },
+    /**
+     * desc: 增加额外的快速效果
+     */
+    addMaxSpeed: function addMaxSpeed() {
+        this._oldMaxSpeed = this.maxSpeed;
+        this.maxSpeed += this.addSpecialMaxSpeed;
+        this._runSpeed = this.maxSpeed;
+    },
+    /**
+     * desc: 移除额外的快速效果
+     */
+    subMaxSpeed: function subMaxSpeed() {
+        this.maxSpeed = this._oldMaxSpeed;
+        this._runSpeed = this.maxSpeed;
     },
     /*
     *  desc: get the speed of main scene at runtime
@@ -364,6 +386,7 @@ cc.Class({
         this._runSpeed = 0.0;
         this._heroRunDistance = 0;
         this._enemyTimeInteval = 0.0;
+        this._oldMaxSpeed = 0.0;
         this._deadEnemy = {
             enemyNodeType: "none",
             deadCount: 0,

@@ -195,6 +195,7 @@ cc.Class({
                     this.fly();
                     break;
             }
+            Global.gameMainScene.addMaxSpeed();
         } else {
             this.node.parent = this._oldParentNode;
             this.node.scaleX *= -1;
@@ -205,6 +206,7 @@ cc.Class({
                 this.node.setPosition(nodePos);
             }
             this.run();
+            Global.gameMainScene.subMaxSpeed();
         }
     },
 
