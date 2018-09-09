@@ -76,15 +76,24 @@ cc.Class({
         return this._leftOrRight
     },
 
+    /**
+     * desc: run state
+     */
     run : function(){
         this._status = HeroStatus.running
         this.getComponent(cc.Animation).play("HeroRunClip")
     },
 
+    /**
+     * desc: fly state
+     */
     fly : function(){
         this._status = HeroStatus.fly
     },
 
+    /**
+     * desc: dead state
+     */
     dead : function(){
         this._status = HeroStatus.dead
         if(this._allProps.circleprop.circlePropNode){
@@ -94,29 +103,29 @@ cc.Class({
     },
 
 
+    /**
+     * desc: jump state
+     */
     jumpFromSideToSide : function(){
-        if(this.getInvincible()){
-            return
+        if(this._status === HeroStatus.running){
+            this._status = HeroStatus.jump
+
+            this._leftOrRight *= -1
+
+            var offsetX = Global.gameMainScene.rightHeroPosNode.x - Global.gameMainScene.leftHeroPosNode.x
+            offsetX *= this._leftOrRight 
+            this.getComponent(cc.Animation).play("HeroJumpClip")
+
+            var moveAction = cc.moveBy(0.33, offsetX, 0)
+            var callfuncAction = cc.callFunc(
+                function(){
+                    this.node.scaleX *= (-1)
+                    this.run()
+                }, this
+            )
+            var action = cc.sequence(moveAction, callfuncAction)
+            this.node.runAction(action)
         }
-
-        this._status = HeroStatus.jump
-
-        this._leftOrRight *= -1
-
-
-        var offsetX = Global.gameMainScene.rightHeroPosNode.x - Global.gameMainScene.leftHeroPosNode.x
-        offsetX *= this._leftOrRight 
-        this.getComponent(cc.Animation).play("HeroJumpClip")
-
-        var moveAction = cc.moveBy(0.33, offsetX, 0)
-        var callfuncAction = cc.callFunc(
-            function(){
-                this.node.scaleX *= (-1)
-                this.run()
-            }, this
-        )
-        var action = cc.sequence(moveAction, callfuncAction)
-        this.node.runAction(action)
     },
 
     /**

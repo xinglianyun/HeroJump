@@ -14,38 +14,47 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        // 鸟儿
         birdEnemyPrefab: {
             default: null,
             type: cc.Prefab
         },
+        // 猫
         catEnemyPrefab: {
             default: null,
             type: cc.Prefab
         },
+        // 长屋脊
         crakerLongEnemyPrefab: {
             default: null,
             type: cc.Prefab
         },
+        // 短屋脊
         crakerShortEnemyPrefab: {
             default: null,
             type: cc.Prefab
         },
+        // 忍者主体
         dartEnemyPrefab: {
             default: null,
             type: cc.Prefab
         },
+        // 忍着手里剑
         dartPrefab: {
             default: null,
             type: cc.Prefab
         },
+        // 跑步忍者
         runEnemyPrefab: {
             default: null,
             type: cc.Prefab
         },
+        // 条幅
         bannerPrefab: {
             default: null,
             type: cc.Prefab
         },
+        // 圆圈道具
         circlePropPrefab: {
             default: null,
             type: cc.Prefab
@@ -60,6 +69,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
     onLoad: function onLoad() {
         cc.game.addPersistRootNode(this.Node);
+        // enable the collider
         cc.director.getCollisionManager().enabled = true;
     },
     start: function start() {
@@ -212,10 +222,10 @@ cc.Class({
                 enemy = this._createDart2();
                 break;
             case Global.enemyType.line:
-                enemy = this._createLine();
+                enemy = this._createBanner();
                 break;
             case Global.enemyType.linecat:
-                enemy = this._createLineCat();
+                enemy = this._createBannerCat();
                 break;
             case Global.enemyType.shortbarrier:
                 enemy = this._createShortBarrier();
@@ -311,7 +321,7 @@ cc.Class({
     /**
      * desc: create line alone
      */
-    _createLine: function _createLine() {
+    _createBanner: function _createBanner() {
         var line = null;
         line = this._bannerEnemyPool.get();
         if (!line) {
@@ -323,8 +333,8 @@ cc.Class({
     /**
      * desc: create line with cat
      */
-    _createLineCat: function _createLineCat() {
-        var line = this._createLine();
+    _createBannerCat: function _createBannerCat() {
+        var line = this._createBanner();
 
         var cat = null;
         cat = this._catEnemyPool.get();
