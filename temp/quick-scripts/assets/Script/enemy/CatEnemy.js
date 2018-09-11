@@ -52,7 +52,7 @@ cc.Class({
         if (this._idle) {
             return;
         }
-        var moveAction = cc.moveBy(this.runTime, cc.director.getWinSize().width, 0);
+        var moveAction = cc.moveBy(this.runTime, cc.winSize.width, 0);
         var callfunc = cc.callFunc(function (target) {
             this.node.scaleX *= -1;
         }, this);

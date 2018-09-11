@@ -34,7 +34,7 @@ cc.Class({
         this.node.y += offsetY;
         this._totalOffsetY += offsetY;
 
-        if (Math.abs(this._totalOffsetY) > cc.director.getWinSize().height * 1.5) {
+        if (Math.abs(this._totalOffsetY) > cc.winSize.height * 1.5) {
             if (this.catNode.childrenCount > 0) {
                 if (this._cat) {
                     this._cat.getComponent("CatEnemy").beCollected();

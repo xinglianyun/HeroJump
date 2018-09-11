@@ -56,14 +56,14 @@ cc.Class({
         this._totalOffsetY += offsetY
 
         if(!this._isEmitDart){
-            if(Math.abs(this._totalOffsetY) >= cc.director.getWinSize().height * this.emitDartTime){
+            if(Math.abs(this._totalOffsetY) >= cc.winSize.height * this.emitDartTime){
                 // emit the DartNode
                 this.emitDartNode()
                 this._isEmitDart = true
             }
         }
 
-        if(Math.abs(this._totalOffsetY) >= cc.director.getWinSize() * 1.5){
+        if(Math.abs(this._totalOffsetY) >= cc.winSize.height * 1.5){
             this.beCollected()
         }
     },
@@ -190,7 +190,7 @@ cc.Class({
                 var moveToHeroPos = this.node.parent.convertToNodeSpace(this._targetWorldPos)
                 moveToHeroPos.x += this._startSide*this._overScreenX
                 moveToHeroPos.y += (this._overScreenX * Math.abs(this.node.y - moveToHeroPos.y)) / (Math.abs(this.node.x - moveToHeroPos.x))
-                var moveAction = cc.moveTo(cc.director.getWinSize().height * (1- this.emitDartTime) / Math.abs(Global.gameMainScene.getRunSpeed()) * 0.5, moveToHeroPos)
+                var moveAction = cc.moveTo(cc.winSize.height * (1- this.emitDartTime) / Math.abs(Global.gameMainScene.getRunSpeed()) * 0.5, moveToHeroPos)
                 // change the dartnode's parent to the grandpa
                 var dartNodeWorldPos = this.node.convertToWorldSpace(this._dartNodes[i].getPosition())
                 var tmpPos = this.node.parent.convertToNodeSpace(dartNodeWorldPos)
@@ -199,8 +199,8 @@ cc.Class({
                 this._dartNodes[i].runAction(moveAction)
             }else if(i === 1){
                 // fly horizon
-                var offsetX = -1 * this._startSide * cc.director.getWinSize().width * this.node.scaleX
-                var time = cc.director.getWinSize().height * (1- this.emitDartTime) / Math.abs(Global.gameMainScene.getRunSpeed())
+                var offsetX = -1 * this._startSide * cc.winSize.width * this.node.scaleX
+                var time = cc.winSize.height * (1- this.emitDartTime) / Math.abs(Global.gameMainScene.getRunSpeed())
                 var moveAction = cc.moveBy(time, offsetX, 0)
                 console.log("aaaaaaaaaaaaaaaaaa DartEnemy emitDartNode emit " + this._dartNodes[i].uuid + " _startSide " + this._startSide + " time " + time + " offsetX " + offsetX)
 
