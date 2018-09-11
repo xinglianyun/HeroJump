@@ -174,7 +174,7 @@ cc.Class({
             this.bottomBG.y += offsetY
 
             // bottom bg can stop
-            if(Math.abs(this._heroRunDistance) > cc.director.getWinSize().height * 0.5)
+            if(Math.abs(this._heroRunDistance) > cc.winSize.height * 0.5)
             {
                 this._bottomBGScroll = false
                 this._startEnemyDistance = this._heroRunDistance
