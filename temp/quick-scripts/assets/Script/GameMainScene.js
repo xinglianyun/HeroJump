@@ -63,6 +63,10 @@ cc.Class({
             default: null,
             type: cc.Label
         },
+        WXSubcontextNode: {
+            default: null,
+            type: cc.Node
+        },
         // 两侧墙体向下移动速度，负数
         _runSpeed: {
             default: 0.0,
@@ -200,6 +204,16 @@ cc.Class({
     },
     onTouchMove: function onTouchMove(event) {},
     onTouchEnd: function onTouchEnd(event) {},
+
+    /**
+     * desc: 
+     */
+    onRankBtnClick: function onRankBtnClick() {
+        console.log("GameMainScene onRankBtnClick");
+        //this._showWXSubContext = !this._showWXSubContext
+        //this.WXSubcontextNode.active = this._showWXSubContext
+    },
+
     /*
     *  desc: create enemy
     */
@@ -353,8 +367,40 @@ cc.Class({
     *  desc: gameOver
     */
     gameOver: function gameOver() {
+        this.saveDataToWX();
         Global.gameManager.gameOver();
         cc.director.loadScene("GameStartScene");
+    },
+
+    saveDataToWX: function saveDataToWX() {
+        var timestamp = Date.parse(new Date());
+        timestamp = timestamp / 1000;
+
+        var jsonData = {
+            wxgame: {
+                score: Math.abs(Math.floor(this._heroRunDistance * 0.33)),
+                update_time: timestamp
+            },
+            cost_ms: Global.gameManager.getTotalTime()
+        };
+        jsonData = JSON.stringify(jsonData);
+        console.log("GameMainScene saveDataToWX KVDATA " + jsonData);
+        var wxKVData = {
+            key: "user_data",
+            value: jsonData
+        };
+        wx.setUserCloudStorage({
+            KVDataList: [wxKVData],
+            success: function success() {
+                console.log("GameMainScene saveDataToWX success");
+            },
+            fail: function fail() {
+                console.log("GameMainScene saveDataToWX fail");
+            },
+            complete: function complete() {
+                console.log("GameMainScene saveDataToWX complete");
+            }
+        });
     },
 
     /**
@@ -387,6 +433,7 @@ cc.Class({
         this._heroRunDistance = 0;
         this._enemyTimeInteval = 0.0;
         this._oldMaxSpeed = 0.0;
+        this._showWXSubContext = false;
         this._deadEnemy = {
             enemyNodeType: "none",
             deadCount: 0,

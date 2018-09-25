@@ -57,6 +57,10 @@ cc.Class({
             default : null,
             type : cc.Label
         },
+        WXSubcontextNode : {
+            default : null,
+            type : cc.Node
+        },
         // 两侧墙体向下移动速度，负数
         _runSpeed : {
             default : 0.0,
@@ -205,6 +209,16 @@ cc.Class({
     onTouchEnd : function(event){
 
     },
+
+    /**
+     * desc: 
+     */
+    onRankBtnClick : function(){
+        console.log("GameMainScene onRankBtnClick")
+        //this._showWXSubContext = !this._showWXSubContext
+        //this.WXSubcontextNode.active = this._showWXSubContext
+    },
+
     /*
     *  desc: create enemy
     */
@@ -358,8 +372,40 @@ cc.Class({
     *  desc: gameOver
     */
     gameOver : function(){  
+        this.saveDataToWX()
         Global.gameManager.gameOver()
         cc.director.loadScene("GameStartScene")
+    },
+
+    saveDataToWX : function(){
+        var timestamp = Date.parse(new Date())
+        timestamp = timestamp / 1000
+
+        var jsonData = {
+            wxgame: {
+                    score : Math.abs(Math.floor(this._heroRunDistance * 0.33)),
+                    update_time : timestamp
+            },
+            cost_ms : Global.gameManager.getTotalTime()
+        }
+        jsonData = JSON.stringify(jsonData)
+        console.log("GameMainScene saveDataToWX KVDATA " + jsonData)
+        var wxKVData = {
+            key : "user_data",
+            value : jsonData
+        }
+        wx.setUserCloudStorage({
+            KVDataList : [wxKVData],
+            success : function(){
+                console.log("GameMainScene saveDataToWX success")
+            },
+            fail : function(){
+            console.log("GameMainScene saveDataToWX fail")
+            },
+            complete : function(){
+                console.log("GameMainScene saveDataToWX complete")
+            },
+        })
     },
 
     /**
@@ -393,6 +439,7 @@ cc.Class({
         this._heroRunDistance = 0
         this._enemyTimeInteval = 0.0
         this._oldMaxSpeed = 0.0
+        this._showWXSubContext = false
         this._deadEnemy = {
             enemyNodeType : "none",
             deadCount : 0,

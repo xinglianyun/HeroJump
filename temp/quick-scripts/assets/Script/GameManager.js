@@ -93,6 +93,12 @@ cc.Class({
 
     //************************************start logic*************************************************//
     /**
+     * desc: 
+     */
+    getTotalTime: function getTotalTime() {
+        return this._totalTime;
+    },
+    /**
      * desc: calaulate the apperence rate of enemy according to the rate
      *       the varible _enemyTotalRate contains the total rate of the enemys in one level
      *       the _enemyRate contains the seperate rate of the enemys
