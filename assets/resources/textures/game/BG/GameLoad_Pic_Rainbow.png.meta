@@ -1,9 +1,10 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.2.0",
   "uuid": "4d64d9ab-58f1-4cc2-a3e8-ba59e92aab4c",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
   "subMetas": {
     "GameLoad_Pic_Rainbow": {
       "ver": "1.0.3",
